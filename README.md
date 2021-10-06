@@ -1,6 +1,6 @@
 👇👇DEPLOY👇👇
 
-[LEGENDBOT](https://github.com/LEGEND-OS/LEGENDBOT)
+[PYTHON](https://github.com/LEGEND-OS/LEGENDBOT)
   <summary> <h2>Generate String Session</h2> </summary>
 
 - Termux
