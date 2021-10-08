@@ -7,7 +7,7 @@
     - Install git package
            `pkg install git`
     - Clone this repository.
-           `git clone https://github.com/LEGEND-OS/LEGENDBOT.git`
+           `git clone https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8.git`
     - Then Do
            `cd PYTHONBOT`
     - Run String Generator By
