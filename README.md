@@ -1,6 +1,6 @@
 👇👇DEPLOY👇👇
 
-[PYTHON](https://github.com/LEGEND-OS/LEGENDBOT)
+[PYTHON](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8)
   <summary> <h2>Generate String Session</h2> </summary>
 
 - Termux
@@ -9,7 +9,7 @@
     - Clone this repository.
            `git clone https://github.com/LEGEND-OS/LEGENDBOT.git`
     - Then Do
-           `cd LEGENDBOT`
+           `cd PYTHONBOT`
     - Run String Generator By
            `bash string.sh`
     - Then Fill The Required Details.
@@ -39,7 +39,7 @@
     - Any Other VPS.
     - No support for Termux Yet.
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LEGEND-OS/LEGENDUSERBOT/)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8/)
 
 
 ## Mandatory Vars
@@ -49,7 +49,7 @@
     - `APP_ID`:   You can get this value from [here](https://my.telegram.org)
     - `API_HASH`:   You can get this value from [here](https://my.telegram.org)
     - `ENV`:   `ANYTHING`
-    - `LEGEND_STRING`:   You can get this value from running `python3 string_session.py` in termux after cloning this repo. Or just using [repl run](https://repl.it/@itzglegendvv/LEGENDBOT#main.py)
+    - `PYTHON_STRING`:   You can get this value from running `python3 string_session.py` in termux after cloning this repo. Or just using [repl run](https://repl.it/@itzglegendvv/PYTHONBOT4#main.py)
     - `LOG_GROUP`:   Make a Channel Or Group and get it's id.
     - `DATABASE_URL`:   Make a database on elephant sql and paste the url.
     - `DB_URI`:   Same as `DATABASE_URL`
@@ -64,7 +64,7 @@
 
 ```
 Get help regarding setting up 
-your LEGENDBOT in our official 
+your PYTHONBOT in our official 
 support Group and get updates
 notifications in Update Channel.
 ```
@@ -82,9 +82,9 @@ notifications in Update Channel.
 
 ![](https://www.gnu.org/graphics/gplv3-or-later.png)
 
-Copyright (C) 2021 LEGEND-OS
+Copyright (C) 2021 LEGEND-LX
 
-Poject [LEGENDBOT](https://github.com/LEGEND-OS/LEGENDBOT) is free software: you can redistribute it and/or modify
+Poject [PYTHONBOT](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -102,7 +102,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 <details>
   <summary> <h4>• Credits 🏅 •</h4> </summary>
 
-• [LEGEND](https://github.com/LEGEND-OS):OWNER
+• [LEGEND-LX](https://github.com/LEGEND-LX):OWNER
  
 </details>
 
