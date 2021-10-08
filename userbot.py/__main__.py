@@ -107,24 +107,24 @@ bot.loop.run_until_complete(assistant())
 
 print(f"""『🔱🇱 🇪 🇬 🇪 🇳 🇩 B O T 🔱』➙𖤍࿐ IS ON!!! LEGEND VERSION :- {LEGENDversion}
 TYPE :- " .gpromote @Its_LegendBoy " OR .legend OR .ping CHECK IF I'M ON!
-╔════❰LEGENDBOT❱═❍⊱❁۪۪
-║┣⪼ OWNER - LEGEND
-║┣⪼{LEGEND_PIC}
-║┣⪼ CREATOR -@Its_LegendBoy
-║┣⪼ TELETHON - 1.2.0
-║┣⪼ ✨ 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+╔════❰PYTHOPBOT❱═❍⊱❁۪۪
+║┣⪼ OWNER - LEGEND-LX
+║┣⪼{PYTHON_PIC}
+║┣⪼ CREATOR -@Legendl_Mr_Hacker
+║┣⪼ TELETHON - 9.2.7JAA
+║┣⪼   PYTHON-𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱""")
 
 
 
-async def legend_is_on():
+async def Python_is_on():
     try:
         if Config.LOGGER_ID != 0:
             await bot.send_file(
                 Config.LOGGER_ID,
-                LEGEND_PIC,
-                caption=f"#START \n\nDeployed LEGENDBOT Successfully\n\n**LEGENDBOT- {LEGENDversion}**\n\nType `{l1}op` or `{l1}alive` to check! \n\nJoin [LegendBot Channel](t.me/Its_LegendBot) for Updates & [LegendBot Chat](t.me/Legend_Userbot) for any query regarding LegendBot",
+                Python_PIC,
+                caption=f"#START \n\nDeployed LEGENDBOT Successfully\n\n**PYTHONBOT- {PYTHONversion}**\n\nType `{l1}op` or `{l1}alive` to check! \n\nJoin [PythonBot Channel](t.me/Its_LegendBot) for Updates & [PythonBot Chat](t.me/Legend_Userbot) for any query regarding LegendBot",
             )
     except Exception as e:
         print(str(e))
