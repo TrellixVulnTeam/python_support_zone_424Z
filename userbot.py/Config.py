@@ -99,9 +99,9 @@ if ENV:
         #open load
         OPEN_LOAD_LOGIN = os.environ.get("OPEN_LOAD_LOGIN", None)
         OPEN_LOAD_KEY = os.environ.get("OPEN_LOAD_KEY", None)
-        # number of colums of buttons to be displayed in .legend command
+        # number of colums of buttons to be displayed in .op command
         NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", 2))
-        # emoji to be displayed  in help .legend
+        # emoji to be displayed  in help .python
         EMOJI_IN_HELP1 = os.environ.get("EMOJI_IN_HELP1", "⚜️ ")
         EMOJI_IN_HELP2 = os.environ.get("EMOJI_IN_HELP2", "⚡ ")
         ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "🔥")
@@ -157,9 +157,9 @@ if ENV:
         LYDIA_API = os.environ.get("LYDIA_API",None)
         PLUGIN_CHANNEL = os.environ.get("PLUGIN_CHANNEL",None)
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/LEGEND-OS/LEGENDBOT"
+            "UPSTREAM_REPO", "https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8"
         )
-        LEGEND_STRING = os.environ.get("LEGEND_STRING", None)
+        PYTHON_STRING = os.environ.get("PYTHON_STRING", None)
         BOT_MODE = os.environ.get("BOT_MODE", "ON")
         BOTLOG = False
         ABUSE = os.environ.get("ABUSE", None)
@@ -176,7 +176,7 @@ if ENV:
         if LOGGER_ID:
             LOGGER_ID = int(LOGGER_ID)
         FORCE_CHANNEL_ID = int(os.environ.get("FORCE_CHANNEL_ID", False))
-        EXTRA_LEGENDBOT = os.environ.get("EXTRA_LEGENDBOT", -1001221881562)
+        EXTRA_PYTHONBOT = os.environ.get("EXTRA_PYTHONBOT", -1001221881562)
         PM_DATA = os.environ.get("PM_DATA", "ENABLE")
 
 else:
