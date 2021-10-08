@@ -7,18 +7,18 @@ from userbot.Config import Config
 from var import Var
 BOTLOG = True
 StartTime = time.time()
-LEGENDversion = "𝚅2.1"
-botversion = "𝚅2.1"
+PYTHONversion = "𝚅9.0.8"
+botversion = "𝚅9.0.8"
 
 os.system("pip install --upgrade pip")
-if Var.LEGEND_STRING:
-    session_name = str(Var.LEGEND_STRING)
+if Var.PYTHON_STRING:
+    session_name = str(Var.PYTHON_STRING)
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
 else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
-#LEGEND = bot
+#PYTHON = bot
 DEVS = [2033517108]
 CMD_LIST = {}
 # for later purposes
@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-LEGEND_ID = ["2033517108"]
+PYTHON_ID = ["2033517108"]
 
 """ PPE initialization. """
 
@@ -54,7 +54,7 @@ if bool(ENV):
     else:
         basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
                     level=INFO)
-    LOGS = getLogger("[Lêɠêɳ̃dẞø† 2.1]")
+    LOGS = getLogger("[Pythonẞø† 9.0.8]")
 
 try:
     if Config.HEROKU_API_KEY is not None or Config.HEROKU_APP_NAME is not None:
@@ -153,7 +153,7 @@ except:
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/LEGEND-OS/LEGENDUSERBOT.git")
+    "https://github.com/LEGEND-LX/python_support_zone.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
