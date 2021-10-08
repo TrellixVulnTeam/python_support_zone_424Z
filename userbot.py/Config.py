@@ -21,7 +21,7 @@ if ENV:
         # This is required for the hash to torrent file functionality to work.
         HASH_TO_TORRENT_API = os.environ.get("HASH_TO_TORRENT_API", "https://example.com/torrent/{}");
         # This is required for the @telegraph functionality.
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "LEGENDBOT")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "PYTHONBOT")
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         # Send .get_id in any group with all your administration bots (added)
@@ -144,7 +144,7 @@ if ENV:
         ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
         PM_PIC = os.environ.get("PM_PIC", None)
         AWAKE_PIC = os.environ.get("AWAKE_PIC", None)
-        HELP_PIC = os.environ.get("OP_PIC", None)
+        HELP_PIC = os.environ.get("PYTHON_PIC", None)
         ALIVE_MSG = os.environ.get("ALIVE_MSG", None)
         PM_MSG = os.environ.get("PM_MSG", None)
         INSTANT_BLOCK = os.environ.get("INSTANT_BLOCK", "DISABLE")
