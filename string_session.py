@@ -4,18 +4,23 @@ import random
 from colorama import Fore, Style, Back
 
 
-legend = """
-╔╗──╔═══╦═══╦═══╦═╗─╔╦═══╦═══╦═══╦╗──╔╗
-║║──║╔══╣╔═╗║╔══╣║╚╗║╠╗╔╗║╔═╗║╔═╗║╚╗╔╝║  
-║║──║╚══╣║─╚╣╚══╣╔╗╚╝║║║║║║─║║╚═╝╠╗╚╝╔╝  
-║║─╔╣╔══╣║╔═╣╔══╣║╚╗║║║║║║╚═╝║╔╗╔╝╚╗╔╝   
-║╚═╝║╚══╣╚╩═║╚══╣║─║║╠╝╚╝║╔═╗║║║╚╗─║║   
-╚═══╩═══╩═══╩═══╩╝─╚═╩═══╩╝─╚╩╝╚═╝─╚╝   
-
+python = """
+╭━━━┳╮╱╱╭┳━━━━┳╮╱╭┳━━━┳━╮╱╭╮
+┃╭━╮┃╰╮╭╯┃╭╮╭╮┃┃╱┃┃╭━╮┃┃╰╮┃┃
+┃╰━╯┣╮╰╯╭┻╯┃┃╰┫╰━╯┃┃╱┃┃╭╮╰╯┃
+┃╭━━╯╰╮╭╯╱╱┃┃╱┃╭━╮┃┃╱┃┃┃╰╮┃┃
+┃┃╱╱╱╱┃┃╱╱╱┃┃╱┃┃╱┃┃╰━╯┃┃╱┃┃┃
+╰╯╱╱╱╱╰╯╱╱╱╰╯╱╰╯╱╰┻━━━┻╯╱╰━╯
+╭━━╮╭━━━┳━━━━╮
+┃╭╮┃┃╭━╮┃╭╮╭╮┃
+┃╰╯╰┫┃╱┃┣╯┃┃╰╯
+┃╭━╮┃┃╱┃┃╱┃┃
+┃╰━╯┃╰━╯┃╱┃┃
+╰━━━┻━━━╯╱╰╯
 """
 baap_bolte = """
-#Legendary LEGENDBOT          
-Made With Love By Team LEGENDBOT
+#Legendary PYTHONBOT          
+Made With Love By Team PYTHONBOT
 """
                                                                                                             
 print("")
@@ -25,7 +30,7 @@ print(Style.BRIGHT + Fore.BLUE + logo)
 print(Style.RESET_ALL)
 print(Style.BRIGHT + Fore.CYAN + Back.BLUE + baap_bolte)
 print(Style.RESET_ALL)
-print("""Welcome To LEGENDBOT String Generator By @Its_LegendBoy""")
+print("""Welcome To PYTHONBOT String Generator By @Legendl_Mr_Hacker""")
 print("""Kindly Enter Your Details To Continue ! """)
 
 API_KEY = input("API_KEY: ")
@@ -43,7 +48,7 @@ while True:
             )
 
             print(
-                "Thanks for Choosing LEGENDBOT Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
+                "Thanks for Choosing PYTHONBOT Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
             )
     except:
         print("")
