@@ -1,4 +1,4 @@
-#   Copyright (C) 2021 LEGEND-OS
+#   Copyright (C) 2021 LEGEND-LX
 #
 #   Poject VΛDΣЯ is free software: 
 #   you can redistribute it and/or modify it under the terms of the GNU General Public License 
@@ -16,8 +16,8 @@
 
 echo """
               
-Legendary LEGENDBOT!!
-@Legend_Userbot
+Legendary PYTHONBOT!!
+@Python_Userbot_Support
 """
 
 python3 -m userbot
