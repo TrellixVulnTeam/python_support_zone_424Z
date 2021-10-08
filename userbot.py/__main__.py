@@ -7,7 +7,7 @@ from var import Var
 from userbot.Config import Config
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 from userbot.utils import load_module, start_assistant, load_addons
-from userbot import LOAD_PLUG, LOGS, LEGENDversion
+from userbot import LOAD_PLUG, LOGS, PYTHONversion
 from pathlib import Path
 import asyncio
 import glob
@@ -15,7 +15,7 @@ import telethon.utils
 os.system("pip install -U telethon")
 
 l2= Config.SUDO_COMMAND_HAND_LER
-LEGEND_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/75e1eda1498620f0030ea.jpg"
+PYTHON_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/75e1eda1498620f0030ea.jpg"
 l1 = Config.COMMAND_HAND_LER
 
 
@@ -28,7 +28,7 @@ async def add_bot(bot_token):
         bot.me = await bot.get_me()
         bot.uid = telethon.utils.get_peer_id(bot.me)
     except Exception as e:
-        print(f"LEGEND_STRING - {str(e)}")
+        print(f"PYTHON_STRING - {str(e)}")
         sys.exit()
         
         
@@ -43,9 +43,9 @@ else:
                 "BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
             ).start(bot_token=Var.BOT_TOKEN)
             LOGS.info("Checking Completed. Proceeding to next step...")
-            LOGS.info("🔰 Starting LegendBot 🔰")
+            LOGS.info("🐍 Starting PythonBot 🐍")
             bot.loop.run_until_complete(add_bot(Config.BOT_USERNAME))
-            LOGS.info("🔥 LegendBot Startup Completed 🔥")
+            LOGS.info("🔥 PythonBot Startup Completed 🔥")
         else:
             bot.start()
     except Exception as e:
@@ -78,7 +78,7 @@ if "BOY" in addon:
     addon = addon.replace("BOY", "Boy")            
 async def addons():
     if addon == "Boy":
-        extra_repo = "https://github.com/LEGEND-OS/LegendBot-Addons"
+        extra_repo = "https://github.com/LEGEND-LX/PYTHONBOT.py.pkg"
         try:
             os.system(f"git clone {extra_repo}")  
         except BaseException:
