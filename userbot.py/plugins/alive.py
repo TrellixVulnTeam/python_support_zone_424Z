@@ -5,8 +5,8 @@ from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 from userbot.Config import Config
 from telethon import version
-from userbot import ALIVE_NAME, StartTime, LEGENDversion
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot import ALIVE_NAME, StartTime, PYTHONversion
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 from . import *
 async def reply_id(event):
@@ -18,14 +18,14 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎ 🇮🇳"
-LEGEND_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 𝖑𝖊ɠêɳ̃dẞø✞︎"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Legend_Userbot"
+DEFAULTUSER = ALIVE_NAME or "✞︎t͛ẞ̸ Pythonẞø✞︎ 🇮🇳"
+PYTHON_IMG = Config.ALIVE_PIC
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂-ℓx Choice Pythonẞø✞︎"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
 
 Legend = bot.uid
 
-mention = f"[{DEFAULTUSER}](tg://user?id={Legend})"
+mention = f"[{DEFAULTUSER}](tg://user?id={Python})"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -60,7 +60,7 @@ uptime = get_readable_time((time.time() - StartTime))
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
-@bot.on(sudo_cmd(pattern="legend$", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
@@ -130,11 +130,11 @@ botname = Config.BOT_USERNAME
 
 @bot.on(admin_cmd(pattern="alive$"))
 @bot.on(admin_cmd(pattern="alive$", allow_sudo=True))
-async def legend_a(event):
+async def python_a(event):
     try:
-        legend = await bot.inline_query(botname, "alive")
-        await legend[0].click(event.chat_id)
-        if event.sender_id == Its_LegendBoy:
+        python = await bot.inline_query(botname, "alive")
+        await python[0].click(event.chat_id)
+        if event.sender_id == Legendl_Mr_Hacker:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
