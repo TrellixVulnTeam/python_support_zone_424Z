@@ -85,7 +85,7 @@ async def addons():
             pass
         import glob
         LOGS.info("Loading Addons")
-        path = "LegendBot-Addons/*.py"
+        path = "PythonBot-Addons/*.py"
         files = glob.glob(path)
         for name in files:
             with open(name) as ex:
@@ -94,9 +94,9 @@ async def addons():
                 try:
                     load_addons(shortname.replace(".py", ""))
                     if not shortname.startswith("__") or shortname.startswith("_"):
-                        LOGS.info(f"[LEGEND-BOT 2.1] - Addons -  ✅Installed✅ - {shortname}")
+                        LOGS.info(f"[PYTHON-BOT 9.0.8] - Addons -  ✅Installed✅ - {shortname}")
                 except Exception as e:
-                    LOGS.warning(f"[LEGEND-BOT 2.1] - Addons - ⚠️ERROR⚠️ - {shortname}")
+                    LOGS.warning(f"[PYTHON-BOT 9.0.8] - Addons - ⚠️ERROR⚠️ - {shortname}")
                     LOGS.warning(str(e))
     else:
         print("Addons Not Loading")
@@ -105,12 +105,12 @@ bot.loop.run_until_complete(module())
 bot.loop.run_until_complete(addons())
 bot.loop.run_until_complete(assistant())
 
-print(f"""『🔱🇱 🇪 🇬 🇪 🇳 🇩 B O T 🔱』➙𖤍࿐ IS ON!!! LEGEND VERSION :- {LEGENDversion}
-TYPE :- " .gpromote @Its_LegendBoy " OR .legend OR .ping CHECK IF I'M ON!
+print(f""" ╔════❰PYTHOPBOT❱═❍⊱❁۪۪➙𖤍࿐ IS ON!!! PYTHON VERSION :- {PYTHONversion}
+TYPE :- " .gpromote @Legendl_Me_Hacker " OR .Alive OR .ping CHECK IF I'M ON!
 ╔════❰PYTHOPBOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - LEGEND-LX
 ║┣⪼{PYTHON_PIC}
-║┣⪼ CREATOR -@Legendl_Mr_Hacker
+║┣⪼ CREATOR - @Legendl_Mr_Hacker
 ║┣⪼ TELETHON - 9.2.7JAA
 ║┣⪼   PYTHON-𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
@@ -124,24 +124,24 @@ async def Python_is_on():
             await bot.send_file(
                 Config.LOGGER_ID,
                 Python_PIC,
-                caption=f"#START \n\nDeployed LEGENDBOT Successfully\n\n**PYTHONBOT- {PYTHONversion}**\n\nType `{l1}op` or `{l1}alive` to check! \n\nJoin [PythonBot Channel](t.me/Its_LegendBot) for Updates & [PythonBot Chat](t.me/Legend_Userbot) for any query regarding LegendBot",
+                caption=f"#START \n\nDeployed PYTHONBOT Successfully\n\n**PYTHONBOT- {PYTHONversion}**\n\nType `{l1}op` or `{l1}alive` to check! \n\nJoin [PythonBot Channel](t.me/Its_LegendBot) for Updates & [PythonBot Chat](t.me/Python_Userbot_Support) for any query regarding PythonBot",
             )
     except Exception as e:
         print(str(e))
 
-# Join LegndBot Channel after deploying 🤐😅
+# Join PythonBot Channel after deploying 🤐😅
     try:
         await bot(JoinChannelRequest("@Its_LegendBot"))
     except BaseException:
         pass
 
     try:
-        await bot(JoinChannelRequest("@Legend_Userbot"))
+        await bot(JoinChannelRequest("@Python_Userbot_Support"))
     except BaseException:
          pass
 
 
-bot.loop.create_task(legend_is_on())
+bot.loop.create_task(python_is_on())
 
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
