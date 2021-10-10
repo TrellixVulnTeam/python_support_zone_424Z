@@ -59,56 +59,72 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="legend$"))
+@bot.on(admin_cmd(outgoing=True, pattern="alive$"))
 @bot.on(sudo_cmd(pattern="legend$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
     reply_to_id = await reply_id(alive)
 
-    if  LEGEND_IMG:
-        LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
+    if  PYTHON_IMG:
+        PYTHON_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
-        LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"        **♥ẞø† ẞ✞︎α†µѕ** \n"
-        LEGEND_caption += f"•⚜️• **Øաղ̃ҽ̈ɾ**          : {mention}\n\n"
-        LEGEND_caption += f"•📍• **𝖑𝖊ɠêɳ̃dẞø†**   : {LEGENDversion}\n"
-        LEGEND_caption += f"•📍• **†ҽ̀lҽ́ƭhøղ̃**     : `{version.__version__}`\n"
-        LEGEND_caption += f"•📍• **𝚄ρƭเɱε**         : `{uptime}`\n"
-        LEGEND_caption += f"•📍• **𝙶𝚛𝚘𝚞𝚙**           : [𝙶𝚛𝚘𝚞𝚙](t.me/Legend_Userbot)\n"
-        LEGEND_caption += f"•📍• **𝙼𝚢 𝙶𝚛𝚘𝚞𝚙**  : {CUSTOM_YOUR_GROUP}\n"   
+        PYTHON_caption += f"______𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭______\n"
+        PYTHON_caption += f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
+        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
+        PYTHON_caption += f"║┣⪼ Ⲟⲱⲛⲉʀ     ┣⪼ [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼ Ⲋⲧⲁⲧυⲋ      ┣⪼ Ⲟⲛⳑⲓⲛⲉ\n"
+        PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {mention}\n"
+        PYTHON_caption += f"║┣⪼ Ⳙⲣⲧⲓⲙⲉ      ┣⪼  {uptime}\n"
+        PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ    ┣⪼  {uptime}\n"   
+        PYTHON_caption += f"║┣⪼ Ⲣⲩⲧⲏⲟⲛ      ┣⪼  {PYTHONversion}\n"
+        PYTHON_caption += f"║┣⪼ Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__} \n"
+        PYTHON_caption += f"║┣⪼ [✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
+        PYTHON_caption += f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
 
         await alive.client.send_file(
-            alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
+            alive.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
-            f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
-            f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
-            f"🇮🇳 υρτιмє        : `{uptime}`\n"
-            f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Its_LegendBoy)\n"
+            f"______𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭______\n"
+            f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
+            f"║╭━━━━━━━━━━━━━━━➣ \n"
+            f"║┣⪼ Ⲟⲱⲛⲉʀ     ┣⪼ [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+            f"║┣⪼ Ⲋⲧⲁⲧυⲋ      ┣⪼ Ⲟⲛⳑⲓⲛⲉ\n"
+            f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {mention}\n"
+            f"║┣⪼ Ⳙⲣⲧⲓⲙⲉ      ┣⪼  {uptime}\n"
+            f"║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ    ┣⪼  {uptime}\n"   
+            f"║┣⪼ Ⲣⲩⲧⲏⲟⲛ      ┣⪼  {PYTHONversion}\n"
+            f"║┣⪼ Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__} \n"
+            f"║┣⪼ [✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+            f"║╰━━━━━━━━━━━━━━━➣ \n"
+            f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
         )
 
 
 msg = f"""
-**  ⚜️ Lêɠêɳ̃dẞø† ιѕ σиℓιиє ⚜️**
+**  ⚜️ Pythonẞø† ιѕ σиℓιиє ⚜️**
 
 {Config.ALIVE_MSG}
 
-**    ♥️ ẞø✞︎ ẞ✞︎α✞︎µѕ ♥️**
-**•⚜️•Øաղ̃ҽ̈r     :** **{mention}**
-
-**•🌹•𝖑𝖊ɠêɳ̃dẞø✞︎ :** {LEGENDversion}
-**•🌹•✞︎ҽ̀lҽ́ƭhøղ  :** {version.__version__}
-**•🌹•Ãbûßê     :**  {abuse_m}
-**•🌹•ßudø      :**  {is_sudo}
-**•🌹•Bøt.      :** {Config.BOY_OR_GIRL}
+** ______𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭______\n"
+**╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
+**║╭━━━━━━━━━━━━━━━➣ \n"
+**║┣⪼ Ⲟⲱⲛⲉʀ     ┣⪼ [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+**║┣⪼ Ⲋⲧⲁⲧυⲋ      ┣⪼ Ⲟⲛⳑⲓⲛⲉ\n"
+**║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {mention}\n"
+**║┣⪼ Ⳙⲣⲧⲓⲙⲉ      ┣⪼  {uptime}\n"
+**║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ    ┣⪼  {uptime}\n"   
+**║┣⪼ Ⲣⲩⲧⲏⲟⲛ      ┣⪼  {PYTHONversion}\n"
+**║┣⪼ Ⲧⲉⳑⲉⲏⲧⲟⲛ     ┣⪼  {version.__version__} \n"
+**║┣⪼ [✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+**║╰━━━━━━━━━━━━━━━➣ \n"
+**╚══════════════════❍⊱❁۪۪¤๋͜-  \n"L}
 """
 botname = Config.BOT_USERNAME
 
