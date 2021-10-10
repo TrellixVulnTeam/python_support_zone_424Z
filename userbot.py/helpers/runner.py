@@ -33,10 +33,10 @@ def run_async(loop, coro):
     return asyncio.run_coroutine_threadsafe(coro, loop).result()
 
 
-async def reload_LEGENDBOT():
+async def reload_PYTHONBOT():
     executable = sys.executable.replace(" ", "\\ ")
     args = [executable, "-m", "userbot"]
     os.execle(executable, *args, os.environ)
     os._exit(143)
 
-# legendbot
+# pythonbot
