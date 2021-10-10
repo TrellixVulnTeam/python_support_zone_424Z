@@ -113,4 +113,4 @@ async def dotify(image, pix, mode):
 
 
 
-# LEGENDBOT
+# PYTHONBOT
