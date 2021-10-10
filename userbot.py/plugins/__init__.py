@@ -5,17 +5,17 @@ from userbot.cmdhelp import CmdHelp
 import datetime
 from telethon import version
 from . import *
-LEGEND_USER = bot.me.first_name
-Its_LegendBoy = bot.uid
-legend_mention = f"[{LEGEND_USER}](tg://user?id={Its_LegendBoy})"
-LEGEND_logo = "./userbot/resources/pics/-6163428037589314866_121.jpg"
-LEGEND_logo1 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo2 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGENDversion = "𝚅2.𝙾"
+PYTHON_USER = bot.me.first_name
+Legendl_Mr_Hacker = bot.uid
+python_mention = f"[{PYTHON_USER}](tg://user?id={Legendl_Mr_Hacker})"
+PYTHON_logo = "./userbot/resources/pics/-6163428037589314866_121.jpg"
+PYTHON_logo1 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+PYTHON_logo2 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+PYTHON_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+PYTHON_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+PYTHONversion = "𝚅9.𝙾.8"
 
-perf = "[ †hê Lêɠêɳ̃dẞø† ]"
+perf = "[ DMG-PYTHONẞø† ]"
 
 
 DEVLIST = [
@@ -45,7 +45,7 @@ else:
 START_TIME = datetime.datetime.now()
 uptime = f"{str(datetime.datetime.now() - START_TIME).split('.')[0]}"
 my_channel = Config.YOUR_CHANNEL or "Its_LegendBot"
-my_group = Config.YOUR_GROUP or "Legend_Userbot"
+my_group = Config.YOUR_GROUP or "Python_Userbot_Support"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
@@ -59,9 +59,9 @@ else:
     botname = f"@{mybot}"
 
 chnl_link = "https://t.me/Its_LegendBot"
-Legend_channel = f"[✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎]({chnl_link})"
-grp_link = "https://t.me/Legend_Userbot"
-Legend_grp = f"[𝖑𝖊ɠêɳ̃dẞø✞︎ Group]({grp_link})"
+Legend_channel = f"[✞︎t͛ẞ̸ Pythonẞø✞︎]({chnl_link})"
+grp_link = "https://t.me/Python_Userbot_Support"
+Python_grp = f"[Pythonẞø✞︎ Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
