@@ -71,7 +71,7 @@ async def amireallyalive(event):
         PYTHON_caption += f"•🔥•`SPAMProtect :`  {ss} \n"       
         PYTHON_caption += f"•🔥• 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
         PYTHON_caption += f"•🔥•`PYTHON` :  {platform.python_version()} \n"
-        PYTHON_caption += f"•🔥•`OS:`       : Kali GNU/Linux Rollingx86_64 \n"                                        
+        PYTHON_caption += f"•🔥•`OS:`       : Kali GNU/Linux Rolling x86_64 \n"                                        
         PYTHON_caption += f"•🔥• 𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
         PYTHON_caption += f"•🔥• 𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/Its_LegendBot)\n"
         PYTHON_caption += f"•🔥• 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 : {CUSTOM_YOUR_GROUP}\n"   
@@ -84,13 +84,20 @@ async def amireallyalive(event):
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
-            f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
-            f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
-            f"🇮🇳 υρτιмє        : `{uptime}`\n"
-            f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Its_LegendBoy)\n"
+            f"______𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭______\n"
+            f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
+            f"║╭━━━━━━━━━━━━━━━➣ \n"
+            f"║┣⪼ Ⲟⲱⲛⲉʀ     ┣⪼ [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+            f"║┣⪼ Ⲋⲧⲁⲧυⲋ      ┣⪼ Ⲟⲛⳑⲓⲛⲉ\n"
+            f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {mention}\n"
+            f"║┣⪼ Ⳙⲣⲧⲓⲙⲉ      ┣⪼  {uptime}\n"
+            f"║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ    ┣⪼  {uptime}\n"   
+            f"║┣⪼ Ⲣⲩⲧⲏⲟⲛ      ┣⪼  {PYTHONversion}\n"
+            f"║┣⪼`Os:`        ┣⪼   Kali GNU/Linux Rolling x86_64 \n"                                       
+            f"║┣⪼ Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__} \n"
+            f"║┣⪼ [✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+            f"║╰━━━━━━━━━━━━━━━➣ \n"
+            f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
         )
 
 CmdHelp("awake").add_command(
