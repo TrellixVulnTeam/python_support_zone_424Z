@@ -1,4 +1,4 @@
-# by uniborg...Thanks @Its_LegendBoy
+# by uniborg...Thanks @Legendl_Mr_Hacker
 # Now will be used in PYTHONBOT too....
 import asyncio
 import datetime
