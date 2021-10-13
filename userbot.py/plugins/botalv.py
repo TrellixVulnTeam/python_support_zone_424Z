@@ -1,5 +1,5 @@
 from userbot import *
-from LEGENDBOT.utils import *
+from PYTHONBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 from telethon import events, version
 from telethon.events import NewMessage
@@ -8,7 +8,7 @@ from telethon.tl.types import Channel, Chat, User
 
 #-------------------------------------------------------------------------------
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "PYTHON"
 
 ludosudo = Config.SUDO_USERS
 
@@ -17,15 +17,15 @@ if ludosudo:
 else:
     sudou = "False"
 
-legend = bot.uid
+python = bot.uid
 
-mention = f"[{DEFAULTUSER}](tg://user?id={legend})"
+mention = f"[{DEFAULTUSER}](tg://user?id={python})"
 
 
 PM_IMG = "https://telegra.ph/file/71339ef5c1b34cffa6cb5.jpg"
-pm_caption ="**𝖑𝖊ɠêɳ̃dẞø✞︎ 𝙸𝚜 𝙾𝚗𝚕𝚒𝚗𝚎**\n\n"
+pm_caption ="**Pythonẞø✞︎ 𝙸𝚜 𝙾𝚗𝚕𝚒𝚗𝚎**\n\n"
 
-pm_caption += f"**┏━━︎♠️✞t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎♠️━━┓**\n"
+pm_caption += f"**┏━━︎♠️✞t͛ẞ̸ Pythonẞø✞︎♠️━━┓**\n"
 pm_caption += f"**┣🌷 𝙼𝚢 𝙼𝚊𝚜𝚝𝚎𝚛    : {mention}**\n"
 pm_caption += f"**┣🌷 𝚃𝚎𝚕𝚎𝚝𝚑𝚘𝚗 : `{version.__version__}`**\n"
 pm_caption += f"**┣🌷 𝖑𝖊ɠêɳ̃dẞø✞︎ : {LEGENDversion}**\n"
