@@ -100,7 +100,7 @@ async def delete_legend(event, text, time=None, parse_mode=None, link_preview=No
     time = time or 10
     if event.sender_id in Config.SUDO_USERS:
         reply_to = await event.get_reply_message()
-        legendevent = (
+        pythonevent = (
             await reply_to.reply(text, link_preview=link_preview, parse_mode=parse_mode)
             if reply_to
             else await event.reply(
@@ -108,10 +108,10 @@ async def delete_legend(event, text, time=None, parse_mode=None, link_preview=No
             )
         )
     else:
-        LEGENDevent = await event.edit(
+           PYTHONevent = await event.edit(
             text, link_preview=link_preview, parse_mode=parse_mode
         )
     await asyncio.sleep(time)
-    return await legendevent.delete()
+    return await pythonevent.delete()
 
-# legendbot
+# pythonbot
