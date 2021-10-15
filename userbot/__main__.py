@@ -71,7 +71,7 @@ bot.loop.run_until_complete(module())
 
 print(f""" ╔════❰PYTHOPBOT❱═❍⊱❁۪۪➙𖤍࿐ IS ON!!! PYTHON VERSION :- {PYTHONversion}
 TYPE :- " .gpromote @Legendl_Me_Hacker " OR .Alive OR .ping CHECK IF I'M ON!
-╔════❰PYTHOPBOT❱═❍⊱❁۪۪
+╔════❰PYTHONBOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - LEGEND-LX
 ║┣⪼{PYTHON_PIC}
 ║┣⪼ CREATOR - @Legendl_Mr_Hacker
