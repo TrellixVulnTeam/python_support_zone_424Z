@@ -153,7 +153,7 @@ def load_module(shortname):
         mod.borg = bot
         mod.PYTHONBOT = bot
         mod.edit_or_reply = edit_or_reply
-        mod.delete_PYTHON = delete_LEGEND
+        mod.delete_PYTHON = delete_PYTHON
         mod.eod = delete_PYTHON
         mod.admin_cmd = admin_cmd
         mod.python_cmd = admin_cmd
@@ -166,7 +166,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("🔥⚡Pythonẞø†⚡🔥 ~ " + shortname)
+        LOGS.info("🔥Pythonẞø†🔥 ~ " + shortname)
 
 
    
