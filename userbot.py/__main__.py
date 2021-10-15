@@ -6,7 +6,7 @@ from telethon import TelegramClient
 from var import Var
 from userbot.Config import Config
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
-from userbot.utils import load_module, start_assistant, load_addons
+from userbot.utils import load_module
 from userbot import LOAD_PLUG, LOGS, PYTHONversion
 from pathlib import Path
 import asyncio
@@ -64,46 +64,10 @@ async def module():
       shortname = path1.stem
       load_module(shortname.replace(".py", ""))
 
-async def assistant():
-    path = "userbot/plugins/assistant/*.py"
-    files = glob.glob(path)
-    for name in files:
-      with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        start_assistant(shortname.replace(".py", ""))
 
-addon = os.environ.get("BOY_OR_GIRL") or False    
-if "BOY" in addon:
-    addon = addon.replace("BOY", "Boy")            
-async def addons():
-    if addon == "Boy":
-        extra_repo = "https://github.com/LEGEND-LX/PYTHONBOT.py.pkg"
-        try:
-            os.system(f"git clone {extra_repo}")  
-        except BaseException:
-            pass
-        import glob
-        LOGS.info("Loading Addons")
-        path = "PythonBot-Addons/*.py"
-        files = glob.glob(path)
-        for name in files:
-            with open(name) as ex:
-                path2 = Path(ex.name)
-                shortname = path2.stem
-                try:
-                    load_addons(shortname.replace(".py", ""))
-                    if not shortname.startswith("__") or shortname.startswith("_"):
-                        LOGS.info(f"[PYTHON-BOT 9.0.8] - Addons -  ✅Installed✅ - {shortname}")
-                except Exception as e:
-                    LOGS.warning(f"[PYTHON-BOT 9.0.8] - Addons - ⚠️ERROR⚠️ - {shortname}")
-                    LOGS.warning(str(e))
-    else:
-        print("Addons Not Loading")
 
 bot.loop.run_until_complete(module())
-bot.loop.run_until_complete(addons())
-bot.loop.run_until_complete(assistant())
+
 
 print(f""" ╔════❰PYTHOPBOT❱═❍⊱❁۪۪➙𖤍࿐ IS ON!!! PYTHON VERSION :- {PYTHONversion}
 TYPE :- " .gpromote @Legendl_Me_Hacker " OR .Alive OR .ping CHECK IF I'M ON!
@@ -141,7 +105,7 @@ async def Python_is_on():
          pass
 
 
-bot.loop.create_task(python_is_on())
+bot.loop.create_task(Python_is_on())
 
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
