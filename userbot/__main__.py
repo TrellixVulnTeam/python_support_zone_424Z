@@ -43,9 +43,9 @@ else:
                 "BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
             ).start(bot_token=Var.BOT_TOKEN)
             LOGS.info("Checking Completed. Proceeding to next step...")
-            LOGS.info("🐍 Starting PythonBot 🐍")
+            LOGS.info("🐍Starting PythonBot🐍")
             bot.loop.run_until_complete(add_bot(Config.BOT_USERNAME))
-            LOGS.info("🔥 PythonBot Startup Completed 🔥")
+            LOGS.info("🔥PythonBot Startup Completed🔥")
         else:
             bot.start()
     except Exception as e:
