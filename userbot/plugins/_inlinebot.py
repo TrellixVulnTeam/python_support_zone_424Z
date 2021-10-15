@@ -8,7 +8,7 @@ import sys
 from telethon.events import InlineQuery, callbackquery
 from userbot import *
 from userbot.cmdhelp import *
-from LEGENDBOT.utils import *
+from PYTHONBOT.utils import *
 import telethon.tl.functions
 from userbot.Config import Config
 from userbot import ALIVE_NAME
@@ -20,7 +20,7 @@ from telethon.errors.rpcerrorlist import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.messages import ExportChatInviteRequest
-DEFAULTUSER = ALIVE_NAME or "LEGEND"
+DEFAULTUSER = ALIVE_NAME or "PYTHON"
 from . import * 
 legend_row = Config.BUTTONS_IN_HELP
 legend_emoji1 = Config.EMOJI_IN_HELP1
