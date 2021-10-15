@@ -170,55 +170,6 @@ def load_module(shortname):
 
 
    
-def load_addons(shortname):
-    if shortname.startswith("__"):
-        pass
-    elif shortname.endswith("_"):
-        import userbot.utils
-        import sys
-        import importlib
-        from pathlib import Path
-        path = Path(f"PythonBot-Addons/{shortname}.py")
-        name = "PythonBot-Addons.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        LOGS.info("PythonBot-Addons ~ " + shortname)
-    else:
-        import userbot.utils
-        import sys
-        import importlib
-        from pathlib import Path
-        path = Path(f"PythonBot-Addons/{shortname}.py")
-        name = "PythonBot-Addons.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
-        mod.bot = bot
-        #mod.PYTHON = PYTHON
-        mod.tgbot = bot.tgbot
-        mod.Var = Var
-        mod.command = command
-        mod.logger = logging.getLogger(shortname)
-        # support for uniborg
-        sys.modules["uniborg.util"] = userbot.utils
-        mod.Config = Config
-        mod.borg = bot
-        mod.PYTHONBOT = bot
-        mod.edit_or_reply = edit_or_reply
-        mod.delete_PYTHON = delete_PYTHON
-        mod.eod = delete_PYTHON
-        mod.admin_cmd = admin_cmd
-        mod.sudo_cmd = sudo_cmd
-        # support for PYTHONBOT originals
-        sys.modules["PYTHONBOT.utils"] = userbot.utils
-        sys.modules["userbot"] = userbot
-        # support for paperplaneextended
-        sys.modules["userbot.events"] = userbot.utils
-        spec.loader.exec_module(mod)
-        # for imports
-        sys.modules["PythonBot-Addons." + shortname] = mod
-        LOGS.info("🔱PythonBot-Addons🔱 ~ " + shortname)
-
 
 
 
