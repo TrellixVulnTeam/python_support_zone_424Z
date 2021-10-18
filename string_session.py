@@ -1,10 +1,10 @@
-from telethon.sessions import StringSession
+
 from telethon.sync import TelegramClient
-import random
-from colorama import Fore, Style, Back
-
-
-python = """
+from telethon.sessions import StringSession
+PYTHONBOT = """
+"""
+print(PYTHONBOT)
+print("""String Generator. ==> PYTHONBot. Get Your Api Id & Api Hash From my.telegram.org and fill accordingly.
 ╭━━━┳╮╱╱╭┳━━━━┳╮╱╭┳━━━┳━╮╱╭╮
 ┃╭━╮┃╰╮╭╯┃╭╮╭╮┃┃╱┃┃╭━╮┃┃╰╮┃┃
 ┃╰━╯┣╮╰╯╭┻╯┃┃╰┫╰━╯┃┃╱┃┃╭╮╰╯┃
@@ -16,45 +16,17 @@ python = """
 ┃╰╯╰┫┃╱┃┣╯┃┃╰╯
 ┃╭━╮┃┃╱┃┃╱┃┃
 ┃╰━╯┃╰━╯┃╱┃┃
-╰━━━┻━━━╯╱╰╯
-"""
-baap_bolte = """
-#Legendary PYTHONBOT          
-Made With Love By Team PYTHONBOT
-"""
-                                                                                                            
-print("")
-print(Style.BRIGHT + Fore.MAGENTA + legend)
-print(Style.RESET_ALL)
-print(Style.BRIGHT + Fore.BLUE + logo)
-print(Style.RESET_ALL)
-print(Style.BRIGHT + Fore.CYAN + Back.BLUE + baap_bolte)
-print(Style.RESET_ALL)
-print("""Welcome To PYTHONBOT String Generator By @Legendl_Mr_Hacker""")
-print("""Kindly Enter Your Details To Continue ! """)
+╰━━━┻━━━╯╱╰╯""")
+APP_ID = int(input("Enter APP ID - "))
+API_HASH = input("Enter API HASH - ")
 
-API_KEY = input("API_KEY: ")
-API_HASH = input("API_HASH: ")
-
-while True:
-    try:
-        with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
-            print("String Sent To Your Saved Message, Store It To A Safe Place!! ")
-            print("")
-            session = client.session.save()
-            client.send_message(
-                "me",
-                f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @Python_Userbot_Support For Any Help !",
-            )
-
-            print(
-                "Thanks for Choosing PYTHONBOT Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
-            )
-    except:
-        print("")
-        print(
-            "Wrong phone number \n make sure its with correct country code. Example : +919811099999 ! Kindly Retry"
-        )
-        print("")
-        continue
-    break
+with TelegramClient(StringSession(), APP_ID, API_HASH) as PYTHONBOT:
+    print("")
+    print("This is your STRING_SESSION. Please Keep It safe.")
+    print("")
+    print(PYTHONBOT.session.save())
+    print("")
+    print("You can Get Your String Session In Saved Message of Your Telegram Account. Remember To Make New String Session Whenever You Terminate Sessions.")
+    omk =PYTHONBOT.send_message("me", f"`{PYTHONBOT.session.save()}`")
+    omk.reply("The above is the `PYTHON_STRING` #POWERFUL [PYTHONBOT](https://t.me/Python_Userbot_Support)"
+		)
