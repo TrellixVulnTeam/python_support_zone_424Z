@@ -40,7 +40,7 @@ if ENV:
         DUAL_LOG = os.environ.get("DUAL_LOG", None)
         # DO NOT EDIT BELOW THIS LINE IF YOU DO NOT KNOW WHAT YOU ARE DOING
         # TG API limit. A message can have maximum 4096 characters!
-        MAX_MESSAGE_SIZE_LIMIT = 4095
+        MAX_MESSAGE_SIZE_LIMIT = 4096
         # set blacklist_chats where you do not want userbot's features
         UB_BLACK_LIST_CHAT = set(int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split())
         # maximum number of messages for antiflood
@@ -97,7 +97,7 @@ if ENV:
         # number of colums of buttons to be displayed in .help command
         NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", 3))
         # emoji to be displayed  in help .help
-        EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", "🔰")
+        EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", "🔥")
         # specify command handler that should be used for the plugins
         # this should be a valid "regex" pattern
         COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", "\.")
