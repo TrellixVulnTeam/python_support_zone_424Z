@@ -59,7 +59,7 @@ else:
     botname = f"@{mybot}"
 
 chnl_link = "https://t.me/Its_LegendBot"
-Legend_channel = f"[✞︎t͛ẞ̸ Pythonẞø✞︎]({chnl_link})"
+Python_channel = f"[✞︎t͛ẞ̸ Pythonẞø✞︎]({chnl_link})"
 grp_link = "https://t.me/Python_Userbot_Support"
 Python_grp = f"[Pythonẞø✞︎ Group]({grp_link})"
 
