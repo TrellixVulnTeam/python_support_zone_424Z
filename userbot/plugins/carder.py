@@ -6,8 +6,8 @@ from telethon.tl.functions.messages import DeleteHistoryRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
-from LEGENDBOT import CmdHelp, bot as LEGENDBOT
+from PYTHONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from PYTHONBOT import CmdHelp, bot as PYTHONBOT
 
 
 @LEGENDBOT.on(admin_cmd("gencc$"))
