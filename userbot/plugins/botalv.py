@@ -28,12 +28,12 @@ pm_caption ="**Pythonẞø✞︎ 𝙸𝚜 𝙾𝚗𝚕𝚒𝚗𝚎**\n\n"
 pm_caption += f"**┏━━︎♠️✞t͛ẞ̸ Pythonẞø✞︎♠️━━┓**\n"
 pm_caption += f"**┣🌷 𝙼𝚢 𝙼𝚊𝚜𝚝𝚎𝚛    : {mention}**\n"
 pm_caption += f"**┣🌷 𝚃𝚎𝚕𝚎𝚝𝚑𝚘𝚗 : `{version.__version__}`**\n"
-pm_caption += f"**┣🌷 𝖑𝖊ɠêɳ̃dẞø✞︎ : {LEGENDversion}**\n"
+pm_caption += f"**┣🌷 PYTHONẞø✞︎ : {PYTHONversion}**\n"
 pm_caption += f"**┣🌷 𝚂𝚞𝚍𝚘     : `{sudou}`**\n"
-pm_caption += f"**┣🌷 𝙾𝚠𝚗𝚎𝚛     : [𝖑𝖊ɠêɳ̃d](https://t.me/Its_LegendBoy)**\n"
+pm_caption += f"**┣🌷 𝙾𝚠𝚗𝚎𝚛     : [python](https://t.me/Legend_Mr_Hacker)**\n"
 pm_caption += f"**┗━━━━━[♠️𝙶𝚛𝚘𝚞𝚙♠️](https://t.me/Legend_Userbot)━━━━━━━━┛**\n"
 
-pm_caption += "    [✨яєρο✨](https://github.com/LEGEND-OS/LEGENDBOT) 🔹 [📜ℓιϲєиѕє📜](https://github.com/LEGEND-OS/LEGENDBOT/blob/master/LICENSE)"
+pm_caption += "    [✨яєρο✨](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8) 🔹 [📜ℓιϲєиѕє📜](https://github.com/LEGEND-LC/PYTHONBOT/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="bot$"))
