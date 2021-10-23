@@ -8,7 +8,7 @@ from . import *
 from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
-perf = "[ DMG-Pythonẞø† ]"
+perf = "[ Pythonẞø† ]"
 
 mybot = Config.BOT_USERNAME
 if mybot.startswith("@"):
