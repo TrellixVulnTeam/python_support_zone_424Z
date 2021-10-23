@@ -31,7 +31,7 @@ botname = Config.BOT_USERNAME
 @bot.on(sudo_cmd(pattern="repo$", allow_sudo=True))
 async def repo(event):
     try:
-        legend = await bot.inline_query(botname, "repo")
+        python = await bot.inline_query(botname, "repo")
         await python[0].click(event.chat_id)
         if event.sender_id == Legendl_Mr_Hacker:
             await event.delete()
@@ -54,7 +54,7 @@ async def _(event):
             )
             await event.delete()
         except noinline:
-            legend = await eor(event, "**Inline Mode is disabled.** \n__Turning it on, please wait for a minute...__")
+            python = await eor(event, "**Inline Mode is disabled.** \n__Turning it on, please wait for a minute...__")
             async with bot.conversation(chat) as conv:
                 try:
                     first = await conv.send_message("/setinline")
@@ -66,14 +66,14 @@ async def _(event):
                     await bot.send_read_acknowledge(conv.chat_id)
                 except YouBlockedUserError:
                     return await legend.edit("Unblock @Botfather first.")
-                await legend.edit(f"**Turned On Inline Mode Successfully.** \n\nDo `{l1}op` again to get the help menu.")
+                await python.edit(f"**Turned On Inline Mode Successfully.** \n\nDo `{l1}op` again to get the help menu.")
             await bot.delete_messages(
                 conv.chat_id, [first.id, second.id, third.id, fourth.id, fifth.id, sixth.id]
             )
     else:
         await eor(event, "**⚠️ 𝙴𝚁𝚁𝙾𝚁 !!** \n𝙿𝚕𝚎𝚊𝚜𝚎 𝚁𝚎-𝙲𝚑𝚎𝚌𝚔 BOT_TOKEN & BOT_USERNAME on Heroku.")
 
-@bot.on(admin_cmd(pattern="op ?(.*)", outgoing=True))
+@bot.on(admin_cmd(pattern="python ?(.*)", outgoing=True))
 async def yardim(event):
     if event.fwd_from:
         return
