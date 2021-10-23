@@ -11,7 +11,7 @@ from . import *
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "『Pythonẞø†』"
 python = bot.uid
-PYTHON = f"[{DEFAULTUSER}](tg://user?id={legend})"
+PYTHON = f"[{DEFAULTUSER}](tg://user?id={python})"
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
