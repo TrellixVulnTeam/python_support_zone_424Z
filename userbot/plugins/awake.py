@@ -88,7 +88,7 @@ async def amireallyalive(event):
             f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
             f"║╭━━━━━━━━━━━━━━━➣ \n"
             f"║┣⪼Developer^By┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
-            f"║┣⪼Edition_Developer^By ┣⪼ [Legend-Os](t.me/The_LegendBoy
+            f"║┣⪼Edition^Developer^By ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
             f"║┣⪼Ⲟⲱⲛⲉʀ      ┣⪼ [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
             f"║┣⪼Ⲋⲧⲁⲧυⲋ      ┣⪼ Ⲟⲛⳑⲓⲛⲉ\n"
             f"║┣⪼Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {mention}\n"
