@@ -23,7 +23,7 @@ PYTHON_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂-ℓx Choice Pythonẞø✞︎"
 CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
 
-Legend = bot.uid
+Python = bot.uid
 
 mention = f"[{DEFAULTUSER}](tg://user?id={Python})"
 
@@ -69,7 +69,7 @@ async def amireallyalive(alive):
     if  PYTHON_IMG:
         PYTHON_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
-        PYTHON_caption += f"______𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭______\n"
+        PYTHON_caption += f" ______𝙿𝚈𝚃𝙷𝙾𝙽-𝐔𝐬𝐞𝐫𝐛𝐨𝐭______\n"
         PYTHON_caption += f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"║┣⪼Developer^By┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
@@ -110,7 +110,7 @@ async def amireallyalive(alive):
             f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
             f"║╰━━━━━━━━━━━━━━━➣ \n"
             f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
-        )
+         )
 
 
 msg = f"""
