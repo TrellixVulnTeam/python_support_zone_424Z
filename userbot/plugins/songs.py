@@ -35,17 +35,17 @@ except:
     from youtubesearchpython import SearchVideos
 
 from userbot import bot
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply, progress
+from PYTHONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply, progress
 from userbot.cmdhelp import CmdHelp
 from userbot.helpers.functions import deEmojify
 
-from userbot.utils import delete_LEGEND, edit_or_reply
+from userbot.utils import delete_PYTHON, edit_or_reply
 
 @bot.on(admin_cmd(pattern="lyrics(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="lyrics(?: |$)(.*)", allow_sudo=True))
 async def nope(aura):
-    LEGEND = aura.pattern_match.group(1)
-    if not LEGEND:
+    PYTHON = aura.pattern_match.group(1)
+    if not PYTHON:
         if aura.is_reply:
             (await aura.get_reply_message()).message
         else:
@@ -54,7 +54,7 @@ async def nope(aura):
             )
             return
 
-    troll = await bot.inline_query("iLyricsBot", f"{(deEmojify(LEGEND))}")
+    troll = await bot.inline_query("iLyricsBot", f"{(deEmojify(PYTHON))}")
 
     await troll[0].click(
         aura.chat_id,
@@ -133,7 +133,7 @@ async def _(event):
     hell = await eor(event, f"__Searching for__ `{query}`")
     hel_ = await song_search(event, query, max_results, details=True)
     x, title, views, duration, thumb = hel_[0], hel_[1], hel_[2], hel_[3], hel_[4]
-    thumb_name = f'thumb{Its_LegendBoy}.jpg'
+    thumb_name = f'thumb{Legendl_Mr_Hacker}.jpg'
     thumbnail = requests.get(thumb, allow_redirects=True)
     open(thumb_name, 'wb').write(thumbnail.content)
     url = x.replace("\n", "")
@@ -193,7 +193,7 @@ async def _(event):
     hell = await eor(event, f"__Searching for__ `{query}`")
     hel_ = await song_search(event, query, max_results, details=True)
     x, title, views, duration, thumb = hel_[0], hel_[1], hel_[2], hel_[3], hel_[4]
-    thumb_name = f'thumb{Its_LegendBoy}.jpg'
+    thumb_name = f'thumb{Legendl_Mr_Hacker}.jpg'
     thumbnail = requests.get(thumb, allow_redirects=True)
     open(thumb_name, 'wb').write(thumbnail.content)
     url = x.replace("\n", "")
