@@ -21,11 +21,11 @@ async def reply_id(event):
 DEFAULTUSER = ALIVE_NAME or "✞t͛ẞ̸ Pythonẞø✞ 🇮🇳"
 PYTHON_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 𝖑𝖊ɠêɳ̃dẞø✞"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Legend_Userbot"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
 
-Legend = bot.uid
+Python = bot.uid
 
-mention = f"[{DEFAULTUSER}](tg://user?id={Legend})"
+mention = f"[{DEFAULTUSER}](tg://user?id={Python})"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -59,27 +59,27 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="legend$"))
-@bot.on(sudo_cmd(pattern="legend$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="py$"))
+@bot.on(sudo_cmd(pattern="py$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
     reply_to_id = await reply_id(alive)
 
-    if  LEGEND_IMG:
-        LEGEND_caption = f"{CUSTOM_ALIVE_TEXT}**\n"
+    if  PYTHON_IMG:
+        PYTHON_caption = f"{CUSTOM_ALIVE_TEXT}**\n"
         
-        LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"        ♥️ẞø† ẞ✞α†µѕ** \n"
-        LEGEND_caption += f"•⚜️• Øաղ̃ҽ̈ɾ          : {mention}\n\n"
-        LEGEND_caption += f"•📍• 𝖑𝖊ɠêɳ̃dẞø†   : {PYTHONversion}\n"
-        LEGEND_caption += f"•📍• †ҽ̀lҽ́thøղ̃     : `{version.version}`\n"
-        LEGEND_caption += f"•📍• 𝚄ρtime         : `{uptime}`\n"
-        LEGEND_caption += f"•📍• 𝙶𝚛𝚘𝚞𝚙           : [𝙶𝚛𝚘𝚞𝚙](t.me/Legend_Userbot)\n"
-        LEGEND_caption += f"•📍• 𝙼𝚢 𝙶𝚛𝚘𝚞𝚙  : {CUSTOM_YOUR_GROUP}\n"   
+        PYTHON_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
+        PYTHON_caption += f"        ♥️ẞø† ẞ✞α†µѕ** \n"
+        PYTHON_caption += f"•⚜️• Øաղ̃ҽ̈ɾ          : {mention}\n\n"
+        PYTHON_caption += f"•📍• 𝖑𝖊ɠêɳ̃dẞø†   : {PYTHONversion}\n"
+        PYTHON_caption += f"•📍• †ҽ̀lҽ́thøղ̃     : `{version.version}`\n"
+        PYTHON_caption += f"•📍• 𝚄ρtime         : `{uptime}`\n"
+        PYTHON_caption += f"•📍• 𝙶𝚛𝚘𝚞𝚙           : [𝙶𝚛𝚘𝚞𝚙](t.me/Legend_Userbot)\n"
+        PYTHON_caption += f"•📍• 𝙼𝚢 𝙶𝚛𝚘𝚞𝚙  : {CUSTOM_YOUR_GROUP}\n"   
 
         await alive.client.send_file(
-            alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
+            alive.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
@@ -111,11 +111,11 @@ botname = Config.BOT_USERNAME
 
 @bot.on(admin_cmd(pattern="alive$"))
 @bot.on(admin_cmd(pattern="alive$", allow_sudo=True))
-async def legend_a(event):
+async def python_a(event):
     try:
-        legend = await bot.inline_query(botname, "alive")
-        await legend[0].click(event.chat_id)
-        if event.sender_id == Its_LegendBoy:
+        python = await bot.inline_query(botname, "alive")
+        await python[0].click(event.chat_id)
+        if event.sender_id == Python_Userbot_Support:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
