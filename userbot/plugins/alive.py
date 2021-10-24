@@ -73,7 +73,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"        ♥️ẞø† ẞ✞α†µѕ** \n"
         PYTHON_caption += f"•⚜️• Øաղ̃ҽ̈ɾ          : {mention}\n\n"
         PYTHON_caption += f"•📍• 𝖑𝖊ɠêɳ̃dẞø†   : {PYTHONversion}\n"
-        PYTHON_caption += f"•📍• †ҽ̀lҽ́thøղ̃     : `{version.11.9.0}`\n"
+        PYTHON_caption += f"•📍• †ҽ̀lҽ́thøղ̃     : `{version.version}`\n"
         PYTHON_caption += f"•📍• 𝚄ρtime         : `{uptime}`\n"
         PYTHON_caption += f"•📍• 𝙶𝚛𝚘𝚞𝚙           : [𝙶𝚛𝚘𝚞𝚙](t.me/Legend_Userbot)\n"
         PYTHON_caption += f"•📍• 𝙼𝚢 𝙶𝚛𝚘𝚞𝚙  : {CUSTOM_YOUR_GROUP}\n"   
