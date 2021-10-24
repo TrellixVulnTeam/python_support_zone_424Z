@@ -10,8 +10,8 @@ from PYTHONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from PYTHONBOT import CmdHelp, bot as PYTHONBOT
 
 
-@LEGENDBOT.on(admin_cmd("gencc$"))
-@LEGENDBOT.on(sudo_cmd("gencc$", allow_sudo=True))
+@PYTHONBOT.on(admin_cmd("gencc$"))
+@PYTHONBOT.on(sudo_cmd("gencc$", allow_sudo=True))
 async def _(LEGENDevent):
     if LEGENDevent.fwd_from:
         return
@@ -107,8 +107,8 @@ async def _(event):
              await event.client.send_message(event.chat_id, response.message)
 
     
-@LEGENDBOT.on(admin_cmd(pattern="ccheck ?(.*)"))
-@LEGENDBOT.on(sudo_cmd(pattern="ccheck ?(.*)", allow_sudo=True))
+@PYTHONBOT.on(admin_cmd(pattern="ccheck ?(.*)"))
+@PYTHONBOT.on(sudo_cmd(pattern="ccheck ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return 
