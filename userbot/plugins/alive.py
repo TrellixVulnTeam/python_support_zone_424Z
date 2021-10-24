@@ -5,7 +5,7 @@ from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 from userbot.Config import Config
 from telethon import version
-from userbot import ALIVE_NAME, StartTime, LEGENDversion
+from userbot import ALIVE_NAME, StartTime, PYTHONversion
 from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 from . import *
@@ -18,8 +18,8 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "✞t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞ 🇮🇳"
-LEGEND_IMG = Config.ALIVE_PIC
+DEFAULTUSER = ALIVE_NAME or "✞t͛ẞ̸ Pythonẞø✞ 🇮🇳"
+PYTHON_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 𝖑𝖊ɠêɳ̃dẞø✞"
 CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Legend_Userbot"
 
@@ -72,7 +72,7 @@ async def amireallyalive(alive):
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"        ♥️ẞø† ẞ✞α†µѕ** \n"
         LEGEND_caption += f"•⚜️• Øաղ̃ҽ̈ɾ          : {mention}\n\n"
-        LEGEND_caption += f"•📍• 𝖑𝖊ɠêɳ̃dẞø†   : {LEGENDversion}\n"
+        LEGEND_caption += f"•📍• 𝖑𝖊ɠêɳ̃dẞø†   : {PYTHONversion}\n"
         LEGEND_caption += f"•📍• †ҽ̀lҽ́thøղ̃     : `{version.version}`\n"
         LEGEND_caption += f"•📍• 𝚄ρtime         : `{uptime}`\n"
         LEGEND_caption += f"•📍• 𝙶𝚛𝚘𝚞𝚙           : [𝙶𝚛𝚘𝚞𝚙](t.me/Legend_Userbot)\n"
@@ -89,7 +89,7 @@ async def amireallyalive(alive):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
             f"•⚡️• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
+            f"🇮🇳 ℓєgєи∂ϐοτ  : `{PYTHONversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
             f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Its_LegendBoy)\n"
@@ -101,7 +101,7 @@ msg = f"""
 {Config.ALIVE_MSG}
     ♥️ ẞø✞ ẞ✞α✞µѕ ♥️
 **•⚜️•Øաղ̃ҽ̈r     : {mention}
-•🌹•𝖑𝖊ɠêɳ̃dẞø✞ : {LEGENDversion}
+•🌹•𝖑𝖊ɠêɳ̃dẞø✞ : {PYTHONversion}
 •🌹•✞ҽ̀lҽ́ƭhøղ  : {version.version}
 •🌹•Ãbûßê     :  {abuse_m}
 •🌹•ßudø      :  {is_sudo}
