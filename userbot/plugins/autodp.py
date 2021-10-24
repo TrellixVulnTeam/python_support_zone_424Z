@@ -18,7 +18,7 @@ import urllib
 import requests
 from telethon.tl import functions
 
-from LEGENDBOT.utils import admin_cmd
+from PYTHONBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 
 COLLECTION_STRING1 = [
