@@ -16,8 +16,7 @@ PYTHON_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
 PYTHONversion = "𝚅9.𝙾.8"
 
 perf = "[ DMG-PYTHONẞø† ]"
-
-
+#Developer here list
 DEVLIST = [
     "2033517108"
     "2082798662"
@@ -31,6 +30,7 @@ async def get_user_id(ids):
 
 l1 = Config.COMMAND_HAND_LER
 l2 = Config.SUDO_COMMAND_HAND_LER
+#sudo explained 
 sudos = Config.SUDO_USERS
 if sudos:
     is_sudo = "True"
