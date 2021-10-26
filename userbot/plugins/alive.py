@@ -69,14 +69,21 @@ async def amireallyalive(alive):
     if  PYTHON_IMG:
         PYTHON_caption = f"{CUSTOM_ALIVE_TEXT}**\n"
         
-        PYTHON_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        PYTHON_caption += f"        ♥️ẞø† ẞ✞α†µѕ** \n"
-        PYTHON_caption += f"•⚜️• Øաղ̃ҽ̈ɾ          : {mention}\n\n"
-        PYTHON_caption += f"•📍• 𝖑𝖊ɠêɳ̃dẞø†   : {PYTHONversion}\n"
-        PYTHON_caption += f"•📍• †ҽ̀lҽ́thøղ̃     : `{version.__version__}`\n"
-        PYTHON_caption += f"•📍• 𝚄ρtime         : `{uptime}`\n"
-        PYTHON_caption += f"•📍• 𝙶𝚛𝚘𝚞𝚙           : [𝙶𝚛𝚘𝚞𝚙](t.me/Legend_Userbot)\n"
-        PYTHON_caption += f"•📍• 𝙼𝚢 𝙶𝚛𝚘𝚞𝚙  : {CUSTOM_YOUR_GROUP}\n"   
+        PYTHON_caption += f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
+        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
+        PYTHON_caption += f"║┣⪼Developer^By┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼Edition^Developer^By ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
+        PYTHON_caption += f"║⪼ Ⲟⲱⲛⲉʀ     ┣⪼ [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼ Ⲋⲧⲁⲧυⲋ      ┣⪼ Ⲟⲛⳑⲓⲛⲉ\n"
+        PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {mention}\n"
+        PYTHON_caption += f"║┣⪼Ⳙⲣⲧⲓⲙⲉ      ┣⪼  {uptime}\n"
+        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ     ┣⪼  {uptime}\n"   
+        PYTHON_caption += f"║┣⪼Ⲣⲩⲧⲏⲟⲛ       ┣⪼  {PYTHONversion}\n"
+        PYTHON_caption += f"║┣⪼Os:        ┣⪼   Kali GNU/Linux Rolling x86_64 \n"   
+        PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__}\n" 
+        PYTHON_caption += f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+        PYTHON_caption += f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
+        
 
         await alive.client.send_file(
             alive.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
@@ -97,7 +104,7 @@ async def amireallyalive(alive):
 
 
 msg = f"""
-  ⚜️ Lêɠêɳ̃dẞø† ιѕ σиℓιиє ⚜️
+  ⚜️ pythonẞø† ιѕ σиℓιиє ⚜️
 {Config.ALIVE_MSG}
     ♥️ ẞø✞ ẞ✞α✞µѕ ♥️
 **•⚜️•Øաղ̃ҽ̈r     : {mention}
