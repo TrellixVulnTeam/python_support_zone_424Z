@@ -19,7 +19,7 @@ async def send(event):
     if event.fwd_from:
         return
     message_id = event.message.id
-    thumb = PYTHON_logo
+    thumb = PYTHON_logo2
     input_str = event.pattern_match.group(1)
     omk = f"**⍟ 𝙿𝚕𝚞𝚐𝚒𝚗 𝚗𝚊𝚖𝚎 ≈** `{input_str}`\n**⍟ 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝙱𝚢 ≈** {python_mention}\n\n⚡ **[Pythonẞø†](https://t.me/Python_Userbot_Support)** ⚡"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
