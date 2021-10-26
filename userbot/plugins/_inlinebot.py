@@ -29,7 +29,7 @@ alive_emoji = Config.ALIVE_EMOJI
 python_pic = Config.PM_PIC or "https://telegra.ph/file/6a5075d000f69d98565b6.jpg"
 cstm_pmp = Config.PM_MSG
 ALV_PIC = Config.ALIVE_PIC
-help_pic = Config.HELP_PIC or "https://telegra.ph/file/6a08bc3d83b51923f47b2.jpg"
+help_pic = Config.HELP_PIC or "https://telegra.ph/file/6a5075d000f69d98565b6.jpg"
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
