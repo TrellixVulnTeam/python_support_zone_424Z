@@ -20,6 +20,7 @@ perf = "[ DMG-PYTHONẞø† ]"
 
 DEVLIST = [
     "2033517108"
+    "2082798662"
 ]
 async def get_user_id(ids):
     if str(ids).isdigit():
