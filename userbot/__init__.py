@@ -19,7 +19,7 @@ else:
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
 #PYTHON = bot
-DEVS = [2033517108]
+DEVS = ["2033517108", "2082798662"]
 CMD_LIST = {}
 # for later purposes
 CMD_HELP = {}
