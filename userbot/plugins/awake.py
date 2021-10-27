@@ -68,7 +68,7 @@ async def amireallyalive(event):
         PYTHON_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         PYTHON_caption += f"     💫 ✞︎t͛ẞ̸ Pythonẞø✞︎ ιѕ αωακє 💫\n"
         PYTHON_caption += f"•🔥•     : ν9.0.8\n"
-        PYTHON_caption += f"•🔥•`SPAMProtect :`  {ss} \n"       
+        PYTHON_caption += f"•🔥•`SPAMProtect :`  {SpamBot} \n"       
         PYTHON_caption += f"•🔥• 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
         PYTHON_caption += f"•🔥•`PYTHON` :  {platform.python_version()} \n"
         PYTHON_caption += f"•🔥•`OS:`       : Kali GNU/Linux Rolling x86_64 \n"                                        
