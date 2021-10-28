@@ -82,7 +82,8 @@ alive_txt = """
 **║┣⪼Os:        ┣⪼   Kali GNU/Linux Rolling x86_64 \n"   
 **║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__}\n" 
 **║⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
-**   ╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
+**║╰━━━━━━━━━━━━━━━➣
+**╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
 """
 
 def button(page, modules):
@@ -134,7 +135,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             for x in CMD_LIST.values():
                 for y in x:
                     apn.append(y)
-            help_msg = f"🔥『{python_mention}』🔥\n\n**🔥𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍🔥⭆ **`{pyt(CMD_HELP)}`\n**🔥Tοταℓ Cοммαи∂ѕ🔥⭆** `{pyt(apn)}`\n**🔥Pαցҽ🔥⭆ **1/{veriler[0]}\n"
+            help_msg = f"🔥『{python_mention}』🔥\n\n
+            **║╭━━━━━━━━━━━━━━━➣\n"
+            **║┣⪼🔥𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍🔥⭆ **`{pyt(CMD_HELP)}`\n
+            **║┣⪼🔥Tοταℓ Cοммαи∂ѕ🔥⭆** `{pyt(apn)}`\n
+            **║┣⪼🔥Pαցҽ🔥⭆ **1/{veriler[0]}\n"
+            **║╰━━━━━━━━━━━━━━━➣\n"
             if help_pic and help_pic.endswith((".jpg", ".png")):
                 result = builder.photo(
                     help_pic,
@@ -158,7 +164,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     link_preview=False,
                 )
         elif event.query.user_id == bot.uid and query == "alive":
-            pyt_hon = alive_txt.format(Config.ALIVE_MSG, alive_emoji, python_mention, alive_emoji,  PYTHONversion, alive_emoji, version.__version__, alive_emoji, Developer^By, alive_emoji, Edition^Developer^By, alive_emoji,Ⲟⲱⲛⲉʀ ,alive_emoji, Ⲋⲧⲁⲧυⲋ , alive_emoji, Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ,Ⳙⲣⲧⲓⲙⲉ ,Ⲣⲩⲧⲏⲟⲛ  ,Os:  ,Ⲧⲉⳑⲉⲧⲏⲟⲛ Config.BOY_OR_GIRL)
+            pyt_hon = alive_txt.format(Config.ALIVE_MSG, alive_emoji, python_mention, alive_emoji,  PYTHONversion, alive_emoji, version.__version__, alive_emoji, Developer^By, alive_emoji, Edition^Developer^By, alive_emoji,Ⲟⲱⲛⲉʀ ,alive_emoji, Ⲋⲧⲁⲧυⲋ , alive_emoji, Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ,alive_emoji ,Ⳙⲣⲧⲓⲙⲉ ,alive_emoji ,Ⲣⲩⲧⲏⲟⲛ ,alive_emoji  ,Os ,alive_emoji  ,Ⲧⲉⳑⲉⲧⲏⲟⲛ ,alive_emoji
             alv_btn = [
                 [Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Legendl_Mr_Hacker}")],
                 [Button.url("❣My Channel❣", f"https://t.me/{my_channel}"), 
@@ -232,22 +238,22 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             if VAR_PIC and VAR_PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     VAR_PIC,
-                    text=le_gend,
+                    text=py_thon,
                     buttons=var_btn,
                     link_preview=False,
                 )
             elif VAR_PIC:
                 result = builder.document(
                     VAR_PIC,
-                    text=le_gend,
-                    title="LegendBot Alive",
+                    text=py_thon,
+                    title="PythonBot Alive",
                     buttons=var_btn,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
-                    text=le_gend,
-                    title="LegendBot Alive",
+                    text=py_thon,
+                    title="PythonBot Alive",
                     buttons=var_btn,
                     link_preview=False,
                 )
@@ -255,10 +261,10 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 𝙻𝚎𝚐𝚎𝚗𝚍𝙱𝚘𝚝 ⚜**",
+                text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 PYTHONBOT ⚜**",
                 buttons=[
                     [Button.url("♥️ Tutorial ♥", "https://youtu.be/9dQgdUJfk_k")], 
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/LEGEND-OS/LEGENDBOT")],
+                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8")],
                     [Button.url("💞 Deploy 💞", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT")],
                 ],
             )
@@ -274,18 +280,18 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         else:
             result = builder.article(
-                "@Legend_Userbot",
-                text="""**Hey! This is [Lêɠêɳ̃dẞø†](https://t.me/Official_LegendBot) \nYou can know more about me from the links given below 👇**""",
+                "@Python_Userbot_Support",
+                text="""**Hey! This is [Pythonẞø†](https://t.me/Python_Userbot_Support) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Official_LegendBot"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Python_Userbot_Support"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/Legend_Userbot"
+                            "⚡ GROUP ⚡", "https://t.me/Python_Userbot_Support"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/LEGEND-OS/LEGENDBOT"),
+                            "✨ REPO ✨", "https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8"),
                         custom.Button.url
                     (
                             "🔰 TUTORIAL 🔰", "https://youtu.be/bPzvmaQejNM"
@@ -304,54 +310,54 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"🔰 This is Lêɠêɳ̃dẞø† PM Security for {legend_mention} to keep away unwanted retards from spamming PM..."
+                f"🔰 This is Pythonẞø† PM Security for {Python_mention} to keep away unwanted retards from spamming PM..."
             )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
-    async def on_pm_click(legend):
-        if legend.query.user_id == bot.uid:
-            fck_bit = f"Oh! C'mon Master {legend_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
-            await legend.answer(fck_bit, cache_time=0, alert=True)
+    async def on_pm_click(python):
+        if python.query.user_id == bot.uid:
+            fck_bit = f"Oh! C'mon Master {python_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+            await python.answer(fck_bit, cache_time=0, alert=True)
             return
-        await legend.get_chat()
-        legend_id = legend.query.user_id
-        await legend.edit("Oh You Wanna Talk With My Master\n\nPls Wait Dear \n\n**Btw** **You Can Wait For My Master**")
+        await python.get_chat()
+        python_id = python.query.user_id
+        await python.edit("Oh You Wanna Talk With My Master\n\nPls Wait Dear \n\n**Btw** **You Can Wait For My Master**")
         await asyncio.sleep(2)
-        await legend.edit(
+        await python.edit(
             "Which Type Of Request U Want?", buttons= [
             [Button.inline("Register", data="school")],
             [Button.inline("As Usual", data="tg_okay")],
             ], 
         )
         yup_text = "`Warning`-❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
-        await bot.send_message(legend.query.user_id, yup_text)
+        await bot.send_message(python.query.user_id, yup_text)
     
     
     
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"tg_okay")))
-    async def yeahbaba(legend):
+    async def yeahbaba(python):
             if legend.query.user_id == bot.uid:
                 fck_bit = f"Oh! C'mon Master.This Is for other users"
-                await legend.answer(fck_bit, cache_time=0, alert=True)
+                await python.answer(fck_bit, cache_time=0, alert=True)
             else:
-                await legend.edit(
-                    f"✅ **Request Registered** \n\n{legend_mention} will now decide to talk with u or not\n😐 Till then wait patiently and don't spam!!"
+                await python.edit(
+                    f"✅ **Request Registered** \n\n{python_mention} will now decide to talk with u or not\n😐 Till then wait patiently and don't spam!!"
                     )
-                target = await legend.client(GetFullUserRequest(legend.query.user_id))
+                target = await python.client(GetFullUserRequest(python.query.user_id))
                 first_name = html.escape(target.user.first_name)
-                ok = legend.query.user_id
+                ok = python.query.user_id
                 if first_name is not None:
                     first_name = first_name.replace("\u2060", "")
-                    tosend = f"**👀 Hey {legend_mention} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
+                    tosend = f"**👀 Hey {python_mention} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
                     await bot.send_message(LOG_GP, tosend)
 
 
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"school")))
-    async def yeahbaba(legend):
+    async def yeahbaba(python):
             if legend.query.user_id == bot.uid:
                 fck_bit = f"This Is For Other user"
-                await legend.answer(fck_bit, cache_time=0, alert=True)
+                await python.answer(fck_bit, cache_time=0, alert=True)
             else:
                 await legend.edit(
                     f"✅ **Request Registered** \n\n{legend_mention} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
