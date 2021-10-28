@@ -135,7 +135,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             for x in CMD_LIST.values():
                 for y in x:
                     apn.append(y)
-            help_msg = f"『{ python_mention }』\n\n**
+            help_msg = f"『{ python_mention }』"\n\n**
             **║╭━━━━━━━━━━━━━━━➣\n"
             **║┣⪼🔥𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍🔥⭆ **`{pyt(CMD_HELP)}`\n"
             **║┣⪼🔥Tοταℓ Cοммαи∂ѕ🔥⭆** `{pyt(apn)}`\n
