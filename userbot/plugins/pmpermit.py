@@ -7,23 +7,23 @@ from telethon.sync import custom
 from telethon import events, functions, Button, custom
 from telethon.tl.functions.users import GetFullUserRequest
 from userbot.Config import Config
-from userbot import ALIVE_NAME, PM_MSG, LEGEND_ID
+from userbot import ALIVE_NAME, PM_MSG, PYTHON_ID
 from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 from userbot.plugins.sql_helper import pmpermit_sql as pm_sql
 from . import *
 
-WARN_PIC = Config.PM_PIC or "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
+WARN_PIC = Config.PM_PIC or "https://telegra.ph/file/2028fda1da68a8641c705.jpg"
 max_flood = Config.MAX_FLOOD_IN_PM
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 PM_ON_OFF = Config.PM_DATA
 CSTM_PMP = Config.PM_MSG or "**You Have Trespassed To My Master's PM!\nThis Is Illegal And Regarded As Crime.**"
-LEGEND_ZERO = "Go get some sleep retard. \n\n**Blocked !!**"
-LEGEND_FIRST = (
-    "**🔥 LegendBo† Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nThis is to inform you that "
+PYTHON_ZERO = "Go get some sleep retard. \n\n**Blocked !!**"
+PYTHON_FIRST = (
+    "**🔥 PythonBo† Ultra Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nThis is to inform you that "
     "{} is currently unavailable.\nThis is an automated message.\n\n"
-    "{}\n\n**{}Please Choose Why You Are Here!!**".format(legend_mention, CSTM_PMP, max_flood)
+    "{}\n\n**{}Please Choose Why You Are Here!!**".format(python_mention, CSTM_PMP, max_flood)
 )
  
 if PM_ON_OFF != "DISABLE":
@@ -234,7 +234,7 @@ if PM_ON_OFF != "DISABLE":
             return
         message_text = event.message.raw_text
         chat_id = event.sender_id
-        if LEGEND_FIRST == message_text:
+        if PYTHON_FIRST == message_text:
             return
         sender = await bot.get_entity(chat_id)
         if chat_id == bot.uid:
@@ -254,7 +254,7 @@ if PM_ON_OFF != "DISABLE":
         if chat_id not in PM_WARNS:
             PM_WARNS.update({chat_id: 0})
         if PM_WARNS[chat_id] == Config.MAX_FLOOD_IN_PM:
-            r = await event.reply(LEGEND_ZERO)
+            r = await event.reply(PYTHON_ZERO)
             await asyncio.sleep(3)
             await event.client(functions.contacts.BlockRequest(chat_id))
             if chat_id in PREV_REPLY_MESSAGE:
@@ -280,12 +280,12 @@ if PM_ON_OFF != "DISABLE":
         
         botusername = Config.BOT_USERNAME
         tap = await bot.inline_query(botusername, "pm_warn")
-        legend_ = await tap[0].click(event.chat_id)
+        python_ = await tap[0].click(event.chat_id)
         PM_WARNS[chat_id] += 1
         chat_id = chat_id
         if chat_id in PREV_REPLY_MESSAGE:
             await PREV_REPLY_MESSAGE[chat_id].delete()
-        PREV_REPLY_MESSAGE[chat_id] = legend_
+        PREV_REPLY_MESSAGE[chat_id] = python_
 
 NEEDIT = Config.INSTANT_BLOCK
 if NEEDIT == "ENABLE":
@@ -329,7 +329,7 @@ CmdHelp("pm_permit").add_command(
 ).add_command(
   "block", "<in pm>", "Blocks the user"
 ).add_command(
-  "listapproved", None, "Sends the list of all users approved by LegendBot"
+  "listapproved", None, "Sends the list of all users approved by PythonBot"
 ).add_info(
   "PM SECURITY"
 ).add_warning(
