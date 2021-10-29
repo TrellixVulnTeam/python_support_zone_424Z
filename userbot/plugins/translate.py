@@ -6,7 +6,7 @@ Available Commands:
 import emoji
 from googletrans import Translator
 
-from PYTHONBOT.utils import *
+from LEGENDBOT.utils import *
 from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="trt ?(.*)"))
