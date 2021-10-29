@@ -20,7 +20,7 @@ async def lg1(PYTHONevent):
     event = await edit_or_reply(PYTHONevent, "`Processing.....`")
     fnt = await get_font_file(event.client, "@PythonFonts")
     if PYTHONevent.reply_to_msg_id:
-        rply = await=PYTHONevent.get_reply_message()
+        rply = await= PYTHONevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
         async for i in bot.iter_messages("@PYTHON_MR_LOGOS", filter=InputMessagesFilterPhotos):
