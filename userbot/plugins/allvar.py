@@ -5,8 +5,8 @@ from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 from userbot.Config import Config
 from telethon import version
-from userbot import ALIVE_NAME, StartTime, LEGENDversion
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot import ALIVE_NAME, StartTime, PYTHONversion
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 from . import *
 
@@ -56,11 +56,11 @@ else:
 
 @bot.on(admin_cmd(pattern="allvar$"))
 @bot.on(admin_cmd(pattern="allvar$", allow_sudo=True))
-async def legend_a(event):
+async def python_a(event):
     try:
-        legend = await bot.inline_query(botname, "varboy")
-        await legend[0].click(event.chat_id)
-        if event.sender_id == The_LegendBoy:
+        python = await bot.inline_query(botname, "varboy")
+        await python[0].click(event.chat_id)
+        if event.sender_id == Legendl_Mr_Hacker:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
@@ -68,7 +68,7 @@ async def legend_a(event):
 CmdHelp("allvar").add_command(
     'allvar', None, 'υѕє αи∂ ѕєє'
 ).add_info(
-     "U can See All Var Except LEGEND_STRING"
+     "U can See All Var Except PYTHON_STRING"
 ).add_warning(
      "Harm Module"
 ).add_type(
