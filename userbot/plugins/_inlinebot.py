@@ -160,7 +160,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     link_preview=False,
                 )
         elif event.query.user_id == bot.uid and query == "alive":
-            pyt_hon = alive_txt.format(Config.ALIVE_MSG, alive_emoji, python_mention, alive_emoji,  PYTHONversion, alive_emoji, version.__version__, alive_emoji, Developer^By, alive_emoji, Edition^Developer^By, alive_emoji,Ⲟⲱⲛⲉʀ , alive_emoji, Ⲋⲧⲁⲧυⲋ , alive_emoji, Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ , Ⳙⲣⲧⲓⲙⲉ  , alive_emoji ,Ⲣⲩⲧⲏⲟⲛ , alive_emoji  , Os , alive_emoji  , Ⲧⲉⳑⲉⲧⲏⲟⲛ ,
+            pyt_hon = alive_txt.format(Config.ALIVE_MSG, alive_emoji, python_mention, alive_emoji,  PYTHONversion, alive_emoji, version.__version__ , alive_emoji, Developer^By, alive_emoji, Edition^Developer^By, alive_emoji,Ⲟⲱⲛⲉʀ , alive_emoji, Ⲋⲧⲁⲧυⲋ , alive_emoji, Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ , Ⳙⲣⲧⲓⲙⲉ  , alive_emoji ,Ⲣⲩⲧⲏⲟⲛ , alive_emoji  , Os , alive_emoji  , Ⲧⲉⳑⲉⲧⲏⲟⲛ ,
             alv_btn = [
                 [Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Legendl_Mr_Hacker}")],
                 [Button.url("❣My Channel❣", f"https://t.me/{my_channel}"), 
