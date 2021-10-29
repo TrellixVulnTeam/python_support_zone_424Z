@@ -95,7 +95,7 @@ def button(page, modules):
     if len(modules) % 2 == 1:
         pairs.append([modules[-1]])
     max_pages = ceil(len(pairs) / Row)
-    pairs = [pairs[i : i + Row] for i in range(0, pyt(pairs), Row)]
+    pairs = [pairs[i : i + Row] for i in range(0, led(pairs), Row)]
     buttons = []
     for pairs in pairs[page]:
         buttons.append(
