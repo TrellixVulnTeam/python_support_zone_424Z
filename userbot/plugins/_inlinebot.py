@@ -135,7 +135,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             for x in CMD_LIST.values():
                 for y in x:
                     apn.append(y)
-            help_msg = f"🔥『{python_mention}』🔥\n\n"**╭━━━━━━━━━━━━━━━➣\n"**║┣⪼🔥𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍🔥⭆**`{led(CMD_HELP)}`\n"**║┣⪼🔥Tοταℓ Cοммαи∂ѕ🔥⭆** `{led(apn)}`\n"**║┣⪼🔥Pαցҽ🔥⭆**1/{veriler[0]}\n" **╰━━━━━━━━━━━━━━━➣\n"
+            help_msg = f"🔥『{python_mention}』🔥\n\n"
+            **╭━━━━━━━━━━━━━━━➣\n"
+            **║┣⪼🔥𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍🔥⭆**`{led(CMD_HELP)}`\n"
+            **║┣⪼🔥Tοταℓ Cοммαи∂ѕ🔥⭆** `{led(apn)}`\n"
+            **║┣⪼🔥Pαցҽ🔥⭆**1/{veriler[0]}\n" 
+            **╰━━━━━━━━━━━━━━━➣\n"
            
             if help_pic and help_pic.endswith((".jpg", ".png")):
                 result = builder.photo(
@@ -444,24 +449,24 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         await bot(functions.contacts.BlockRequest(legend.query.user_id))
         await bot.send_message(
                 LOG_GP,
-                message = f"Hello, Master  [Nibba](tg://user?id={legend_id}). Has Been Blocked Due to Choose Spam",
-                buttons = [Button.url("Contact Him", f"tg://user?id=legend_id")],
+                message = f"Hello, Master  [Nibba](tg://user?id={python_id}). Has Been Blocked Due to Choose Spam",
+                buttons = [Button.url("Contact Him", f"tg://user?id=python_id")],
             )
        
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"unmute")))
     async def on_pm_click(event):
         hunter = (event.data_match.group(2)).decode("UTF-8")
         legend = hunter.split("+")
-        if not event.sender_id == int(legend[0]):
+        if not event.sender_id == int(python[0]):
             return await event.answer("This Ain't For You!!", alert=True)
         try:
-            await bot(GetParticipantRequest(int(legend[1]), int(legend[0])))
+            await bot(GetParticipantRequest(int(python[1]), int(python[0])))
         except UserNotParticipantError:
             return await event.answer(
                 "You need to join the channel first.", alert=True
             )
         await bot.edit_permissions(
-            event.chat_id, int(legend[0]), send_message=True, until_date=None
+            event.chat_id, int(python[0]), send_message=True, until_date=None
         )
         await event.edit("Yay! You can chat now !!")
 
@@ -482,17 +487,17 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     link_preview=False,
                 )
             else:
-                reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own © Lêɠêɳ̃dẞø†™"
+                reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own © Pythonẞø†™"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
-            veriler = custom.Button.inline(f"{legend_emoji1} Re-Open Menu {legend_emoji2}", data="reopen")
-            await event.edit(f"**⚜️ Lêɠêɳ̃dẞø† Mêñû Prõvîdêr háš běěn čłøšĕd ⚜️**\n\n**Bot Of :**  {legend_mention}\n\n            [©️Lêɠêɳ̃dẞø†]({chnl_link})", buttons=veriler, link_preview=False)
+            veriler = custom.Button.inline(f"{python_emoji1} Re-Open Menu {python_emoji2}", data="reopen")
+            await event.edit(f"**⚜️ Pythonẞø† Mêñû Prõvîdêr háš běěn čłøšĕd ⚜️**\n\n**Bot Of :**  {python_mention}\n\n            [©️Pythonẞø†]({chnl_link})", buttons=veriler, link_preview=False)
         else:
-            reply_pop_up_alert = "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα. Aα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©Lêɠêɳ̃dẞø†"
+            reply_pop_up_alert = "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα. Aα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©Pythondẞø†"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
    
 
@@ -506,7 +511,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 apn.append(y)
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             await event.edit(
-                f"🔥『{legend_mention}』🔥\n\n**📍𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍⭆ **`{len(CMD_HELP)}`\n**📍Tοταℓ Cοммαи∂ѕ⭆** `{len(apn)}`\n**🎒Pαցҽ⭆ **1/{veriler[0]}\n",
+                f"🔥『{python_mention}』🔥\n\n"
+            **╭━━━━━━━━━━━━━━━➣\n"
+            **║┣⪼🔥𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍🔥⭆**`{led(CMD_HELP)}`\n"
+            **║┣⪼🔥Tοταℓ Cοммαи∂ѕ🔥⭆** `{led(apn)}`\n"
+            **║┣⪼🔥Pαցҽ🔥⭆**1/{veriler[0]}\n" 
+            **╰━━━━━━━━━━━━━━━➣\n",
                 buttons=veriler[1],
                 link_preview=False,
             )
