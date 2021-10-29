@@ -83,7 +83,7 @@ alive_txt = """
 **║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__}\n" 
 **║⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
 **║╰━━━━━━━━━━━━━━━➣
-**╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
+**╚══════════════════❍⊱❁۪۪¤๋͜-\n"
 """
 
 def button(page, modules):
@@ -351,19 +351,19 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"school")))
     async def yeahbaba(python):
-            if legend.query.user_id == bot.uid:
+            if python.query.user_id == bot.uid:
                 fck_bit = f"This Is For Other user"
                 await python.answer(fck_bit, cache_time=0, alert=True)
             else:
-                await legend.edit(
-                    f"✅ **Request Registered** \n\n{legend_mention} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
+                await python.edit(
+                    f"✅ **Request Registered** \n\n{python_mention} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
                     )
                 target = await legend.client(GetFullUserRequest(event.query.user_id))
                 first_name = html.escape(target.user.first_name)
-                ok = legend.query.user_id
+                ok = python.query.user_id
                 if first_name is not None:
                     first_name = first_name.replace("\u2060", "")
-                tosend = f"**👀 Hey {legend_mention} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
+                tosend = f"**👀 Hey {pythond_mention} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
                 await bot.send_message(LOG_GP, tosend)
 
 
@@ -375,29 +375,29 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"Ahh!! You here to do chit-chat!!\n\nPlease wait for {legend_mention} to come. Till then keep patience and don't spam."
+                f"Ahh!! You here to do chit-chat!!\n\nPlease wait for {python_mention} to come. Till then keep patience and don't spam."
             )
             target = await event.client(GetFullUserRequest(event.query.user_id))
             ok = event.query.user_id
             first_name = html.escape(target.user.first_name)
             if first_name is not None:
                 first_name = first_name.replace("\u2060", "")
-            tosend = f"**👀 Hey {legend_mention} !!** \n\n⚜️ You Got A PM from  [{first_name}](tg://user?id={ok})  for random chats!!"
+            tosend = f"**👀 Hey {python_mention} !!** \n\n⚜️ You Got A PM from  [{first_name}](tg://user?id={ok})  for random chats!!"
             await bot.send_message(LOG_GP, tosend)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"heheboi")))
-    async def on_pm_click(legend):
-        if legend.query.user_id == bot.uid:
-            fck_bit = f"Oh! C'mon Master{legend_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
-            await legend.answer(fck_bit, cache_time=0, alert=True)
+    async def on_pm_click(python):
+        if python.query.user_id == bot.uid:
+            fck_bit = f"Oh! C'mon Master{python_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+            await python.answer(fck_bit, cache_time=0, alert=True)
             return
-        await legend.get_chat()
-        legend_id = legend.query.user_id
-        await legend.edit("Okay let Me Think🤫")
+        await python.get_chat()
+        python_id = python.query.user_id
+        await python.edit("Okay let Me Think🤫")
         await asyncio.sleep(2)
-        await legend.edit("Okay Giving You A Chance🤨")
+        await python.edit("Okay Giving You A Chance🤨")
         await asyncio.sleep(2)
-        await legend.edit(
+        await python.edit(
             "Will You Spam?", buttons= [
             [Button.inline("Yes", data="lemme_ban")],
             [Button.inline("No", data="hmm")],
@@ -407,41 +407,41 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     
         reqws = "`Warning`- ❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
 
-        await bot.send_message(legend.query.user_id, reqws)
+        await bot.send_message(python.query.user_id, reqws)
         await bot.send_message(
             LOG_GP,
-            message = f"Hello, Master  [Nibba](tg://user?id={legend_id}). Wants To Request Something.",
+            message = f"Hello, Master  [Nibba](tg://user?id={python_id}). Wants To Request Something.",
             buttons = [Button.url("Contact Him", f"tg://user?id=legend_id")],
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"hmm")))
-    async def yes_ucan(legend):
-        if legend.query.user_id == bot.uid:
+    async def yes_ucan(python):
+        if python.query.user_id == bot.uid:
                lmaoo = "You Are Not Requesting , Lol."
-               await legend.answer(lmaoo, cache_time=0, alert=True)
+               await python.answer(lmaoo, cache_time=0, alert=True)
                return          
-        await legend.get_chat()
+        await python.get_chat()
         await asyncio.sleep(2)
-        legend_id = legend.query.user_id
-        await legend.edit("Okay You Can Wait Till Wait")
+        python_id = python.query.user_id
+        await python.edit("Okay You Can Wait Till Wait")
         hmmmmm = "Okay Kindly wait  i will inform you"
         await bot.send_message(
-                  legend.query.user_id, hmmmmm)
+                  python.query.user_id, hmmmmm)
           
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lemme_ban")))
-    async def yes_ucan(legend):
-        if legend.query.user_id == bot.uid:
+    async def yes_ucan(python):
+        if python.query.user_id == bot.uid:
                lmaoo = "You Are Not Requesting , Lol."
-               await legend.answer(lmaoo, cache_time=0, alert=True)
+               await python.answer(lmaoo, cache_time=0, alert=True)
                return    
-        await legend.get_chat()
+        await python.get_chat()
         await asyncio.sleep(2)
-        legend_id = legend.query.user_id
-        await legend.edit("Get Lost Retard")
+        python_id = python.query.user_id
+        await python.edit("Get Lost Retard")
         ban = f"Pahli Fursat Me Nikal\nU Are Blocked" 
         await bot.send_message(
-             legend.query.user_id, ban)
-        await bot(functions.contacts.BlockRequest(legend.query.user_id))
+             python.query.user_id, ban)
+        await bot(functions.contacts.BlockRequest(python.query.user_id))
         await bot.send_message(
                 LOG_GP,
                 message = f"Hello, Master  [Nibba](tg://user?id={python_id}). Has Been Blocked Due to Choose Spam",
@@ -512,7 +512,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "This Button Only For My Master.   ©Lêɠêɳ̃dẞø†",
+                "This Button Only For My Master.   ©Pythonẞø†",
                 cache_time=0,
                 alert=True,
             )
@@ -537,7 +537,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
 
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([custom.Button.inline(f"{legend_emoji1} Help Menu {legend_emoji2}", data=f"page({page})")])
+        buttons.append([custom.Button.inline(f"{python_emoji1} Help Menu {python_emoji2}", data=f"page({page})")])
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             await event.edit(
                 f"**📗 𝙵𝚒𝚕𝚎 :**  `{commands}`\n**🔢 Total Commands :**  `{len(CMD_HELP_BOT[commands]['commands'])}`",
@@ -546,7 +546,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. ©Lêɠêɳ̃dẞø†™",
+                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. ©Pythonẞø†™",
                 cache_time=0,
                 alert=True,
             )
@@ -585,13 +585,13 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.edit(
                 result,
                 buttons=[
-                    custom.Button.inline(f"{legend_emoji1} Return {legend_emoji2}", data=f"Information[{page}]({cmd})")
+                    custom.Button.inline(f"{python_emoji1} Return {python_emoji2}", data=f"Information[{page}]({cmd})")
                 ], 
                 link_preview=False,
             )
         else:
             return await event.answer(
-                "MY MASTER ONLY CAN ACCESS THIS BUTTON. DEPLOY UR OWN ©Lêɠêɳ̃dẞø†™ ",
+                "MY MASTER ONLY CAN ACCESS THIS BUTTON. DEPLOY UR OWN ©Pythonẞø†™ ",
                 cache_time=0,
                 alert=True,
             )
