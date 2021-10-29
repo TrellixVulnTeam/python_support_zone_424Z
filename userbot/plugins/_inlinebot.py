@@ -22,11 +22,11 @@ from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.messages import ExportChatInviteRequest
 DEFAULTUSER = ALIVE_NAME or "PYTHON"
 from . import * 
-legend_row = Config.BUTTONS_IN_HELP
-legend_emoji1 = Config.EMOJI_IN_HELP1
-legend_emoji2 = Config.EMOJI_IN_HELP2
+python_row = Config.BUTTONS_IN_HELP
+python_emoji1 = Config.EMOJI_IN_HELP1
+python_emoji2 = Config.EMOJI_IN_HELP2
 alive_emoji = Config.ALIVE_EMOJI
-legend_pic = Config.PM_PIC or ""
+python_pic = Config.PM_PIC or ""
 cstm_pmp = Config.PM_MSG
 ALV_PIC = Config.ALIVE_PIC
 help_pic = Config.HELP_PIC or "https://telegra.ph/file/6a08bc3d83b51923f47b2.jpg"
@@ -48,7 +48,7 @@ mssge = (
 
 USER_BOT_WARN_ZERO = "Enough Of Your Flooding In My Master's PM!! \n\n**🚫 Blocked and Reported**"
 
-LEGEND_FIRST = (
+PYTHON_FIRST = (
     "𝙷𝚎𝚕𝚕𝚘 𝚂𝚒𝚛/𝙼𝚒𝚜𝚜,\n𝙸 𝚑𝚊𝚟𝚎𝚗'𝚝 𝚊𝚙𝚙𝚛𝚘𝚟𝚎𝚍 𝚢𝚘𝚞 𝚢𝚎𝚝 𝚝𝚘 𝚙𝚎𝚛𝚜𝚘𝚗𝚊𝚕 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚖𝚎😎⚠️.\n"
     "𝐓𝐡𝐢𝐬 𝐈𝐬 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 {}\n\n"
     "**{}**\n\nPlease Choose Why u Are Here♥️!!"
@@ -79,7 +79,7 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"{legend_emoji1} " + pair + f" {legend_emoji2}", data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"{python_emoji1} " + pair + f" {python_emoji2}", data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
@@ -90,7 +90,7 @@ def button(page, modules):
                f"⭅ϐαϲκ{alive_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"{legend_emoji2} ❌ {legend_emoji1}", data="close"
+               f"{python_emoji2} ❌ {python_emoji1}", data="close"
             ),
             custom.Button.inline(
                f"{alive_emoji}ղҽxԵ⭆", data=f"page({0 if page == (max_pages - 1) else page + 1})"
@@ -107,14 +107,14 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "legendbot_help":
+        if event.query.user_id == bot.uid and query == "Pythonbot_help":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             apn = []
             for x in CMD_LIST.values():
                 for y in x:
                     apn.append(y)
-            help_msg = f"𓆩{legend_emoji2}{legend_mention}{legend_emoji1}𓆪\n\n**🕹️𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍⭆ `{len(CMD_HELP)}`**\n**⌨️Tοταℓ Cοммαи∂ѕ⭆ `{len(apn)}`**\n**🎒Pαցҽ⭆ 1/{veriler[0]}** \n"
+            help_msg = f"𓆩{python_emoji2}{python_mention}{python_emoji1}𓆪\n\n**🕹️𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍⭆ `{len(CMD_HELP)}`**\n**⌨️Tοταℓ Cοммαи∂ѕ⭆ `{len(apn)}`**\n**🎒Pαցҽ⭆ 1/{veriler[0]}** \n"
             if help_pic and help_pic.endswith((".jpg", ".png")):
                 result = builder.photo(
                     help_pic,
@@ -126,7 +126,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     help_pic,
                     text=help_msg,
-                    title="LegendBot Alive",
+                    title="PythonBot Alive",
                     buttons=veriler[1],
                     link_preview=False,
                 )
@@ -140,8 +140,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query.startswith("fsub"):
             hunter = event.pattern_match.group(1)
             legend = hunter.split("+")
-            user = await bot.get_entity(int(legend[0]))
-            channel = await bot.get_entity(int(legend[1]))
+            user = await bot.get_entity(int(python0]))
+            channel = await bot.get_entity(int(python[1]))
             msg = f"**👋 Welcome** [{user.first_name}](tg://user?id={user.id}), \n\n**📍 You need to Join** {channel.title} **to chat in this group.**"
             if not channel.username:
                 link = (await bot(ExportChatInviteRequest(channel))).link
@@ -161,7 +161,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "alive":
             leg_end = alive_txt.format(Config.ALIVE_MSG, alive_emoji, legend_mention, alive_emoji, LEGENDversion, alive_emoji, version.__version__, alive_emoji, abuse_m, alive_emoji, is_sudo, alive_emoji, Config.BOY_OR_GIRL)
             alv_btn = [
-                [Button.url(f"{LEGEND_USER}", f"tg://openmessage?user_id={Its_LegendBoy}")],
+                [Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Its_LegendBoy}")],
                 [Button.url("My Channel", f"https://t.me/{my_channel}"), 
                 Button.url("My Group", f"https://t.me/{my_group}")],
             ]
