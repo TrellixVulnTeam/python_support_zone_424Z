@@ -506,12 +506,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 apn.append(y)
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             await event.edit(
-                f"🔥『{python_mention}』🔥\n\n"
-            **╭━━━━━━━━━━━━━━━➣\n"
-            **║┣⪼🔥𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍🔥⭆**`{led(CMD_HELP)}`\n"
-            **║┣⪼🔥Tοταℓ Cοммαи∂ѕ🔥⭆** `{led(apn)}`\n"
-            **║┣⪼🔥Pαցҽ🔥⭆**1/{veriler[0]}\n" 
-            **╰━━━━━━━━━━━━━━━➣\n",
+                f"🔥『{python_mention}』🔥\n\n"🔥𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍🔥⭆**`{led(CMD_HELP)}`\n"🔥Tοταℓ Cοммαи∂ѕ🔥⭆** `{led(apn)}`\n"🔥Pαցҽ🔥⭆**1/{veriler[0]}\n" 
                 buttons=veriler[1],
                 link_preview=False,
             )
