@@ -12,7 +12,7 @@ from telethon.tl.functions.messages import GetFullChatRequest
 from telethon.tl.functions.channels import InviteToChannelRequest
 
 from userbot import CMD_HELP
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd, eor
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd, eor
 from userbot.cmdhelp import CmdHelp
 
 async def get_chatinfo(event):
@@ -62,10 +62,10 @@ def user_full_name(user):
 @bot.on(admin_cmd(pattern="inviteall ?(.*)"))
 @bot.on(sudo_cmd(pattern="inviteall ?(.*)", allow_sudo=True))
 async def get_users(event):
-    legen_ = event.text[11:]
-    legend_chat =legen_.lower
+    pytho_ = event.text[11:]
+    python_chat =pytho_.lower
     restricted = ["@Legend_Userbot", "@Official_LegendBot"]
-    legend = await eor(event, f"**Inviting members from** {legen_}")
+    python = await eor(event, f"**Inviting members from** {legen_}")
     if legend_chat in restricted:
         await event.edit("You can't Invite Members from there.")
         await bot.send_message(-1001344140905, "Sorry for inviting members from here.")
