@@ -6,9 +6,9 @@ from .. import ALIVE_NAME, CMD_HELP
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from ..cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
-legend = borg.uid
-LEGEND_IMG = os.environ.get("PING_PIC", "https://te.legra.ph/file/a59da36828333262c9848.jpg")
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "PYTHON User"
+python = borg.uid
+PYTHON_IMG = os.environ.get("PING_PIC", "https://telegra.ph/file/2028fda1da68a8641c705.jpg")
 
 @bot.on(admin_cmd(pattern=f"hbping$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"hbping$", allow_sudo=True))
@@ -68,10 +68,10 @@ async def _(event):
     event = await edit_or_reply(event, "**(❛ ᑭσɳց ❜!**")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
-    if LEGEND_IMG:
-        legend_caption = f"**💞Pong💞**\n\n   🔸️ {ms}\n   🔹️ **𝙼𝚢** **𝙼𝚊𝚜𝚝𝚎𝚛** ~『[{DEFAULTUSER}](tg://user?id={legend})』"
+    if PYTHON_IMG:
+        python_caption = f"**🔥🗡Pong🗡🔥**\n\n   🔸️ {ms}\n   🔹️ **𝙼𝚢** **𝙼𝚊𝚜𝚝𝚎𝚛** ~『[{DEFAULTUSER}](tg://user?id={python})』"
         await event.client.send_file(
-            event.chat_id, LEGEND_IMG, caption=legend_caption
+            event.chat_id, PYTHON_IMG, caption=python_caption
         )
         await event.delete()
 
