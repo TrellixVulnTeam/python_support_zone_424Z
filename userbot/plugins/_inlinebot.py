@@ -66,7 +66,7 @@ alive_txt = """
 """
 
 def button(page, modules):
-    Row = legend_row
+    Row = python_row
     Column = 3
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
@@ -140,7 +140,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query.startswith("fsub"):
             hunter = event.pattern_match.group(1)
             legend = hunter.split("+")
-            user = await bot.get_entity(int(python0]))
+            user = await bot.get_entity(int(python[0]))
             channel = await bot.get_entity(int(python[1]))
             msg = f"**👋 Welcome** [{user.first_name}](tg://user?id={user.id}), \n\n**📍 You need to Join** {channel.title} **to chat in this group.**"
             if not channel.username:
