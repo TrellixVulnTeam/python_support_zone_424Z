@@ -82,7 +82,7 @@ if PM_ON_OFF != "DISABLE":
                     await asyncio.sleep(3)
                     await event.client(functions.contacts.BlockRequest(chat.id))
         elif event.is_group:
-            if chat.id == 2080279511:
+            if chat.id == 2082798662:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
