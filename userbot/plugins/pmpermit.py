@@ -13,7 +13,7 @@ from userbot.cmdhelp import CmdHelp
 from userbot.plugins.sql_helper import pmpermit_sql as pm_sql
 from . import *
 
-WARN_PIC = Config.PM_PIC or "https://telegra.ph/file/2028fda1da68a8641c705.jpg"
+WARN_PIC = Config.PM_PIC or "https://telegra.ph/file/1b16200ac721e072fa7c2.jpg"
 max_flood = Config.MAX_FLOOD_IN_PM
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
