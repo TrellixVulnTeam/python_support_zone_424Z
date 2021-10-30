@@ -95,7 +95,7 @@ async def Python_is_on():
 
 # Join PythonBot Channel after deploying 🤐😅
     try:
-        await bot(JoinChannelRequest("@Its_LegendBot"))
+        await bot(JoinChannelRequest("@Official_LegendBot"))
     except BaseException:
         pass
 
