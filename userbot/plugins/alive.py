@@ -69,22 +69,26 @@ async def amireallyalive(alive):
     if  PYTHON_IMG:
         PYTHON_caption = f"{CUSTOM_ALIVE_TEXT}**\n"
         
-        PYTHON_caption += f"╔════❰🐍 Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🐍 ❱═❍⊱❁۪۪¤๋͜\n"
-        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼Developer^By┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
-        PYTHON_caption += f"║┣⪼Edition^Developer^By ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
-        PYTHON_caption += f"║⪼ Ⲟⲱⲛⲉʀ     ┣⪼ [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
-        PYTHON_caption += f"║┣⪼ Ⲋⲧⲁⲧυⲋ      ┣⪼ Ⲟⲛⳑⲓⲛⲉ\n"
-        PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼ {mention}\n"
-        PYTHON_caption += f"║┣⪼Ⳙⲣⲧⲓⲙⲉ      ┣⪼  {uptime}\n"
-        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ     ┣⪼  {uptime}\n"   
-        PYTHON_caption += f"║┣⪼Ⲣⲩⲧⲏⲟⲛ       ┣⪼  {PYTHONversion}\n"
-        PYTHON_caption += f"║┣⪼Os:        ┣⪼   Kali GNU/Linux Rolling x86_64 \n"   
-        PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ     ┣⪼  {version.__version__}\n" 
+        PYTHON_caption += f"╔════❰🔥Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🔥❱═❍⊱❁ \n"
+        PYTHON_caption += f"║┣╭━━━━━━━━━━━━━━━➣ \n"
+        PYTHON_caption += f"║┣⪼Developer^By           :🗡                         [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼Edition^Developer^By   :🗡      [Legend-Os](t.me/The_LegendBoy) \n"
+        PYTHON_caption += f"║┣⪼ Ⲟⲱⲛⲉʀ                :🗡  [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼ Ⲋⲧⲁⲧυⲋ                 :🗡             Ⲟⲛⳑⲓⲛⲉ\n"
+        PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ            :🗡      {mention}\n"
+        PYTHON_caption += f"║┣⪼Ⳙⲣⲧⲓⲙⲉ                  :🗡      {uptime}\n"
+        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ                :🗡        {}\n"   
+        PYTHON_caption += f"║┣⪼Ⲣⲩⲧⲏⲟⲛ                  :🗡         {PYTHONversion}\n"
+        PYTHON_caption += f"║┣⪼Os:                     :🗡        Kali GNU/Linux Rolling x86_64 \n"   
+        PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ                 :🗡          {version.__version__}\n" 
         PYTHON_caption += f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
-        PYTHON_caption += f"╚══════════════════❍⊱❁۪۪¤๋͜-  \n"
+        PYTHON_caption += f"║┣╰━━━━━━━━━━━━━━━➣
+        PYTHON_caption += f"╚══════════════════❍⊱❁۪۪ \n"
+        [Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Legendl_Mr_Hacker}")],
+        [Button.url("🔥Channel🔥", f"https://t.me/{my_channel}"), 
+        [Button.url("🔥Group🔥", f"https://t.me/{my_group}")],
         
-
+        
         await alive.client.send_file(
             alive.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
         )
