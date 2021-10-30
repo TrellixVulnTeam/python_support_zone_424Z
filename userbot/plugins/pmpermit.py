@@ -66,7 +66,7 @@ if PM_ON_OFF != "DISABLE":
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 2080279511:
+            if chat.id == 2082798662:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
