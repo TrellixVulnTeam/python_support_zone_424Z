@@ -17,11 +17,11 @@ CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1="https://telegra.ph/file/2d41a6b1b3713579c63c2.jpg"
-file2="https://telegra.ph/file/9fb5502699714b8eabca3.jpg"
-file3="https://telegra.ph/file/f04dcb487d52b97c36a54.jpg"
-file4="https://telegra.ph/file/bac71ea81bebea8332f86.jpg"
-file5="https://telegra.ph/file/56330a785e4f2a5919e1c.jpg"""" =======================CONSTANTS====================== """
+file1="https://telegra.ph/file/8127c6cde13a1efceb99f.jpg"
+file2="https://telegra.ph/file/02d1f5de8221a561b94ec.jpg"
+file3="https://telegra.ph/file/b42396ecfdc7eafb08657.jpg"
+file4="https://telegra.ph/file/9a630c176437931bc7f94.jpg"
+file5="https://telegra.ph/file/ed1a0f50629de67bf46b5.jpg"""" =======================CONSTANTS====================== """
 pm_caption = "     **🔥『PYTHONẞø†』🔥**\n\n"
 pm_caption += f"**{CUSTOM_ALIVE_TEXT}**\n\n"
 pm_caption += "༆༄🎀🌹Åbôût Mê \n\n"
