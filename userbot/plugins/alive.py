@@ -20,7 +20,7 @@ async def reply_id(event):
 
 DEFAULTUSER = ALIVE_NAME or "✞t͛ẞ̸ Pythonẞø✞ 🇮🇳"
 PYTHON_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 𝖑𝖊ɠêɳ̃dẞø✞"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice Pythonẞø✞"
 CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
 
 Python = bot.uid
@@ -59,8 +59,8 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="py$"))
-@bot.on(sudo_cmd(pattern="py$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="pyalive$"))
+@bot.on(sudo_cmd(pattern="pyalive$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
@@ -69,18 +69,25 @@ async def amireallyalive(alive):
     if  PYTHON_IMG:
         PYTHON_caption = f"{CUSTOM_ALIVE_TEXT}**\n"
         
-        PYTHON_caption += f"╔════❰🔥Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🔥❱═❍⊱❁ \n"
+        PYTHON_caption += f"╔════❰Powermix-linux❱═❍⊱❁ \n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼Developer^By           :🗡                         [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
-        PYTHON_caption += f"║┣⪼Edition^Developer^By   :🗡      [Legend-Os](t.me/The_LegendBoy) \n"
-        PYTHON_caption += f"║┣⪼ Ⲟⲱⲛⲉʀ                :🗡  [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
-        PYTHON_caption += f"║┣⪼ Ⲋⲧⲁⲧυⲋ                 :🗡             Ⲟⲛⳑⲓⲛⲉ\n"
-        PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ            :🗡      {mention}\n"
-        PYTHON_caption += f"║┣⪼Ⳙⲣⲧⲓⲙⲉ                  :🗡      {uptime}\n"
-        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ                :🗡        {ms}\n"   
-        PYTHON_caption += f"║┣⪼Ⲣⲩⲧⲏⲟⲛ                  :🗡         {PYTHONversion}\n"
-        PYTHON_caption += f"║┣⪼Os:                     :🗡        Kali GNU/Linux Rolling x86_64 \n"   
-        PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ                 :🗡          {version.__version__}\n" 
+        PYTHON_caption += f"║┣⪼Developer    ┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼E-Developer  ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
+        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣\n"
+        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
+        PYTHON_caption += f"║┣⪼LegendBot    ┣⪼  [LegendBot](https://github.com/LEGEND-OS/LEGENDBOT)\n"
+        PYTHON_caption += f"║┣⪼PyLegend     ┣⪼9.0.8\3.0\n"
+        PYTHON_caption += f"║┣⪼LegendMix    ┣⪼ 3.0\n"
+        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
+        PYTHON_caption += f"╔════❰🔥Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🔥❱═➣\n"
+        PYTHON_caption += f"║┣⪼Ⲟⲱⲛⲉʀ      ┣⪼   [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼Ⲋⲧⲁⲧυⲋ       ┣⪼    Ⲟⲛⳑⲓⲛⲉ\n"
+        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ  ┣⪼  {mention}\n"
+        PYTHON_caption += f"║┣⪼Ⳙⲣⲧⲓⲙⲉ       ┣⪼  {uptime}\n"
+        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ     ┣⪼   {ms}\n"   
+        PYTHON_caption += f"║┣⪼Ⲣⲩⲧⲏⲟⲛ       ┣⪼  {PYTHONversion}\n"
+        PYTHON_caption += f"║┣⪼Os:          ┣⪼  [Kali GNU/Linux]9(https://pkg.kali.org/derivative/kali-roll/) \n"   
+        PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ      ┣⪼                 {version.__version__}\n" 
         PYTHON_caption += f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"╚══════════════════❍⊱❁۪۪\n"
