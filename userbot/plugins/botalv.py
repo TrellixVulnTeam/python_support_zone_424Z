@@ -30,7 +30,7 @@ pm_caption += f"**┣🔥 𝙼𝚢 𝙼𝚊𝚜𝚝𝚎𝚛    : {mention}**\n"
 pm_caption += f"**┣🔥 𝚃𝚎𝚕𝚎𝚝𝚑𝚘𝚗 : `{version.__version__}`**\n"
 pm_caption += f"**┣🔥 PYTHONBOT : {PYTHONversion}**\n"
 pm_caption += f"**┣🔥 𝚂𝚞𝚍𝚘     : `{sudou}`**\n"
-pm_caption += f"**┣🔥 𝙾𝚠𝚗𝚎𝚛     : [python](https://t.me/Legend_Mr_Hacker)**\n"
+pm_caption += f"**┣🔥 𝙾𝚠𝚗𝚎𝚛     : [Legend-Lx](https://t.me/Legendl_Mr_Hacker)**\n"
 pm_caption += f"**┗━━━━━[♠️𝙶𝚛𝚘𝚞𝚙♠️](https://t.me/Python_Userbot_Support)━━━━━━━━┛**\n"
 
 pm_caption += "    [☠️яєρο☠️](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8) 🔹 [📜ℓιϲєиѕє📜](https://github.com/LEGEND-LX/PYTHONBOT/blob/master/LICENSE)"
