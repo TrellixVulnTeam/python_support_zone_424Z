@@ -77,7 +77,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼ Ⲋⲧⲁⲧυⲋ                 :🗡             Ⲟⲛⳑⲓⲛⲉ\n"
         PYTHON_caption += f"║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ            :🗡      {mention}\n"
         PYTHON_caption += f"║┣⪼Ⳙⲣⲧⲓⲙⲉ                  :🗡      {uptime}\n"
-        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ                :🗡        {}\n"   
+        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ                :🗡        {ms}\n"   
         PYTHON_caption += f"║┣⪼Ⲣⲩⲧⲏⲟⲛ                  :🗡         {PYTHONversion}\n"
         PYTHON_caption += f"║┣⪼Os:                     :🗡        Kali GNU/Linux Rolling x86_64 \n"   
         PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ                 :🗡          {version.__version__}\n" 
