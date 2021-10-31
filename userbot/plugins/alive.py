@@ -84,7 +84,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼Ⲋⲧⲁⲧυⲋ       ┣⪼    Ⲟⲛⳑⲓⲛⲉ\n"
         PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ  ┣⪼  {mention}\n"
         PYTHON_caption += f"║┣⪼Ⳙⲣⲧⲓⲙⲉ       ┣⪼  {uptime}\n"
-        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ     ┣⪼   {mentoin}\n"   
+        PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ     ┣⪼   290.087 \n"   
         PYTHON_caption += f"║┣⪼Ⲣⲩⲧⲏⲟⲛ       ┣⪼  {PYTHONversion}\n"
         PYTHON_caption += f"║┣⪼Os:          ┣⪼  [Kali GNU/Linux]9(https://pkg.kali.org/derivative/kali-roll/) \n"   
         PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ      ┣⪼                 {version.__version__}\n" 
