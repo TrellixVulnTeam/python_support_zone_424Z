@@ -15,7 +15,7 @@ PYTHON_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
 PYTHON_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
 PYTHONversion = "𝚅9.𝙾.8"
 
-perf = "[ DMG-PYTHONẞø† ]"
+perf = "[ PYTHONBOT ]"
 #Developer here list
 DEVLIST = [
     "2033517108"
@@ -45,7 +45,7 @@ else:
 
 START_TIME = datetime.datetime.now()
 uptime = f"{str(datetime.datetime.now() - START_TIME).split('.')[0]}"
-my_channel = Config.YOUR_CHANNEL or "Its_LegendBot"
+my_channel = Config.YOUR_CHANNEL or "Python_Updata"
 my_group = Config.YOUR_GROUP or "Python_Userbot_Support"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
@@ -59,7 +59,7 @@ if mybot.startswith("@"):
 else:
     botname = f"@{mybot}"
 
-chnl_link = "https://t.me/Its_LegendBot"
+chnl_link = "https://t.me/Python_Updata"
 Python_channel = f"[✞︎t͛ẞ̸ Pythonẞø✞︎]({chnl_link})"
 grp_link = "https://t.me/Python_Userbot_Support"
 Python_grp = f"[Pythonẞø✞︎ Group]({grp_link})"
