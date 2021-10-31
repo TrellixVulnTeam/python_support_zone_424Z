@@ -83,11 +83,10 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ                 :🗡          {version.__version__}\n" 
         PYTHON_caption += f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"╚══════════════════❍⊱❁۪۪ \n"
+        PYTHON_caption += f"╚══════════════════❍⊱❁۪۪\n"
         [Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Legendl_Mr_Hacker}")],
         [Button.url("🔥Channel🔥", f"https://t.me/{my_channel}"), 
         [Button.url("🔥Group🔥", f"https://t.me/{my_group}")],
-        
         
         await alive.client.send_file(
             alive.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
