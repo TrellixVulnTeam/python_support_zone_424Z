@@ -69,7 +69,7 @@ async def amireallyalive(event):
         PYTHON_caption += f"     💫 ✞︎t͛ẞ̸ Pythonẞø✞︎ ιѕ αωακє 💫\n"
         PYTHON_caption += f"•🔥•LegendBot-Mix    : ν3.0\n"
         PYTHON_caption += f"•🔥•𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
-        PYTHON_caption += f"•🔥•`PYTHON` :  {platform.python_version()} \n"
+        PYTHON_caption += f"•🔥•`PYTHON` :  V9.0.8 \n"
         PYTHON_caption += f"•🔥•`OS:`       : Kali GNU/Linux Rolling x86_64 \n"                                        
         PYTHON_caption += f"•🔥•𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
         PYTHON_caption += f"•🔥•𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/Its_LegendBot)\n"
