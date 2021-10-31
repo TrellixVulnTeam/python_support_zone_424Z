@@ -82,7 +82,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼Os:                     :🗡        Kali GNU/Linux Rolling x86_64 \n"   
         PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ                 :🗡          {version.__version__}\n" 
         PYTHON_caption += f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
-        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣
+        PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"╚══════════════════❍⊱❁۪۪ \n"
         [Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Legendl_Mr_Hacker}")],
         [Button.url("🔥Channel🔥", f"https://t.me/{my_channel}"), 
