@@ -14,10 +14,10 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "pYtHoNϐοτ"
+DEFAULTUSER = ALIVE_NAME or "PYTHONBOT"
 PYTHON_IMG = Config.AWAKE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice Pythonϐοτ"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
 
 USERID = bot.uid
 
@@ -67,14 +67,13 @@ async def amireallyalive(event):
         
         PYTHON_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         PYTHON_caption += f"     💫 ✞︎t͛ẞ̸ Pythonẞø✞︎ ιѕ αωακє 💫\n"
-        PYTHON_caption += f"•🔥•     : ν9.0.8\n"
-        PYTHON_caption += f"•🔥•`SPAMProtect :`  {SpamBot} \n"       
-        PYTHON_caption += f"•🔥• 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
+        PYTHON_caption += f"•🔥•LegendBot-Mix    : ν3.0\n"
+        PYTHON_caption += f"•🔥•𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
         PYTHON_caption += f"•🔥•`PYTHON` :  {platform.python_version()} \n"
         PYTHON_caption += f"•🔥•`OS:`       : Kali GNU/Linux Rolling x86_64 \n"                                        
-        PYTHON_caption += f"•🔥• 𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
-        PYTHON_caption += f"•🔥• 𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/Its_LegendBot)\n"
-        PYTHON_caption += f"•🔥• 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 : {CUSTOM_YOUR_GROUP}\n"   
+        PYTHON_caption += f"•🔥•𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
+        PYTHON_caption += f"•🔥•𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/Its_LegendBot)\n"
+        PYTHON_caption += f"•🔥•𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 : {CUSTOM_YOUR_GROUP}\n"   
 
         await event.client.send_file(
             event.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
