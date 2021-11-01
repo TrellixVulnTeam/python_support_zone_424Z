@@ -8,14 +8,14 @@ from var import Var
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 BOTLOG = True
 StartTime = time.time()
-PYTHONversion = "𝚅9.08"
+PYTHONversion = "𝚅9.0.8"
 botversion = "𝚅9.0.8"
 from .k import *
 if Config.PYTHON_STRING:
-    session = StringSession(Config.PYTHON_STRING)
+    session = StringSession(Config.PYTHON_STRING))
 else:
     raise Exception("No String Session found. Quitting...")
-  
+    return session
 
 try:
     Python = TelegramClient(
@@ -31,7 +31,7 @@ except Exception as e:
     sys.exit()
 
 
-LegendBot = TelegramClient(
+PythonBot = TelegramClient(
     session="Python-Bot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
@@ -79,7 +79,7 @@ if bool(ENV):
     else:
         basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
                     level=INFO)
-    LOGS = getLogger("[Pythonẞø† 9.0.8]")
+    LOGS = getLogger("[PYTHONBOT 9.0.8]")
 
 try:
     if Config.HEROKU_API_KEY is not None or Config.HEROKU_APP_NAME is not None:
