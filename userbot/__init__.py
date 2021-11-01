@@ -12,7 +12,7 @@ PYTHONversion = "𝚅9.0.8"
 botversion = "𝚅9.0.8"
 from .k import *
 if Config.PYTHON_STRING:
-    session = StringSession(Config.PYTHON_STRING)
+    session = StringSession(Config.PYTHON_STRING))
 else:
     session = "PythonBot"
 try:
