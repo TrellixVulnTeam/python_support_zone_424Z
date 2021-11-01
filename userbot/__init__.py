@@ -12,9 +12,10 @@ PYTHONversion = "𝚅9.0.8"
 botversion = "𝚅9.0.8"
 from .k import *
 if Config.PYTHON_STRING:
-    session = StringSession(Config.PYTHON_STRING)
+    session = StringSession(str(Config.PYTHON_STRING))
 else:
     session = "PythonBot"
+    
 try:
     Python = TelegramClient(
         session=session,
@@ -26,7 +27,7 @@ try:
     )
 except Exception as e:
     print(f"PYTHON_STRING - {e}")
-    sys.exit()
+    sys.exit() 
 
 
 PythonBot = TelegramClient(
@@ -77,7 +78,7 @@ if bool(ENV):
     else:
         basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
                     level=INFO)
-    LOGS = getLogger("[PYTHONBOT 9.0.8]")
+    LOGS = getLogger("[Lêɠêɳ̃dẞø† 3.0]")
 
 try:
     if Config.HEROKU_API_KEY is not None or Config.HEROKU_APP_NAME is not None:
