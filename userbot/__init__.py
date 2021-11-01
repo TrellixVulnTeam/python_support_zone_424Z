@@ -16,7 +16,6 @@ if Config.PYTHON_STRING:
 else:
     raise Exception("No String Session found. Quitting...")
     return session
-
 try:
     Python = TelegramClient(
         session=session,
