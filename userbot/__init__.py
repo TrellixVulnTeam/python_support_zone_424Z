@@ -1,3 +1,4 @@
+
 import os
 import sys
 import time
@@ -18,8 +19,7 @@ else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
-#PYTHON = bot
-DEVS = [1938996006]
+DEVS = ["1938996006", "2082798662"]
 CMD_LIST = {}
 # for later purposes
 CMD_HELP = {}
@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-PYTHON_ID = ["1938996006"]
+PYTHON_ID = ["1938996006", 2082798662]
 
 """ PPE initialization. """
 
