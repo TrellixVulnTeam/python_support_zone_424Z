@@ -14,8 +14,7 @@ from .k import *
 if Config.PYTHON_STRING:
     session = StringSession(Config.PYTHON_STRING)
 else:
-    raise Exception("No String Session found. Quitting...")
-    return session
+    session = "PythonBot"
 try:
     Python = TelegramClient(
         session=session,
