@@ -18,7 +18,7 @@ else:
     return session
 
 try:
-    Legend = TelegramClient(
+    Python = TelegramClient(
         session=session,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
