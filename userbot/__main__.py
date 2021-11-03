@@ -7,21 +7,16 @@ from telethon import TelegramClient
 from var import Var
 from userbot.Config import Config
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
-from userbot.utils import load_module, start_assistant, load_addons
+from userbot.utils import load_module
 from userbot import LOAD_PLUG, LOGS, PYTHONversion
 from pathlib import Path
 import asyncio
 import glob
 import telethon.utils
-os.system("pip install -U telethon")
-
 l2= Config.SUDO_COMMAND_HAND_LER
 PYTHON_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/75e1eda1498620f0030ea.jpg"
 l1 = Config.COMMAND_HAND_LER
 
-
-LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
-LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)    
 
 async def add_bot(bot_token):
     try:
@@ -62,7 +57,7 @@ async def module():
       path1 = Path(f.name)
       shortname = path1.stem
       load_module(shortname.replace(".py", ""))
-
+"""
 async def assistant():
     path = "userbot/plugins/assistant/*.py"
     files = glob.glob(path)
@@ -94,10 +89,8 @@ async def assistant():
                     LOGS.warning(str(e))
     else:
         print("Addons Not Loading")
-
+"""
 bot.loop.run_until_complete(module())
-bot.loop.run_until_complete(addons())
-bot.loop.run_until_complete(assistant())
 
 print(f"""『🔱PYTHON-USER-BOT🔱』➙𖤍࿐ IS ON!!! PYTHON VERSION :- {PYTHONversion}
 TYPE :- " .gpromote @Legendl_Mr_Hacker " OR .python OR .ping CHECK IF I'M ON!
