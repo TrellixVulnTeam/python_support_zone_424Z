@@ -54,8 +54,8 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("『Lêɠêɳ̃dẞø†』", data="deploy")],
-                [Button.url("Help Me ❓", "https://t.me/Legend_Userbot")],
+                [custom.Button.inline("『Pythonẞø†』", data="deploy")],
+                [Button.url("Help Me ❓", "https://t.me/Python_Userbot_Support")],
             ],
         )
 
@@ -69,10 +69,10 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy 『Lêɠêɳ̃dẞø†』 In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="You Can Deploy 『Pythonẞø†』 In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             buttons=[
                 [Button.url("Tutorial 📺", "https://youtu.be/9dQgdUJfk_k")],
-                [Button.url("Need Help ❓", "https://t.me/Legend_Userbot")],
+                [Button.url("Need Help ❓", "https://t.me/Python_Userbot_Support")],
             ],
         )
 
