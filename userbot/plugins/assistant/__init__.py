@@ -1,4 +1,4 @@
-# LEGENDBOT Assistant
+# PYTHONBOT Assistant
 from . import *
 from telethon import Button, custom
 
@@ -9,18 +9,18 @@ OWNER_NAME = ALIVE_NAME
 OWNER_ID = bot.uid
 
 
-LEGEND_USER = bot.me.first_name
-Its_LegendBoy = bot.uid
+PYTHON_USER = bot.me.first_name
+Legendl_Mr_Hacker = bot.uid
 
-legend_mention = f"[{LEGEND_USER}](tg://user?id={Its_LegendBoy})"
-LEGEND_logo = "./userbot/resources/pics/-6163428037589314866_121.jpg"
-LEGEND_logo1 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo2 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGEND_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
-LEGENDversion = "𝚅2.𝙾"
+python_mention = f"[{PYTHON_USER}](tg://user?id={Legendl_Mr_Hacker})"
+PYTHON_logo = "./userbot/resources/pics/-6163428037589314866_121.jpg"
+PYTHON_logo1 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+PYTHON_logo2 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+PYTHON_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+PYTHON_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
+PYTHONversion = "𝚅9.𝙾.8"
 
-perf = "[ †hê Lêɠêɳ̃dẞø† ]"
+perf = "[ I N PYTHONBOT ]"
 
 
 DEVLIST = [
