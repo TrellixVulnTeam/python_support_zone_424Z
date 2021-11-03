@@ -39,4 +39,4 @@ async def reload_PYTHONBOT():
     os.execle(executable, *args, os.environ)
     os._exit(143)
 
-# pythonbot
+# Pythonbot
