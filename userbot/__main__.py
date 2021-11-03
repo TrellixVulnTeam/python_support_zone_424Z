@@ -7,6 +7,7 @@ from telethon import TelegramClient
 from var import Var
 from userbot.Config import Config
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
+from userbot.utils import load_module, start_assistant, load_addons
 from userbot import LOAD_PLUG, LOGS, PYTHONversion
 from pathlib import Path
 import asyncio
@@ -71,9 +72,6 @@ async def assistant():
         shortname = path1.stem
         start_assistant(shortname.replace(".py", ""))
 
-addon = os.environ.get("BOY_OR_GIRL") or False                
-async def addons():
-    if addon == "Boy":
         extra_repo = "https://github.com/LEGEND-LX/PYTHONUSERBOT"
         try:
             os.system(f"git clone {extra_repo}")  
