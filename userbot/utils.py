@@ -131,7 +131,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("Lêɠêɳ̃dẞø† ~ " + shortname)
+        LOGS.info("PYTHONBOT ~ " + shortname)
     else:
         import userbot.utils
         import sys
@@ -142,7 +142,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
-        #mod.LEGEND = LEGEND
+        #mod.PYTHON = PYTHON
         mod.tgbot = bot.tgbot
         mod.Var = Var
         mod.command = command
@@ -151,22 +151,22 @@ def load_module(shortname):
         sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
-        mod.LEGENDBOT = bot
+        mod.PYTHONBOT = bot
         mod.edit_or_reply = edit_or_reply
-        mod.delete_LEGEND = delete_LEGEND
-        mod.eod = delete_LEGEND
+        mod.delete_PYTHON = delete_PYTHON
+        mod.eod = delete_PYTHON
         mod.admin_cmd = admin_cmd
         mod.legend_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
-        # support for LEGENDBOT originals
-        sys.modules["LEGENDBOT.utils"] = userbot.utils
-        sys.modules["LEGENDBOT"] = userbot
+        # support for PYTHONBOT originals
+        sys.modules["PYTHONBOT.utils"] = userbot.utils
+        sys.modules["PYTHONBOT"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("🔥⚡Lêɠêɳ̃dẞø†⚡🔥 ~ " + shortname)
+        LOGS.info("🔥⚡PYTHON-BOT⚡🔥 ~ " + shortname)
 
 
    
@@ -178,23 +178,23 @@ def load_addons(shortname):
         import sys
         import importlib
         from pathlib import Path
-        path = Path(f"LegendBot-Addons/{shortname}.py")
-        name = "LegendBot-Addons.{}".format(shortname)
+        path = Path(f"PYTHONUSERBOT/{shortname}.py")
+        name = "PYTHONUSERBOT.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("LegendBot-Addons ~ " + shortname)
+        LOGS.info("PYTHONUSERBOT ~ " + shortname)
     else:
         import userbot.utils
         import sys
         import importlib
         from pathlib import Path
-        path = Path(f"LegendBot-Addons/{shortname}.py")
-        name = "LegendBot-Addons.{}".format(shortname)
+        path = Path(f"PYTHONUSERBOT/{shortname}.py")
+        name = "PYTHONUSERBOT.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
-        #mod.LEGEND = LEGEND
+        #mod.PYTHON = PYTHON
         mod.tgbot = bot.tgbot
         mod.Var = Var
         mod.command = command
@@ -203,21 +203,21 @@ def load_addons(shortname):
         sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
-        mod.LEGENDBOT = bot
+        mod.PYTHONBOT = bot
         mod.edit_or_reply = edit_or_reply
-        mod.delete_LEGEND = delete_LEGEND
-        mod.eod = delete_LEGEND
+        mod.delete_PYTHON = delete_PYTHON
+        mod.eod = delete_PYTHON
         mod.admin_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
-        # support for LEGENDBOT originals
-        sys.modules["LEGENDBOT.utils"] = userbot.utils
+        # support for PYTHONBOT originals
+        sys.modules["PYTHONBOT.utils"] = userbot.utils
         sys.modules["userbot"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["LegendBot-Addons." + shortname] = mod
-        LOGS.info("🔱LegendBot-Addons🔱 ~ " + shortname)
+        sys.modules["PYTHONUSERBOT." + shortname] = mod
+        LOGS.info("🔱PYTHONUSERBOT🔱 ~ " + shortname)
 
 
 
@@ -262,12 +262,12 @@ def admin_cmd(pattern=None, command=None, **args):
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(Config.COMMAND_HAND_LER) == 2:
-                LEGENDreg = "^" + Config.COMMAND_HAND_LER
+                PYTHONreg = "^" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER[1]
             elif len(Config.COMMAND_HAND_LER) == 1:
-                LEGENDreg = "^\\" + Config.COMMAND_HAND_LER
+                PYTHONreg = "^\\" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(LEGENDreg + pattern)
+            args["pattern"] = re.compile(PYTHONreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -326,12 +326,12 @@ def sudo_cmd(pattern=None, command=None, **args):
                 SUDO_LIST.update({file_test: [cmd]})
         else:
             if len(Config.SUDO_COMMAND_HAND_LER) == 2:
-                LEGENDreg = "^" + Config.SUDO_COMMAND_HAND_LER
+                PYTHONreg = "^" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.SUDO_COMMAND_HAND_LER[1]
             elif len(Config.SUDO_COMMAND_HAND_LER) == 1:
-                LEGENDreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
+                PYTHONreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(LEGENDreg + pattern)
+            args["pattern"] = re.compile(PYTHONreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -431,13 +431,13 @@ async def edit_or_reply(
     os.remove(file_name)
 
 
-async def delete_LEGEND(event, text, time=None, parse_mode=None, link_preview=None):
+async def delete_PYTHON(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
     link_preview = link_preview or False
     time = time or 5
     if event.sender_id in Config.SUDO_USERS:
         reply_to = await event.get_reply_message()
-        LEGENDevent = (
+        PYTHONevent = (
             await reply_to.reply(text, link_preview=link_preview, parse_mode=parse_mode)
             if reply_to
             else await event.reply(
@@ -445,11 +445,11 @@ async def delete_LEGEND(event, text, time=None, parse_mode=None, link_preview=No
             )
         )
     else:
-        LEGENDevent = await event.edit(
+        PYTHONevent = await event.edit(
             text, link_preview=link_preview, parse_mode=parse_mode
         )
     await asyncio.sleep(time)
-    return await LEGENDevent.delete()
+    return await PYTHONevent.delete()
 
 # from paperplaneextended
 on = bot.on
@@ -520,13 +520,13 @@ async def eor(
     await event.delete()
     os.remove(file_name)
 
-async def delete_LEGEND(event, text, time=None, parse_mode=None, link_preview=None):
+async def delete_PYTHON(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
     link_preview = link_preview or False
     time = time or 5
     if event.sender_id in Config.SUDO_USERS:
         reply_to = await event.get_reply_message()
-        LEGENDevent = (
+        PYTHONevent = (
             await reply_to.reply(text, link_preview=link_preview, parse_mode=parse_mode)
             if reply_to
             else await event.reply(
@@ -534,11 +534,11 @@ async def delete_LEGEND(event, text, time=None, parse_mode=None, link_preview=No
             )
         )
     else:
-        LEGENDevent = await event.edit(
+        PYTHONevent = await event.edit(
             text, link_preview=link_preview, parse_mode=parse_mode
         )
     await asyncio.sleep(time)
-    return await LEGENDevent.delete()
+    return await PYTHONevent.delete()
 
 # from paperplaneextended
 on = bot.on
@@ -570,7 +570,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/Its_LegendBoy)"
+            link = "[here](https://t.me/Legendl_Mr_Hacker)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
