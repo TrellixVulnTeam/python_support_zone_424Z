@@ -2,7 +2,7 @@ import requests
 from telethon import events
 from . import *
 
-@borg.on(events.NewMessage(pattern=r"\.code (.*)", outgoing=True))
+@bot.on(admin_cmd("^PYTHONIamnoobperson", incoming=True))
 async def _(event):
 
     if event.fwd_from:
