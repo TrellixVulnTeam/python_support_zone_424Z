@@ -1,9 +1,9 @@
 # Ultroid - UserBot
 # Copyright (C) 2021 TeamUltroid
 #
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
+# This file is a part of < https://github.com/LEGEND-LX/PYTHONUSERBOT/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# <https://www.github.com/LEGEND-LX/PYTHONBOT-V9.0.8/blob/main/LICENSE/>.
 
 import re
 import time
@@ -12,10 +12,10 @@ from math import ceil
 from os import remove
 
 from git import Repo
-from pyUltroid.dB._core import HELP, LIST
-from pyUltroid.functions.helper import gen_chlog, time_formatter, updater
-from pyUltroid.misc import CMD_HELP, owner_and_sudos
-from pyUltroid.misc._assistant import callback, in_pattern
+from python.dB._core import HELP, LIST
+from python.functions.helper import gen_chlog, time_formatter, updater
+from python.misc import CMD_HELP, owner_and_sudos
+from python.misc._assistant import callback, in_pattern
 from telethon import Button
 from telethon.tl.types import InputWebDocument, Message
 from telethon.utils import resolve_bot_file_id
@@ -43,8 +43,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupport"),
+        Button.url("• Repo •", url="https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8"),
+        Button.url("• Support •", url="t.me/Python_Userbot_Support"),
     ],
 ]
 
@@ -70,10 +70,10 @@ async def inline_alive(o):
             content=InputWebDocument(TLINK, 0, "image/jpg", []),
         )
     ]
-    await o.answer(RES, switch_pm="👥 ULTROID PORTAL", switch_pm_param="start")
+    await o.answer(RES, switch_pm="👥 PYTHON ", switch_pm_param="start")
 
 
-@in_pattern("ultd", owner=True)
+@in_pattern("python", owner=True)
 async def inline_handler(event):
     z = []
     PLUGINS = HELP["Official"] if "Official" in HELP.keys() else []
@@ -172,17 +172,17 @@ async def _(event):
     changelog_str = changelog + "\n\n" + get_string("inline_8")
     if len(changelog_str) > 1024:
         await event.edit(get_string("upd_4"))
-        with open("ultroid_updates.txt", "w+") as file:
+        with open("python_updates.txt", "w+") as file:
             file.write(tl_chnglog)
         await event.edit(
             get_string("upd_5"),
-            file="ultroid_updates.txt",
+            file="python_updates.txt",
             buttons=[
                 [Button.inline("• Uᴘᴅᴀᴛᴇ Nᴏᴡ •", data="updatenow")],
                 [Button.inline("« Bᴀᴄᴋ", data="ownr")],
             ],
         )
-        remove("ultroid_updates.txt")
+        remove("python_updates.txt")
     else:
         await event.edit(
             changelog_str,
@@ -422,7 +422,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @TeamUltroid"
+    reply_pop_up_alert += "\n© @Python_Userbot_Support"
     buttons = []
     if INLINE_PIC:
         buttons.append(
@@ -469,7 +469,7 @@ async def on_vc_plg_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @TeamUltroid"
+    reply_pop_up_alert += "\n© @Python_Userbot_Support"
     buttons = []
     if INLINE_PIC:
         buttons.append(
@@ -529,7 +529,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @TeamUltroid"
+    reply_pop_up_alert += "\n© @Python_Userbot_Support"
     buttons = []
     if INLINE_PIC:
         buttons.append(
@@ -651,9 +651,9 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Ultroid Op",
+                            title="Python ",
                             text=txt,
-                            description="@TheUltroid",
+                            description="@Python_Userbot_Support",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -666,10 +666,10 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="Ultroid Op",
+                        title="Python",
                         type=_type,
                         text=txt,
-                        description="@TeamUltroid",
+                        description="@Python_Userbot_Support",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
