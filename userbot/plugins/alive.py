@@ -92,7 +92,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"╚══════════════════❍⊱❁۪۪\n"
-        PYTHON_caption += f"[Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Legendl_Mr_Hacker}")]\n"
+        PYTHON_caption += f"[Button.url("{PYTHON_USER}", f"tg://openmessage?user_id={Legendl_Mr_Hacker}")]\n"
         PYTHON_caption += f"[Button.url("My Channel", f"https://t.me/{my_channel}")]\n"
         PYTHON_caption += f"[Button.url("My Group", f"https://t.me/{my_group}")]\n"
       
