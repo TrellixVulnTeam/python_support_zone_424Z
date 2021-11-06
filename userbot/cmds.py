@@ -18,7 +18,7 @@ class CMD_HELP:
         self.FILE = file
         self.ORIGINAL_FILE = file
         self.IS_OFFICIAL = official
-        self.FILE_NAME = file_name if not file_name == None else file + "linux"
+        self.FILE_NAME = file_name if not file_name == None else file + ".py"
         self.COMMANDS = {}
         self.FILE_AUTHOR = ""
         self.WARNING = ""
