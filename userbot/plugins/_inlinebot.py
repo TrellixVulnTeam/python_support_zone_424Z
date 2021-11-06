@@ -29,7 +29,7 @@ alive_emoji = Config.ALIVE_EMOJI
 python_pic = Config.PM_PIC or ""
 cstm_pmp = Config.PM_MSG
 ALV_PIC = Config.ALIVE_PIC
-help_pic = Config.HELP_PIC or "https://telegra.ph/file/00399ad38373f61c5a2ff.jpg"
+help_pic = Config.HELP_PIC or "https://te.legra.ph/file/d8301597d9e9647d2be06.jpg"
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
@@ -107,7 +107,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@Python_Userbot_Support":
+        if event.query.user_id == bot.uid and query == "pythonbot_help":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             apn = []
@@ -132,7 +132,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 )
             else:
                 result = builder.article(
-                    f"Hey! Only use .python please",
+                    f"Hey! Only use .op please",
                     text=help_msg,
                     buttons=veriler[1],
                     link_preview=False,
