@@ -107,7 +107,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "Pythonbot_help":
+        if event.query.user_id == bot.uid and query == "@Pythonbot_help":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             apn = []
@@ -139,7 +139,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 )
         elif event.query.user_id == bot.uid and query.startswith("fsub"):
             hunter = event.pattern_match.group(1)
-            legend = hunter.split("+")
+            python = hunter.split("+")
             user = await bot.get_entity(int(python[0]))
             channel = await bot.get_entity(int(python[1]))
             msg = f"**👋 Welcome** [{user.first_name}](tg://user?id={user.id}), \n\n**📍 You need to Join** {channel.title} **to chat in this group.**"
@@ -159,7 +159,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             ]
  
         elif event.query.user_id == bot.uid and query == "alive":
-            leg_end = alive_txt.format(Config.ALIVE_MSG, alive_emoji, legend_mention, alive_emoji, PYTHONversion, alive_emoji, version.__version__, alive_emoji, abuse_m, alive_emoji, is_sudo, alive_emoji, Config.BOY_OR_GIRL)
+            pyt_thon = alive_txt.format(Config.ALIVE_MSG, alive_emoji, python_mention, alive_emoji, PYTHONversion, alive_emoji, version.__version__, alive_emoji, abuse_m, alive_emoji, is_sudo, alive_emoji, Config.BOY_OR_GIRL)
             alv_btn = [
                 [Button.url(f"{PYTHON_USER}", f"tg://openmessage?user_id={Legendl_Mr_Hacker}")],
                 [Button.url("My Channel", f"https://t.me/{my_channel}"), 
