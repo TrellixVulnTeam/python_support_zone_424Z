@@ -107,7 +107,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@Pythonbot_help":
+        if event.query.user_id == bot.uid and query == "@Python_Userbot_Support":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             apn = []
@@ -168,28 +168,28 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             if ALV_PIC and ALV_PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     ALV_PIC,
-                    text=leg_end,
+                    text=pyt_hon,
                     buttons=alv_btn,
                     link_preview=False,
                 )
             elif ALV_PIC:
                 result = builder.document(
                     ALV_PIC,
-                    text=leg_end,
+                    text=pyt_thon,
                     title="PythonBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
-                    text=leg_end,
+                    text=pyt_thon,
                     title="PythonBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                 )
 
         elif event.query.user_id == bot.uid and query == "pm_warn":
-            lege_nd = PYTHON_FIRST.format(python_mention, mssge)
+            pyth_on = PYTHON_FIRST.format(python_mention, mssge)
             result = builder.photo(
                 file=python_pic,
                 text=pyth_on,
@@ -206,7 +206,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 python𝙱𝚘𝚝 ⚜**",
+                text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 PYTHON𝙱𝚘𝚝 ⚜**",
                 buttons=[
                     [Button.url("♥️ 𝚁𝚎𝚙𝚘 ♥", "https://github.com/LEGEND-LX/PYTHONBOT")],
                     [Button.url("♦️ Relp ♦️", "https://replit.com/@LEGEND-LX/PYTHONBOT-4")],
@@ -225,7 +225,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@python_Userbot_Support",
-                text="""**Hey! This is [pythonẞø†](https://t.me/Python_Userbot_Support) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [Pythonẞø†](https://t.me/Python_Userbot_Support) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Python_Updata"),
