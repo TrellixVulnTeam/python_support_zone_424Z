@@ -21,7 +21,7 @@ msg = f"""
   •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8)
   •        [♦️ Deploy ♦️](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT)
 
-  •  ©️ {Legend_channel} ™
+  •  ©️ {Python_channel} ™
 """
 botname = Config.BOT_USERNAME
 
