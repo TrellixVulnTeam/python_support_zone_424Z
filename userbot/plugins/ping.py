@@ -8,7 +8,7 @@ from ..cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "PYTHON User"
 python = borg.uid
-PYTHON_IMG = os.environ.get("PING_PIC", "https://telegra.ph/file/2028fda1da68a8641c705.jpg")
+PYTHON_IMG = os.environ.get("PING_PIC", "https://te.legra.ph/file/d8301597d9e9647d2be06.jpg")
 
 @bot.on(admin_cmd(pattern=f"hbping$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"hbping$", allow_sudo=True))
