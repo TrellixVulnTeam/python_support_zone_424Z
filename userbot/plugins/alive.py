@@ -69,7 +69,7 @@ async def amireallyalive(alive):
     if  PYTHON_IMG:
         PYTHON_caption = f"{CUSTOM_ALIVE_TEXT}**\n"
         
-        PYTHON_caption += f"╔════❰Powermix-linux❱═❍⊱❁ \n"
+        PYTHON_caption += f"╔════❰Alive-linux❱═❍⊱❁ \n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"║┣⪼Developer    ┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
         PYTHON_caption += f"║┣⪼E-Developer  ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
@@ -80,13 +80,14 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼LegendMix    ┣⪼ 3.0\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"╔══❰🔥Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🔥❱═➣\n"
+        PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"║┣⪼Ⲟⲱⲛⲉʀ      ┣⪼   [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
         PYTHON_caption += f"║┣⪼Ⲋⲧⲁⲧυⲋ       ┣⪼    Ⲟⲛⳑⲓⲛⲉ\n"
         PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ  ┣⪼  {mention}\n"
         PYTHON_caption += f"║┣⪼Ⳙⲣⲧⲓⲙⲉ       ┣⪼  {uptime}\n"
         PYTHON_caption += f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ     ┣⪼   290.087 \n"   
         PYTHON_caption += f"║┣⪼Ⲣⲩⲧⲏⲟⲛ       ┣⪼  {PYTHONversion}\n"
-        PYTHON_caption += f"║┣⪼Os:          ┣⪼  [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
+        PYTHON_caption += f"║┣⪼Os:  ┣⪼  [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
         PYTHON_caption += f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ      ┣⪼  {version.__version__}\n" 
         PYTHON_caption += f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
@@ -99,27 +100,58 @@ async def amireallyalive(alive):
     else:
         await edit_or_reply(
             alive,
-            f"{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
-            f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
-            f"•⚡️• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{PYTHONversion}`\n"
-            f"🇮🇳 υρτιмє        : `{uptime}`\n"
-            f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Its_LegendBoy)\n"
+            f"╔════❰Alive-linux❱═❍⊱❁ \n"
+            f"║╭━━━━━━━━━━━━━━━➣ \n"
+            f"║┣⪼Developer    ┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
+            f"║┣⪼E-Developer  ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
+            f"║╰━━━━━━━━━━━━━━━➣\n"
+            f"║╭━━━━━━━━━━━━━━━➣ \n"
+            f"║┣⪼LegendBot    ┣⪼  [LegendBot](https://github.com/LEGEND-OS/LEGENDBOT)\n"
+            f"║┣⪼PyLegend     ┣⪼9.0.8,3.0\n"
+            f"║┣⪼LegendMix    ┣⪼ 3.0\n"
+            f"║╰━━━━━━━━━━━━━━━➣ \n"
+            f"╔══❰🔥Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🔥❱═➣\n"
+            f"║╭━━━━━━━━━━━━━━━➣ \n"
+            f"║┣⪼Ⲟⲱⲛⲉʀ      ┣⪼   [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+            f"║┣⪼Ⲋⲧⲁⲧυⲋ       ┣⪼    Ⲟⲛⳑⲓⲛⲉ\n"
+            f"║┣⪼Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ  ┣⪼  {mention}\n"
+            f"║┣⪼Ⳙⲣⲧⲓⲙⲉ       ┣⪼  {uptime}\n"
+            f"║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ     ┣⪼   290.087 \n"   
+            f"║┣⪼Ⲣⲩⲧⲏⲟⲛ       ┣⪼  {PYTHONversion}\n"
+            f"║┣⪼Os:          ┣⪼  [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
+            f"║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ      ┣⪼  {version.__version__}\n" 
+            f"║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+            f"║╰━━━━━━━━━━━━━━━➣ \n"
+            f"╚══════════════════❍⊱❁۪۪\n"
         )
 
 
 msg = f"""
   ⚜️ pythonẞø† ιѕ σиℓιиє ⚜️
 {Config.ALIVE_MSG}
-    ♥️ ẞø✞ ẞ✞α✞µѕ ♥️
-**•⚜️•Øաղ̃ҽ̈r     : {mention}
-•🌹•𝖑𝖊ɠêɳ̃dẞø✞ : {PYTHONversion}
-•🌹•✞ҽ̀lҽ́ƭhøղ  : {version.__version__}
-•🌹•Ãbûßê     :  {abuse_m}
-•🌹•ßudø      :  {is_sudo}
-•🌹•Bøt.      : {Config.BOY_OR_GIRL}
+**╔════❰Alive-linux❱═❍⊱❁ \n"
+**║╭━━━━━━━━━━━━━━━➣ \n"
+**║┣⪼Developer    ┣⪼ [Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
+**║┣⪼E-Developer  ┣⪼ [Legend-Os](t.me/The_LegendBoy) \n"
+**║╰━━━━━━━━━━━━━━━➣\n"
+**║╭━━━━━━━━━━━━━━━➣ \n"
+**║┣⪼LegendBot    ┣⪼  [LegendBot](https://github.com/LEGEND-OS/LEGENDBOT)\n"
+**║┣⪼PyLegend     ┣⪼9.0.8,3.0\n"
+**║┣⪼LegendMix    ┣⪼ 3.0\n"
+**║╰━━━━━━━━━━━━━━━➣ \n"
+**╔══❰🔥Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ🔥❱═➣\n"
+**║╭━━━━━━━━━━━━━━━➣ \n"
+**║┣⪼Ⲟⲱⲛⲉʀ    ┣⪼   [ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"
+**║┣⪼Ⲋⲧⲁⲧυⲋ     ┣⪼    Ⲟⲛⳑⲓⲛⲉ\n"
+**┣⪼Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ ┣⪼  {mention}\n"
+**║┣⪼Ⳙⲣⲧⲓⲙⲉ     ┣⪼  {uptime}\n"
+**║┣⪼Ⲃⲟⲧ Ⲣⲓⲛⳋ   ┣⪼   290.087 \n"   
+**║┣⪼Ⲣⲩⲧⲏⲟⲛ    ┣⪼  {PYTHONversion}\n"
+**║┣⪼Os:  ┣⪼  [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
+**║┣⪼Ⲧⲉⳑⲉⲧⲏⲟⲛ   ┣⪼  {version.__version__}\n" 
+**║┣⪼[✨🐍PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭🐍✨](https://t.me/Python_Userbot_Support)\n"
+**║╰━━━━━━━━━━━━━━━➣ \n"
+**╚══════════════════❍⊱❁۪۪\n"
 """
 botname = Config.BOT_USERNAME
 
