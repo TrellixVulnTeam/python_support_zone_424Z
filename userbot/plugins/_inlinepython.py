@@ -28,13 +28,13 @@ from userbot.cmdhelp import *
 from PYTHONBOT.utils import *
 from userbot.Config import Config
 
-PYTHON_row = Config.BUTTONS_IN_HELP
-PYTHON_emoji = Config.EMOJI_IN_HELP
+python_row = Config.BUTTONS_IN_HELP
+python_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
 # PYTHON
 
 def button(page, modules):
-    Row = PYTHON_row
+    Row = python_row
     Column = 3
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
@@ -47,7 +47,7 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"{PYTHON_emoji} " + pair, data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"{python_emoji} " + pair, data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
@@ -55,13 +55,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"⬅️ 𝐁𝐀𝐂𝐊 {PYTHON_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"⬅️ 𝐁𝐀𝐂𝐊 {python_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
-               f"•{PYTHON_emoji} ❌ {PYTHON_emoji}•", data="close"
+               f"•{python_emoji} ❌ {python_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{PYTHON_emoji} 𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{python_emoji} 𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -94,8 +94,8 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         else:
             result = builder.article(
-                "@W2H_Userbot",
-                text="""**Hey! This is [W2HBOT.](https://t.me/W2H_Userbot) \nYou can know more about me from the links given below 👇**""",
+                "@Python_Userbot_Support",
+                text="""**Hey! This is [PYTHONBOT.](https://t.me/Python_Userbot_Support) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Python_Updata"),
@@ -116,7 +116,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©W2HBOT™ ",
+                "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©PYTHONBOT™ ",
                 cache_time=0,
                 alert=True,
             )
@@ -131,11 +131,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
-            await delete_PYTHON(event,
+            await delete_python(event,
               "⚜️PYTHONBOT Menu Provider Is now Closed⚜️\n\n         **[©PYTHONBOT](t.me/Python_Userbot_Support)**", 5, link_preview=False
             )
         else:
-            PYTHON_alert = "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©W2HBOT"
+            python_alert = "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©PYTHONBOT"
             await event.answer(W2H_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -144,7 +144,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©PYTHON BOT ",
+                "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©PYTHONBOT ",
                 cache_time=0,
                 alert=True,
             )
@@ -177,7 +177,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©W2HBOT ",
+                "Mil Gyi Tasalli..? Kabse mere bot me ungli kr rhe h. Khudka bna lo na agr chaiye to pta nhi kaha se aajate h disturb krne. ©PYTHONBOT ",
                 cache_time=0,
                 alert=True,
             )
