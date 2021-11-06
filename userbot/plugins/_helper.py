@@ -21,7 +21,7 @@ msg = f"""
 **⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 Python𝙱𝚘𝚝 ⚜**
 
   •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8)
-  •        [♦️ Deploy ♦️](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT)
+  •        [♦️ Deploy ♦️](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-LX%2FPYTHONBOT-V9.0.8&template=https%3A%2F%2Fgithub.com%2FLEGEND-LX%2FPYTHONBOT-V9.0.8)
 
   •  ©️ {Python_channel} ™
 """
@@ -39,8 +39,8 @@ async def repo(event):
         await eor(event, msg)
 
 
-@bot.on(admin_cmd(pattern="python ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="python ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="py ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="py ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -66,14 +66,14 @@ async def _(event):
                     await bot.send_read_acknowledge(conv.chat_id)
                 except YouBlockedUserError:
                     return await legend.edit("Unblock @Botfather first.")
-                await python.edit(f"**Turned On Inline Mode Successfully.** \n\nDo `{l1}op` again to get the help menu.")
+                await python.edit(f"**Turned On Inline Mode Successfully.** \n\nDo `{l1}py` again to get the help menu.")
             await bot.delete_messages(
                 conv.chat_id, [first.id, second.id, third.id, fourth.id, fifth.id, sixth.id]
             )
     else:
         await eor(event, "**⚠️ 𝙴𝚁𝚁𝙾𝚁 !!** \n𝙿𝚕𝚎𝚊𝚜𝚎 𝚁𝚎-𝙲𝚑𝚎𝚌𝚔 BOT_TOKEN & BOT_USERNAME on Heroku.")
 
-@bot.on(admin_cmd(pattern="python ?(.*)", outgoing=True))
+@bot.on(admin_cmd(pattern="py ?(.*)", outgoing=True))
 async def yardim(event):
     if event.fwd_from:
         return
