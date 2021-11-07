@@ -1,1 +1,1 @@
-# LegendBot-Addons
+# PythonBot-Addons
