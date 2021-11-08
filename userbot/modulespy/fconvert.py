@@ -10,7 +10,7 @@ from telethon.errors import PhotoInvalidDimensionsError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import SendMediaRequest
 
-from LEGENDBOT.utils import admin_cmd, edit_or_reply, progress, sudo_cmd
+from PYTHONBOT.utils import admin_cmd, edit_or_reply, progress, sudo_cmd
 from userbot import CMD_HELP
 from userbot.helpers.functions import unzip
 from userbot.cmdhelp import CmdHelp
@@ -21,13 +21,13 @@ if not os.path.isdir("./temp"):
 
 @bot.on(admin_cmd(pattern="stim$"))
 @bot.on(sudo_cmd(pattern="stim$", allow_sudo=True))
-async def _(LEGEND):
-    if LEGEND.fwd_from:
+async def _(PYTHON):
+    if PYTHON.fwd_from:
         return
-    reply_to_id = LEGEND.message.id
-    if LEGEND.reply_to_msg_id:
-        reply_to_id = LEGEND.reply_to_msg_id
-    event = await edit_or_reply(LEGEND, "Converting.....")
+    reply_to_id = PYTHON.message.id
+    if PYTHON.reply_to_msg_id:
+        reply_to_id = PYTHON.reply_to_msg_id
+    event = await edit_or_reply(PYTHON, "Converting.....")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if event.reply_to_msg_id:
@@ -36,11 +36,11 @@ async def _(LEGEND):
         reply_message = await event.get_reply_message()
         to_download_directory = Config.TMP_DOWNLOAD_DIRECTORY
         downloaded_file_name = os.path.join(to_download_directory, file_name)
-        downloaded_file_name = await LEGEND.client.download_media(
+        downloaded_file_name = await PYTHON.client.download_media(
             reply_message, downloaded_file_name
         )
         if os.path.exists(downloaded_file_name):
-            caat = await LEGEND.client.send_file(
+            caat = await PYTHON.client.send_file(
                 event.chat_id,
                 downloaded_file_name,
                 force_document=False,
@@ -56,13 +56,13 @@ async def _(LEGEND):
 
 @bot.on(admin_cmd(pattern="itom$"))
 @bot.on(sudo_cmd(pattern="itom$", allow_sudo=True))
-async def _(LEGEND):
-    if LEGEND.fwd_from:
+async def _(PYTHON):
+    if PYTHON.fwd_from:
         return
-    reply_to_id = LEGEND.message.id
-    if LEGEND.reply_to_msg_id:
-        reply_to_id = LEGEND.reply_to_msg_id
-    event = await edit_or_reply(LEGEND, "Converting.....")
+    reply_to_id = PYTHON.message.id
+    if PYTHON.reply_to_msg_id:
+        reply_to_id = PYTHON.reply_to_msg_id
+    event = await edit_or_reply(PYTHON, "Converting.....")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if event.reply_to_msg_id:
@@ -71,11 +71,11 @@ async def _(LEGEND):
         reply_message = await event.get_reply_message()
         to_download_directory = Config.TMP_DOWNLOAD_DIRECTORY
         downloaded_file_name = os.path.join(to_download_directory, file_name)
-        downloaded_file_name = await LEGEND.client.download_media(
+        downloaded_file_name = await PYTHON.client.download_media(
             reply_message, downloaded_file_name
         )
         if os.path.exists(downloaded_file_name):
-            caat = await LEGEND.client.send_file(
+            caat = await PYTHON.client.send_file(
                 event.chat_id,
                 downloaded_file_name,
                 force_document=False,
@@ -157,31 +157,31 @@ async def on_file_to_photo(event):
 async def _(event):
     if event.fwd_from:
         return
-    LEGENDreply = await event.get_reply_message()
-    if not LEGENDreply or not LEGENDreply.media or not LEGENDreply.media.document:
+    PYTHONreply = await event.get_reply_message()
+    if not PYTHONreply or not PYTHONreply.media or not PYTHONreply.media.document:
         return await edit_or_reply(event, "`Stupid!, This is not animated sticker.`")
-    if LEGENDreply.media.document.mime_type != "application/x-tgsticker":
+    if PYTHONreply.media.document.mime_type != "application/x-tgsticker":
         return await edit_or_reply(event, "`Stupid!, This is not animated sticker.`")
     reply_to_id = event.message
     if event.reply_to_msg_id:
         reply_to_id = await event.get_reply_message()
     chat = "@tgstogifbot"
-    LEGENDevent = await edit_or_reply(event, "`Converting to gif ...`")
+    PYTHONevent = await edit_or_reply(event, "`Converting to gif ...`")
     async with event.client.conversation(chat) as conv:
         try:
             await silently_send_message(conv, "/start")
-            await event.client.send_file(chat, LEGENDreply.media)
+            await event.client.send_file(chat, PYTHONreply.media)
             response = await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
             if response.text.startswith("Send me an animated sticker!"):
                 return await LEGENDevent.edit("`This file is not supported`")
-            LEGENDresponse = response if response.media else await conv.get_response()
+            PYTHONresponse = response if response.media else await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
-            LEGENDfile = Path(await event.client.download_media(LEGENDresponse, "./temp/"))
-            LEGENDgif = Path(await unzip(LEGENDfile))
-            legend = await event.client.send_file(
+            PYTHONfile = Path(await event.client.download_media(PYTHONresponse, "./temp/"))
+            PYTAHONgif = Path(await unzip(PYTHONfile))
+            python = await event.client.send_file(
                 event.chat_id,
-                LEGENDgif,
+                PYTHONgif,
                 support_streaming=True,
                 force_document=False,
                 reply_to=reply_to_id,
@@ -189,9 +189,9 @@ async def _(event):
             await event.client(
                 functions.messages.SaveGifRequest(
                     id=types.InputDocument(
-                        id=legend.media.document.id,
-                        access_hash=legend.media.document.access_hash,
-                        file_reference=legend.media.document.file_reference,
+                        id=python.media.document.id,
+                        access_hash=python.media.document.access_hash,
+                        file_reference=python.media.document.file_reference,
                     ),
                     unsave=True,
                 )
