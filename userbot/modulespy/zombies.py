@@ -32,7 +32,7 @@ from telethon.utils import get_input_location
 
 from userbot import BOTLOG, BOTLOG_CHATID
 
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from PYTHONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 
@@ -134,4 +134,4 @@ CmdHelp("zombies").add_command(
   'Addons'
 ).add()
 
-#legendbot
+#pythonbot
