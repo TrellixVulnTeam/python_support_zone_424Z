@@ -1421,3 +1421,4 @@ CmdHelp("diwali").add_command(
 ).add_command(
         'diwali', None, 'մsɾ αղժ sҽҽ'
 ).add()
+
