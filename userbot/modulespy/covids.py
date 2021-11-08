@@ -35,3 +35,4 @@ from userbot.cmdhelp import CmdHelp
 CmdHelp("covids").add_command(
    'covid', None, '.covid <country name>'
 ).add()
+
