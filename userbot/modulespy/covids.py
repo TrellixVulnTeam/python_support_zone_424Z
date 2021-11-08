@@ -36,3 +36,4 @@ CmdHelp("covids").add_command(
    'covid', None, '.covid <country name>'
 ).add()
 
+
