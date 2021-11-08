@@ -577,3 +577,4 @@ from userbot.cmdhelp import CmdHelp
 CmdHelp("facts").add_command(
    'bels', None, 'Randopm Facts Generator'
 ).add() 
+
