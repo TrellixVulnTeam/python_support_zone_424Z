@@ -22,3 +22,4 @@ CmdHelp("gdaftrnoon").add_command(
     "gdaftrnoon", None, "Wishs Good Afternoon in all groups just one command"
 ).add()
 
+
