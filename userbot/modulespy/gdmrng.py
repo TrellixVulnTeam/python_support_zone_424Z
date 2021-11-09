@@ -21,3 +21,4 @@ async def xd(event):
 CmdHelp("gm").add_command(
     "gdmrng", None, "Wishs Good moning in all groups just one command"
 ).add()
+
