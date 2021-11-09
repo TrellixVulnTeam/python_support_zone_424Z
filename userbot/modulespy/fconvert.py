@@ -174,7 +174,7 @@ async def _(event):
             response = await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
             if response.text.startswith("Send me an animated sticker!"):
-                return await LEGENDevent.edit("`This file is not supported`")
+                return await PYTHONevent.edit("`This file is not supported`")
             PYTHONresponse = response if response.media else await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
             PYTHONfile = Path(await event.client.download_media(PYTHONresponse, "./temp/"))
@@ -196,12 +196,12 @@ async def _(event):
                     unsave=True,
                 )
             )
-            await LEGENDevent.delete()
-            for files in (LEGENDgif, LEGENDfile):
+            await PYTHONevent.delete()
+            for files in (PYTHONgif, PYTHONfile):
                 if files and os.path.exists(files):
                     os.remove(files)
         except YouBlockedUserError:
-            await LEGENDevent.edit("Unblock @tgstogifbot")
+            await PYTHONevent.edit("Unblock @tgstogifbot")
             return
 
 
