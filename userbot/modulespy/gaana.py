@@ -1,5 +1,5 @@
 # Port to UserBot
-# modified by @legendboi_atul
+# modified by @PYTHON_atul
 # Copyright (C) 2020.
 
 import asyncio
