@@ -7,7 +7,7 @@ from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 from pySmartDL import SmartDL
 from telethon.tl import functions
-from LEGENDBOT.utils import admin_cmd
+from PYTHONBOT.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
 FONT_FILE_TO_USE = "./userbot/helpers/styles/Voice In My Head_080621160753.otf"
 
@@ -55,6 +55,6 @@ async def autopic(event):
             await asyncio.sleep(60)
         except:
             return
-CmdHelp("legenddp").add_command(
-       'ldp', None, 'Starts autodp of LegendBoy'
+CmdHelp("pythondp").add_command(
+       'ldp', None, 'Starts autodp of Python-lx'
 ).add()
