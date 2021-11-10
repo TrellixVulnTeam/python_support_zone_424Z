@@ -47,3 +47,4 @@ async def _(event):
 CmdHelp("ind slogan").add_command(
   'indslogan', None, 'slogan'
 ).add()
+
