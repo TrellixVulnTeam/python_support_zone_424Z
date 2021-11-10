@@ -56,3 +56,5 @@ async def img_sampler(event):
     await event.client.send_file(event.chat_id, lst, reply_to=reply_to_id)
     shutil.rmtree(os.path.dirname(os.path.abspath(lst[0])))
     await cat.delete()
+
+    
