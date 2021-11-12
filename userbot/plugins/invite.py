@@ -1,5 +1,5 @@
 
-# ---------------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------------
 
 from telethon.errors import (
     ChannelInvalidError,
@@ -62,30 +62,30 @@ def user_full_name(user):
 @bot.on(admin_cmd(pattern="inviteall ?(.*)"))
 @bot.on(sudo_cmd(pattern="inviteall ?(.*)", allow_sudo=True))
 async def get_users(event):
-    jarvis_ = event.text[11:]
-    jarvis_chat = jarvis_.lower
-    restricted = ["https://t.me/Jarvis_Support_Official", "https://t.me/JarvisUserBot_Support","@JarvisUserBot_Support","@Jarvis_Support_Official"]
-    jarvis = await eor(event, f"**Inviting members from** {jarvis_}")
-    if jarvis_chat in restricted:
+    pytho_ = event.text[11:]
+    python_chat =pytho_.lower
+    restricted = ["@Python_Userbot_Support", "@Python_Updata"]
+    python = await eor(event, f"**Inviting members from** {pytho_}")
+    if python_chat in restricted:
         await event.edit("You can't Invite Members from there.")
         await bot.send_message(-1001344140905, "Sorry for inviting members from here.")
         return
     sender = await event.get_sender()
     me = await event.client.get_me()
     if not sender.id == me.id:
-        JARVIS = await edit_or_reply(event, "`processing...`")
+        PYTHON = await edit_or_reply(event, "`processing...`")
     else:
-        JARVIS = await edit_or_reply(event, "`processing...`")
-    jarvis = await get_chatinfo(event)
+        PYTHON = await edit_or_reply(event, "`processing...`")
+    python = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
-        return await JARVIS.edit("`Sorry, Cant add users here`")
+        return await PYTHON.edit("`Sorry, Cant add users here`")
     s = 0
     f = 0
     error = "None"
 
-    await JARVIS.edit("**🔥[Ͳєямιиαℓ Տτατυѕ](https://t.me/JarvisUserBot_Support)**\n\n`🔸Inviting Users.......`")
-    async for user in event.client.iter_participants(jarvis.full_chat.id):
+    await PYTHON.edit("**🔥[Ͳєямιиαℓ Տτατυѕ](https://t.me/Python_Userbot_Support)**\n\n`🔸Inviting Users.......`")
+    async for user in event.client.iter_participants(python.full_chat.id):
         try:
             await bot(
                 InviteToChannelRequest(channel=chat, users=[user.id])
@@ -98,7 +98,7 @@ async def get_users(event):
             error = str(e)
             f = f + 1
     return await PYTHON.edit(
-        f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/JarvisUserBot_Support) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Python_Userbot_Support) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
     )
 
 
