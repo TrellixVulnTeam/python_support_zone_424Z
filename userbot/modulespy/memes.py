@@ -17,7 +17,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
 from userbot.cmdhelp import CmdHelp
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from PYTHONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 
 # ================= CONSTANT =================
 
@@ -868,4 +868,4 @@ CmdHelp("memes").add_command(
 ).add_command(
   "cowsay", "<text>", "Use and see....."
 ).add()
-#LEGENDBOT_OP
+#PYTHONBOT_LX
