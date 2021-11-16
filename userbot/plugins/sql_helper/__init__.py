@@ -7,10 +7,10 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 # the secret configuration specific things
 from var import Var
 from userbot.Config import Config
-DB_URI = os.environ.get("DATABASE_URL")
+
 
 def start() -> scoped_session:
-    engine = create_engine(DB_URI)
+    engine = create_engine(Config.DB_URI)
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
