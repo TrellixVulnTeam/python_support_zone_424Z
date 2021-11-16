@@ -1,6 +1,6 @@
 from sqlalchemy import Column, LargeBinary, Numeric, UnicodeText
 
-from PYTHONBOT.plugins.sql_helper import BASE, SESSION
+from LEGENDBOT.plugins.sql_helper import BASE, SESSION
 
 
 class Snips(BASE):
