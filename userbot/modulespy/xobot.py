@@ -49,3 +49,4 @@ async def nope(doit):
 CmdHelp("xobot").add_command(
     'playxo', None, 'Use and See'
 )
+
