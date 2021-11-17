@@ -45,3 +45,4 @@ async def _(event):
 CmdHelp("wikimedia").add_command(
     'wikimedia', None, 'Search anything on Wikipedia'
 )
+
