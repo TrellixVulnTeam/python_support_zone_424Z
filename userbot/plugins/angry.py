@@ -31,10 +31,16 @@ async def _(event):
         deq.rotate(1)
         
 CmdHelp("angry").add_command(
-  "🤬", None, "υѕє αи∂ ѕєє ex - 🤬"
+  "🤬", None, "υѕє it also it describes all about ur felling that u r angry - 🤬"
 ).add_command(
-  "🤣", None, "Use and See"
+  "🤣", None, "funny command use it and see it"
 ).add_type(
   "Official"
+).add_info(
+       "Its Very Useful Module this module explains all about your fellings like (🤬) for ur angry(🤣)friends message is funny "
+).add_warning(
+       "Harmless Module✅"
+).add_type(
+       "Addons"
 ).add()
 

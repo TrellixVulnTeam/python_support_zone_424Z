@@ -1,4 +1,4 @@
-#plugin made python support
+#plugin made PYTHON support
 #keep credits if you are gonna kang it lol
 import asyncio
 from . import *

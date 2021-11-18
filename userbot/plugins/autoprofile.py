@@ -18,7 +18,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "PYTHON User"
 async def _(event):
     if event.fwd_from:
         return
-    LEGEND = await edit_or_reply(event, "`Starting AutoName Please Wait`")
+    PYTHON = await edit_or_reply(event, "`Starting AutoName Please Wait`")
     if event.fwd_from:
         return
 
@@ -60,7 +60,7 @@ async def _(event):
 
         await asyncio.sleep(DEL_TIME_OUT)
 
-    await LEGEND.edit(f"Auto Name has been started my Master")
+    await PYTHON.edit(f"Auto Name has been started my Master")
 
 
 @bot.on(admin_cmd(pattern="autobio"))  # pylint:disable=E0602

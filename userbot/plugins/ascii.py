@@ -74,7 +74,7 @@ async def _(event):
     if reply_message.sender.bot:
         await edit_or_reply(event, "Reply to actual мє∂ια message.😒🤐")
         return
-    legend = await edit_or_reply(event, "`Processing`")
+    python = await edit_or_reply(event, "`Processing`")
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message("/start")
@@ -84,7 +84,7 @@ async def _(event):
             pic = await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await legend.edit("Please unblock @Lines50Bot and try again")
+            await python.edit("Please unblock @Lines50Bot and try again")
             return
         await python.delete()
         await event.client.send_file(

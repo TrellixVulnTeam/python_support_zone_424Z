@@ -889,7 +889,7 @@ async def _(event):
         "__Current Loaded OS: Symbian OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.macos`\n☑️ `.windows`\n☑️ `.linux`\n☑️ `.stock`",
         "__Current Loaded OS: Symbian OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.macos`\n✅ `.windows`\n☑️ `.linux`\n☑️ `.stock`",
         "__Current Loaded OS: Symbian OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.macos`\n✅ `.windows`\n✅ `.linux`\n☑️ `.stock`",
-        "__Current Loaded OS: Symbian OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.macos`\n✅ `.windows`\n✅ `.linux`\n✅ `.stock`\n\nDeveloped By: @Its_LegendBoy",
+        "__Current Loaded OS: Symbian OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.macos`\n✅ `.windows`\n✅ `.linux`\n✅ `.stock`\n\nDeveloped By: @The_LegendBoy",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -965,4 +965,12 @@ CmdHelp("animation").add_command(
   'stocks', None, 'Use And See'
 ).add_command(
   'oss', None, 'Use And See'
+).add_type(
+  "Official"
+).add_info(
+       "Its Very Useful Module too much just use these u must(might) have fun"
+).add_warning(
+       "Harmless Module✅"
+).add_type(
+       "Addons"
 ).add()

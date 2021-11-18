@@ -67,7 +67,7 @@ async def formatJSON(outData):
         msg += f"\n**𝚈𝚎𝚊𝚛** : {jsonData['startDate']['year']}"
         msg += f"\n**𝚂𝚌𝚘𝚛𝚎** : {jsonData['averageScore']}"
         msg += f"\n**𝙳𝚞𝚛𝚊𝚝𝚒𝚘𝚗** : {jsonData['duration']} min\n\n"
-        # https://t.me/Python_Userbot_Support/19496
+        # https://t.me/Legend_Userbot/19496
         cat = f"{jsonData['description']}"
         msg += " __" + re.sub("<br>", "\n", cat) + "__"
         return msg
@@ -87,4 +87,11 @@ async def anilist(event):
 
 CmdHelp("anilist").add_command(
   'anilist', '<anime name>', 'Shows you the details of the anime'
+).add_info(
+       "Its Very Useful Module Its shows the profile and all the details of the characters of the animation"
+).add_warning(
+       "Harmless Module✅"
+).add_type(
+       "Addons"
 ).add()
+
