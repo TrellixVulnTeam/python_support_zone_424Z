@@ -208,4 +208,4 @@ CmdHelp("dpplugin").add_command(
        "Harmless Module✅"
 ).add_type(
        "Addons"
-).add()
+).add(PYTHONBOT)
