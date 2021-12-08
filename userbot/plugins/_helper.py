@@ -37,8 +37,8 @@ async def repo(event):
         await eor(event, msg)
 
 
-@bot.on(admin_cmd(pattern="op ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="op ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="legend ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="legend ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
