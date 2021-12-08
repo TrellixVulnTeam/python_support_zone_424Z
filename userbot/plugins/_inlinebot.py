@@ -1,10 +1,4 @@
-from math import ceil
-from re import compile
-import asyncio
-import html
-import os
-import re
-import sys
+
 from telethon.events import InlineQuery, callbackquery
 from userbot import *
 from userbot.cmdhelp import *
