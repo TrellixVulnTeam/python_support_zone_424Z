@@ -65,8 +65,8 @@ async def _(event):
                     sixth = await conv.get_response()
                     await bot.send_read_acknowledge(conv.chat_id)
                 except YouBlockedUserError:
-                    return await legend.edit("Unblock @Botfather first.")
-                await legend.edit(
+                    return await python.edit("Unblock @Botfather first.")
+                await python.edit(
                     f"**Turned On Inline Mode Successfully.** \n\nDo `{l1}legend` again to get the help menu."
                 )
             await bot.delete_messages(
