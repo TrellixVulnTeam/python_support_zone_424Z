@@ -1,29 +1,28 @@
-from userbot.Config import Config
-import asyncio
-
-import requests
-from telethon import functions
-from . import *
-from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
-from PYTHONBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
-
-perf = "[ Dark_Python ]"
-
-import requests
 from telethon import functions
 from telethon.errors import ChatSendInlineForbiddenError as noin
-from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot, BotInlineDisabledError as noinline, YouBlockedUserError
+from telethon.errors.rpcerrorlist import BotInlineDisabledError as noinline
+from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
+from telethon.errors.rpcerrorlist import YouBlockedUserError
 
+from PYTHONBOT.utils import admin_cmd, sudo_cmd
+from userbot import CMD_LIST, bot
+from userbot.Config import Config
+
+from . import *
+
+mybot = Config.BOT_USERNAME
+if mybot.startswith("@"):
+    botname = mybot
+else:
+    botname = f"@{mybot}"
 
 msg = f"""
 **⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 Python𝙱𝚘𝚝 ⚜**
-
-  •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/LEGEND-LX/DARK_PYTHON)
-  •        [♦️ Replits ♦️](https://replit.com/@LEGEND-LX/PYTHONBOT-4#main.py)
-
+  •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/LEGEND-LX/PYTHONBOT-V9)
+  •        [♦️ REPL ♦️](https://replit.com/@LEGEND-LX/PYTHONBOT-4#main.py)
   •  ©️ {Python_channel} ™
 """
-botname = Config.BOT_USERNAME
+
 
 @bot.on(admin_cmd(pattern="repo$"))
 @bot.on(sudo_cmd(pattern="repo$", allow_sudo=True))
@@ -37,12 +36,12 @@ async def repo(event):
         await eor(event, msg)
 
 
-@bot.on(admin_cmd(pattern="op ?(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="op ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="legend ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="legend ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
-    tgbotusername = Config.BOT_USERNAME
+    tgbotusername = botname
     chat = "@Botfather"
     if tgbotusername is not None:
         try:
@@ -52,7 +51,10 @@ async def _(event):
             )
             await event.delete()
         except noinline:
-            python = await eor(event, "**Inline Mode is disabled.** \n__Turning it on, please wait for a minute...__")
+            python = await eor(
+                event,
+                "**Inline Mode is disabled.** \n__Turning it on, please wait for a minute...__",
+            )
             async with bot.conversation(chat) as conv:
                 try:
                     first = await conv.send_message("/setinline")
@@ -63,13 +65,44 @@ async def _(event):
                     sixth = await conv.get_response()
                     await bot.send_read_acknowledge(conv.chat_id)
                 except YouBlockedUserError:
-                    return await python.edit("Unblock @Botfather first.")
-                await python.edit(f"**Turned On Inline Mode Successfully.** \n\nDo `{l1}op` again to get the help menu.")
+                    return await legend.edit("Unblock @Botfather first.")
+                await legend.edit(
+                    f"**Turned On Inline Mode Successfully.** \n\nDo `{l1}legend` again to get the help menu."
+                )
             await bot.delete_messages(
-                conv.chat_id, [first.id, second.id, third.id, fourth.id, fifth.id, sixth.id]
+                conv.chat_id,
+                [first.id, second.id, third.id, fourth.id, fifth.id, sixth.id],
             )
     else:
-        await eor(event, "**⚠️ 𝙴𝚁𝚁𝙾𝚁 !!** \n𝙿𝚕𝚎𝚊𝚜𝚎 𝚁𝚎-𝙲𝚑𝚎𝚌𝚔 BOT_TOKEN & BOT_USERNAME on Heroku.")
+        await eor(
+            event,
+            "**⚠️ 𝙴𝚁𝚁𝙾𝚁 !!** \n𝙿𝚕𝚎𝚊𝚜𝚎 𝚁𝚎-𝙲𝚑𝚎𝚌𝚔 BOT_TOKEN & BOT_USERNAME on Heroku.",
+        )
+
+
+@bot.on(admin_cmd(pattern="op ?(.*)", outgoing=True))
+async def yardim(event):
+    if event.fwd_from:
+        return
+    tgbotusername = botname
+    input_str = event.pattern_match.group(1)
+    if tgbotusername is not None or PYTHON_input == "text":
+        results = await event.client.inline_query(tgbotusername, "pythonbot_help")
+        await results[0].click(
+            event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
+        )
+        await event.delete()
+    else:
+        await eor(event, "**Check Bot Token And Bot Username In Reveal Var*")
+
+        if input_str in CMD_LIST:
+            string = "Commands found in {}:\n".format(input_str)
+            for i in CMD_LIST[input_str]:
+                string += "  " + i
+                string += "\n"
+            await event.edit(string)
+        else:
+            await event.edit(input_str + " is not a valid plugin!")
 
 
 @bot.on(admin_cmd(pattern="plinfo(?: |$)(.*)", outgoing=True))
@@ -99,4 +132,23 @@ async def pythonbott(event):
                 else:
                     string += "`, "
             string += "\n"
-        await eor(event, "Please Specify A Module Name Of Which You Want Info" + "\n\n" + string)
+        await eor(
+            event,
+            "Please Specify A Module Name Of Which You Want Info" + "\n\n" + string,
+        )
+
+
+@borg.on(admin_cmd(pattern="config"))  # pylint:disable=E0602
+async def _(event):
+
+    if event.fwd_from:
+
+        return
+
+    result = await borg(functions.help.GetConfigRequest())  # pylint:disable=E0602
+
+    result = result.stringify()
+
+    logger.info(result)  # pylint:disable=E0602
+
+    await event.edit("тєℓєтнση  вαѕє∂ υѕєявσт ρσωєяє∂ ву **Pythonẞø†** вσт")
