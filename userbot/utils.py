@@ -166,7 +166,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("🔥⚡PYTHON-BOT⚡🔥 ~ " + shortname)
+        LOGS.info("🚀Cobra(legend)🚀 ~ " + shortname)
 
 
    
@@ -216,8 +216,8 @@ def load_addons(shortname):
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["PYTHONUSERBOT." + shortname] = mod
-        LOGS.info("🔱PYTHONUSERBOT🔱 ~ " + shortname)
+        sys.modules["DarkHacker." + shortname] = mod
+        LOGS.info("🔱DarkHacker🔱 ~ " + shortname)
 
 
 
