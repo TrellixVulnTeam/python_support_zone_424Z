@@ -22,7 +22,7 @@ python = bot.uid
 mention = f"[{DEFAULTUSER}](tg://user?id={python})"
 
 
-PM_IMG = "https://telegra.ph/file/00399ad38373f61c5a2ff.jpg"
+PM_IMG = "https://telegra.ph/file/73291554e700e61a8d963.jpg"
 pm_caption ="**Pythonẞø✞︎ 𝙸𝚜 𝙾𝚗𝚕𝚒𝚗𝚎**\n\n"
 
 pm_caption += f"**┏━━︎♠️✞t͛ẞ̸ Pythonẞø✞︎♠️━━┓**\n"
