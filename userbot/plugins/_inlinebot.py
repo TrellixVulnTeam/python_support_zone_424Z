@@ -21,7 +21,7 @@ python_row = Config.BUTTONS_IN_HELP
 python_emoji1 = Config.EMOJI_IN_HELP1 or "♦️"
 python_emoji2 = Config.EMOJI_IN_HELP2 or "♦️"
 alive_emoji = Config.ALIVE_EMOJI or "⚜"
-python_pic = Config.PM_PIC or "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
+python_pic = Config.PM_PIC or "https://telegra.ph/file/d73d8b4cb625b4724f093.jpg"
 cstm_pmp = Config.PM_MSG
 ALV_PIC = Config.ALIVE_PIC
 help_pic = Config.HELP_PIC
@@ -71,7 +71,7 @@ alive_txt = """
   ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
   🏅Bø† ẞ†α†µѕ🏅
 **•{}•Oաղ̃ҽ̈r :** {}
-**•{}•Lêɠêɳ̃dẞø† :** {}
+**•{}•Pythonẞø† :** {}
 **•{}•†ҽ̀lҽ́ƭhøղ  :** {}
 **•{}•Ãbûßê     :** {}
 **•{}•ßudø      :** {}
@@ -130,7 +130,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             for x in CMD_LIST.values():
                 for y in x:
                     apn.append(y)
-            help_msg = f"⚜『{python_mention}』⚜\n\n⭐ 𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍⭆ `{len(CMD_HELP)}`\n🔥 𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜⭆ `{len(apn)}`\n📖 Pαցҽ⭆ 1/{veriler[0]}\n"
+            help_msg = f"⚜『{python_mention}』⚜\n\n𓆩 ☠️ργτηοй 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𓆪⭆ `{len(CMD_HELP)}`\n☠️𓆩 ργτηοй 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n☠️𓆩 Pαցҽ𓆪⭆ 1/{veriler[0]}\n"
             if help_pic and help_pic.endswith((".jpg", ".png")):
                 result = builder.photo(
                     help_pic,
@@ -540,7 +540,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 apn.append(y)
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             await event.edit(
-                f"⚜『{python_mention}』⚜\n\n𓆩 𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍𓆪⭆ `{len(CMD_HELP)}`\n🔥𓆩 𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n📖𓆩 Pαցҽ𓆪⭆ 1/{veriler[0]}\n",
+                f"⚜『{python_mention}』⚜\n\n𓆩 ργτηοй 𝙼𝚘𝚍𝚞𝚕𝚎𝚜𓆪⭆ `{len(CMD_HELP)}`\n🔥𓆩 ργτηοй 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n📖𓆩 Pαցҽ𓆪⭆ 1/{veriler[0]}\n",
                 buttons=veriler[1],
                 link_preview=False,
             )
