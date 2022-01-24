@@ -71,7 +71,7 @@ async def amireallyalive(alive):
         
         PYTHON_caption += f"╔════❰𓆩༒Alive-linux𓆩༒❱═❍⊱❁ \n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼𓆩༒Developer༒𓆪⭆[Legend-Lx](t.me/Legendl_Mr_Hacker) \n"
+        PYTHON_caption += f"║┣⪼𓆩༒Developer༒𓆪⭆[Dark-Legend](t.me/Dark_Legend_Pro) \n"
         PYTHON_caption += f"║┣⪼𓆩༒E-Developer༒𓆪⭆[Legend-Os](t.me/The_LegendBoy) \n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣\n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
@@ -81,7 +81,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"╔══❰𓆩༒Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ𓆩༒❱═➣\n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲟⲱⲛⲉʀ༒𓆪⭆[ℓєgєи∂-ℓx](t.me/Legendl_Mr_Hacker) \n"        
+        PYTHON_caption += f"║┣⪼𓆩༒Ⲟⲱⲛⲉʀ༒𓆪⭆[ℓєgєи∂](t.me/Dark_Legend_Pro) \n"        
         PYTHON_caption += f"║┣⪼𓆩༒Ⲋⲧⲁⲧυⲋ༒𓆪⭆Ⲟⲛⳑⲓⲛⲉ\n"            
         PYTHON_caption += f"║┣⪼𓆩༒Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ༒𓆪⭆{mention}\n" 
         PYTHON_caption += f"║┣⪼𓆩༒Ⳙⲣⲧⲓⲙⲉ༒𓆪⭆         {uptime}\n"
@@ -89,7 +89,7 @@ async def amireallyalive(alive):
         PYTHON_caption += f"║┣⪼𓆩༒Ⲣⲩⲧⲏⲟⲛ༒𓆪⭆         {PYTHONversion}\n"
         PYTHON_caption += f"║┣⪼𓆩༒Os:༒𓆪⭆    [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
         PYTHON_caption += f"║┣⪼𓆩༒Ⲧⲉⳑⲉⲧⲏⲟⲛ༒𓆪⭆        {version.__version__}\n" 
-        PYTHON_caption += f"║┣⪼[𓆩༒PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭༒𓆪](https://t.me/Python_Userbot_Support)\n"
+        PYTHON_caption += f"║┣⪼[𓆩༒PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭༒𓆪](https://t.me/Python_Userbot_Support_Pro)\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"╚══════════════════❍⊱❁۪۪\n"
         
