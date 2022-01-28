@@ -8,7 +8,7 @@ from userbot.Config import Config
 from userbot.utils import admin_cmd, errors_handler, sudo_cmd
 
 LOGGER_ID = Config.LOGGER_ID
-from userbot import LOGGER
+from userbot import LEGEND
 
 
 async def get_target_message(event):
