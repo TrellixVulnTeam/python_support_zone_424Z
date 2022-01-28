@@ -66,7 +66,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("`⚡⚡𝚁𝚞𝚔𝚘 𝙹𝚊𝚛𝚊 𝚜𝚊𝚋𝚛𝚊 𝚔𝚊𝚛𝚘 𝚞𝚙𝚍𝚊𝚝𝚎 𝙷𝚘 𝚗𝚎 𝚓𝚊 𝚛𝚑𝚊 𝚑 Pythonbot_V11.0.9⚡⚡`")
+        await message.edit("`💫💥𝚁𝚞𝚔𝚘 𝙹𝚊𝚛𝚊 𝚜𝚊𝚋𝚛𝚊 𝚔𝚊𝚛𝚘 𝚞𝚙𝚍𝚊𝚝𝚎 𝙷𝚘 𝚗𝚎 𝚓𝚊 𝚛𝚑𝚊 𝚑 PYTHONBOT-Pro💫💥`")
         await asyncio.sleep(5)
 
     message_one = NEW_BOT_UP_DATE_FOUND.format(
