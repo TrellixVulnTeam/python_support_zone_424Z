@@ -14,7 +14,7 @@ import asyncio
 import glob
 import telethon.utils
 l2= Config.SUDO_COMMAND_HAND_LER
-PYTHON_PIC = Config.ALIVE_PIC or "https://telegra.ph/file/75e1eda1498620f0030ea.jpg"
+PYTHON_PIC = Config.ALIVE_PIC or "https://te.legra.ph/file/cdbfdc19d6d8801678d6a.jpg"
 l1 = Config.COMMAND_HAND_LER
 
 
@@ -83,9 +83,9 @@ async def assistant():
                 try:
                     load_addons(shortname.replace(".py", ""))
                     if not shortname.startswith("__") or shortname.startswith("_"):
-                        LOGS.info(f"[PYTHON-BOT 9.0.8] - Addons -  Installed - {shortname}")
+                        LOGS.info(f"[PythonBot-Pro] - Addons -  Installed - {shortname}")
                 except Exception as e:
-                    LOGS.warning(f"[PYTHON-BOT 9.0.8] - Addons - ERROR - {shortname}")
+                    LOGS.warning(f"[PythonBot-Pro] - Addons - ERROR - {shortname}")
                     LOGS.warning(str(e))
     else:
         print("Addons Not Loading")
@@ -93,11 +93,11 @@ async def assistant():
 bot.loop.run_until_complete(module())
 
 print(f"""『🔱PYTHON-USER-BOT🔱』➙𖤍࿐ IS ON!!! PYTHON VERSION :- {PYTHONversion}
-TYPE :- " .gpromote @Legendl_Mr_Hacker " OR .python OR .ping CHECK IF I'M ON!
+TYPE :- " .gpromote @DARK-LEGEND-PRO " OR .python OR .ping CHECK IF I'M ON!
 ╔════❰PYTHONBOT❱═❍⊱❁۪۪
-║┣⪼ OWNER - LEGEND-LX
+║┣⪼ OWNER - LEGEND-PRO
 ║┣⪼{PYTHON_PIC}
-║┣⪼ CREATOR -@Legendl_Mr_Hacker
+║┣⪼ CREATOR -@DARK_LEGEND_PRO
 ║┣⪼ TELETHON - 1.2.0
 ║┣⪼ ✨ 『🔱PYTHON-USER-BOT 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
@@ -111,7 +111,7 @@ async def python_is_on():
             await bot.send_file(
                 Config.LOGGER_ID,
                 PYTHON_PIC,
-                caption=f"#START \n\nDeployed PYTHONBOT Successfully\n\n**PYTHONBOT- {PYTHONversion}**\n\nType `{l1}python` or `{l1}pyalive` to check! \n\nJoin [PythonBot Channel](t.me/Python_Updata) for Updates & [PythonBot Chat](t.me/Python_Userbot_Support) for any query regarding PythonBot",
+                caption=f"#START \n\nDeployed PYTHONBOT Successfully\n\n**PYTHONBOT- {PYTHONversion}**\n\nType `{l1}legend` or `{l1}alive` to check! \n\nJoin [PythonBot Channel](t.me/Python_Updata) for Updates & [PythonBot Chat](t.me/Python_Userbot_Support_Pro) for any query regarding PythonBot",
             )
     except Exception as e:
         print(str(e))
@@ -123,7 +123,7 @@ async def python_is_on():
         pass
 
     try:
-        await bot(JoinChannelRequest("@Python_Userbot_Support"))
+        await bot(JoinChannelRequest("@Python_Userbot_Support_Pro"))
     except BaseException:
          pass
 
