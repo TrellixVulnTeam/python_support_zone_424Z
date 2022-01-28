@@ -130,7 +130,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             for x in CMD_LIST.values():
                 for y in x:
                     apn.append(y)
-            help_msg = f"⚜『{python_mention}』⚜\n\n𓆩 ☠️ργτηοй 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𓆪⭆ `{len(CMD_HELP)}`\n☠️𓆩 ργτηοй 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n☠️𓆩 Pαցҽ𓆪⭆ 1/{veriler[0]}\n"
+            help_msg = f"⚜『{python_mention}』⚜\n\n𓆩 ☠️ργτηοйPro 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𓆪⭆ `{len(CMD_HELP)}`\n☠️𓆩 ργτηοйPro 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n☠️𓆩 PαցҽPro𓆪⭆ 1/{veriler[0]}\n"
             if help_pic and help_pic.endswith((".jpg", ".png")):
                 result = builder.photo(
                     help_pic,
@@ -540,7 +540,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 apn.append(y)
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             await event.edit(
-                f"⚜『{python_mention}』⚜\n\n𓆩 ργτηοй 𝙼𝚘𝚍𝚞𝚕𝚎𝚜𓆪⭆ `{len(CMD_HELP)}`\n🔥𓆩 ργτηοй 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n📖𓆩 Pαցҽ𓆪⭆ 1/{veriler[0]}\n",
+                f"⚜『{python_mention}』⚜\n\n𓆩 ργτηοйPro 𝙼𝚘𝚍𝚞𝚕𝚎𝚜𓆪⭆ `{len(CMD_HELP)}`\n🔥𓆩 ργτηοйPro 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n📖𓆩 PαցҽPro𓆪⭆ 1/{veriler[0]}\n",
                 buttons=veriler[1],
                 link_preview=False,
             )
