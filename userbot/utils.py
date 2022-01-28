@@ -166,7 +166,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("🚀Cobra(legend)🚀 ~ " + shortname)
+        LOGS.info("💥💫PythonPro-Bot💫💥 ~ " + shortname)
 
 
    
