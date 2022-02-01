@@ -5,7 +5,7 @@ from telethon.sessions import StringSession
 from telethon import TelegramClient
 from userbot.Config import Config
 from var import Var
-LOGGER = True
+BOTLOG = True
 StartTime = time.time()
 PYTHONversion = "𝚅9.0.8"
 botversion = "𝚅9.0.8"
