@@ -2,14 +2,14 @@ import os
 import urllib
 
 from telethon.tl import functions
-from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from PYTHONBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
 
 OFFLINE_TAG = "[•OFFLINE•]"
 ONLINE_TAG = "[•ONLINE•]"
 PROFILE_IMAGE = os.environ.get(
-    "PROFILE_IMAGE", "https://telegra.ph/file/9f0638dbfa028162a8682.jpg"
+    "PROFILE_IMAGE", "https://te.legra.ph/file/7bfabcc582a8b05ee2f0f.jpg"
 )
 
 
@@ -26,7 +26,7 @@ async def _(event):
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):  # pylint:disable=E0602
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)  # pylint:disable=E0602
     urllib.request.urlretrieve(
-        "https://telegra.ph/file/249f27d5b52a87babcb3f.jpg", "donottouch.jpg"
+        "https://te.legra.ph/file/7bfabcc582a8b05ee2f0f.jpg", "donottouch.jpg"
     )
     photo = "donottouch.jpg"
     if photo:
