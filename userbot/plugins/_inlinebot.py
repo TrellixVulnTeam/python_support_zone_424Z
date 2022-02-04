@@ -20,7 +20,7 @@ DEFAULTUSER = ALIVE_NAME or "PYTHON"
 python_row = Config.BUTTONS_IN_HELP
 python_emoji1 = Config.EMOJI_IN_HELP1 or "♦️"
 python_emoji2 = Config.EMOJI_IN_HELP2 or "♦️"
-alive_emoji = Config.ALIVE_EMOJI or "⚜"
+alive_emoji = Config.ALIVE_EMOJI or "💥"
 python_pic = Config.PM_PIC or "https://telegra.ph/file/f78f716654c404bfa2df7.jpg"
 cstm_pmp = Config.PM_MSG
 ALV_PIC = Config.ALIVE_PIC
@@ -69,7 +69,7 @@ alive_txt = """
 **Hey,
      {}**
   ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-  🏅Bø† ẞ†α†µѕ🏅
+  💥Bø† ẞ†α†µѕ💥
 **•{}•Oաղ̃ҽ̈r :** {}
 **•{}•Pythonẞø† :** {}
 **•{}•†ҽ̀lҽ́ƭhøղ  :** {}
