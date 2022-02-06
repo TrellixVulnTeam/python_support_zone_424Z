@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String
-from legendBOT.plugins.sql_helper import SESSION, BASE
+from PYTHONBOT.plugins.sql_helper import SESSION, BASE
 
 
 class fban(BASE):
