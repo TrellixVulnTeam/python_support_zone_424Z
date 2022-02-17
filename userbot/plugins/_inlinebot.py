@@ -69,7 +69,7 @@ alive_txt = """
 **Hey,
      {}**
   ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-  💥Bø† ẞ†α†µѕ💥
+  ࿐✘࿐Pro ẞ†α†µѕ࿐✘࿐
 **•{}•Oաղ̃ҽ̈r :** {}
 **•{}•Pythonẞø† :** {}
 **•{}•†ҽ̀lҽ́ƭhøղ  :** {}
@@ -105,7 +105,7 @@ def button(page, modules):
             custom.Button.inline(
                 f"ẞαƈƙ", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
-            custom.Button.inline(f"💥 ❌ 💥", data="close"),
+            custom.Button.inline(f"࿐✘࿐ ", data="close"),
             custom.Button.inline(
                 f"ɳ̃êӿ†", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
@@ -130,7 +130,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             for x in CMD_LIST.values():
                 for y in x:
                     apn.append(y)
-            help_msg = f"⚜『{python_mention}』⚜\n\n𓆩 💥ργτηοйPro 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𓆪⭆ `{len(CMD_HELP)}`\n💥𓆩 ργτηοйPro 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n💥𓆩 PαցҽPro𓆪⭆ 1/{veriler[0]}\n"
+            help_msg = f"⚜『{python_mention}』⚜\n\n𓆩࿐𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𓆪⭆ `{len(CMD_HELP)}`\n𓆩࿐𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n𓆩࿐Pro𓆪⭆ 1/{veriler[0]}\n"
             if help_pic and help_pic.endswith((".jpg", ".png")):
                 result = builder.photo(
                     help_pic,
@@ -540,7 +540,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 apn.append(y)
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             await event.edit(
-                f"⚜『{python_mention}』⚜\n\n𓆩 💥ργτηοйPro 𝙼𝚘𝚍𝚞𝚕𝚎𝚜𓆪⭆ `{len(CMD_HELP)}`\n💥𓆩 ργτηοйPro 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n💥𓆩 PαցҽPro𓆪⭆ 1/{veriler[0]}\n",
+                f"⚜『{python_mention}』⚜\n\n𓆩࿐𝙼𝚘𝚍𝚞𝚕𝚎𝚜𓆪⭆ `{len(CMD_HELP)}`\n𓆩࿐𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜𓆪⭆ `{len(apn)}`\n𓆩࿐Pro𓆪⭆ 1/{veriler[0]}\n",
                 buttons=veriler[1],
                 link_preview=False,
             )
