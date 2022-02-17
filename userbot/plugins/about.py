@@ -26,13 +26,13 @@ pm_caption = "     **🔥『PYTHONẞø†』🔥**\n\n"
 pm_caption += f"**{CUSTOM_ALIVE_TEXT}**\n\n"
 pm_caption += "༆༄🎀🌹Åbôût Mê \n\n"
 pm_caption += "💫💫**✞︎t͛ẞ̸ Pythonẞø†**💫💫 >>》 V•9.Ø.8\n"
-pm_caption += "😇😇**Lêɠêɳ̃dLx**😇😇   >>》 [Owner](https://t.me/Legendl_Mr_Hacker)\n"
+pm_caption += "😇😇**Dark-LegendPro**😇😇   >>》 [Owner](https://t.me/DARK_LEGEND_PRO)\n"
 pm_caption += f"🔰🔰**Mâßtêř**🔰🔰  >>》 {python_mention}\n"
-pm_caption += "❣❣ *Pythonẞø✞︎**❣❣ >>》 [𝕲𝖗ουρ](https://t.me/Python_Userbot_Support)\n\n"
+pm_caption += "❣❣ *Pythonẞø✞︎**❣❣ >>》 [𝕲𝖗ουρ](https://t.me/Python_Userbot_Support_Pro)\n\n"
 pm_caption += "🎊🎊 **Řepô**🎊🎊  >>》 [𝕽єρο](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8)\n\n"
-pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Legendl_Mr_Hacker)\n\n"
+pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/DARK_LEGEND_PRO)\n\n"
 @borg.on(admin_cmd(pattern=r"abot"))
-@bot.on(sudo_cmd(pattern="apython$", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="python$", allow_sudo=True))
 async def amireallyalive(yes):
     chat = await yes.get_chat()
 
