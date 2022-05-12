@@ -7,8 +7,8 @@ from userbot.Config import Config
 from var import Var
 BOTLOG = True
 StartTime = time.time()
-PYTHONversion = "𝚅9.0.8"
-botversion = "𝚅9.0.8"
+PYTHONversion = "V1"
+botversion = "𝚅1"
 
 os.system("pip install --upgrade pip")
 if Var.PYTHON_STRING:
