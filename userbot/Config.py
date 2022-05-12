@@ -157,9 +157,9 @@ if ENV:
         LYDIA_API = os.environ.get("LYDIA_API",None)
         PLUGIN_CHANNEL = os.environ.get("PLUGIN_CHANNEL",None)
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8"
+            "UPSTREAM_REPO", "https://github.com/SATYA-OP/SATYABOT"
         )
-        PYTHON_STRING = os.environ.get("PYTHON_STRING", None)
+        SATYA_STRING = os.environ.get("SATYA_STRING", None)
         BOT_MODE = os.environ.get("BOT_MODE", "ON")
         BOTLOG = False
         ABUSE = os.environ.get("ABUSE", None)
