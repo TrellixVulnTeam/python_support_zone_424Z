@@ -131,7 +131,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("PYTHONBOT ~ " + shortname)
+        LOGS.info("SATYABOT ~ " + shortname)
     else:
         import userbot.utils
         import sys
@@ -159,14 +159,14 @@ def load_module(shortname):
         mod.legend_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
         # support for PYTHONBOT originals
-        sys.modules["PYTHONBOT.utils"] = userbot.utils
-        sys.modules["PYTHONBOT"] = userbot
+        sys.modules["SATYABOT.utils"] = userbot.utils
+        sys.modules["SATYABOT"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("💥💫PythonPro-Bot💫💥 ~ " + shortname)
+        LOGS.info("💥💫SaTya-Op-Bot💫💥 ~ " + shortname)
 
 
    
@@ -178,19 +178,19 @@ def load_addons(shortname):
         import sys
         import importlib
         from pathlib import Path
-        path = Path(f"PYTHONUSERBOT/{shortname}.py")
-        name = "PYTHONUSERBOT.{}".format(shortname)
+        path = Path(f"SATYAUSERBOT/{shortname}.py")
+        name = "SATYAUSERBOT.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("PYTHONUSERBOT ~ " + shortname)
+        LOGS.info("SATYAUSERBOT ~ " + shortname)
     else:
         import userbot.utils
         import sys
         import importlib
         from pathlib import Path
-        path = Path(f"PYTHONUSERBOT/{shortname}.py")
-        name = "PYTHONUSERBOT.{}".format(shortname)
+        path = Path(f"SATYAUSERBOT/{shortname}.py")
+        name = "SATYAUSERBOT.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -210,7 +210,7 @@ def load_addons(shortname):
         mod.admin_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
         # support for PYTHONBOT originals
-        sys.modules["PYTHONBOT.utils"] = userbot.utils
+        sys.modules["SATYABOT.utils"] = userbot.utils
         sys.modules["userbot"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
