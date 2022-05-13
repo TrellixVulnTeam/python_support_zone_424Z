@@ -71,7 +71,7 @@ alive_txt = """
   ≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈
   ࿐✘࿐Pro ẞ†α†µѕ࿐✘࿐
 **•{}•Oաղ̃ҽ̈r :** {}
-**•{}•Pythonẞø† :** {}
+**•{}•SaTyaẞø† :** {}
 **•{}•†ҽ̀lҽ́ƭhøղ  :** {}
 **•{}•Ãbûßê     :** {}
 **•{}•ßudø      :** {}
@@ -191,14 +191,14 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     ALV_PIC,
                     text=pyt_hon,
-                    title="PythonBot Alive",
+                    title="satyaBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
                     text=Pyt_hon,
-                    title="PythonBot Alive",
+                    title="satyaBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                 )
@@ -281,14 +281,14 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     VAR_PIC,
                     text=py_thon,
-                    title="PythonBot Alive",
+                    title="satyaBot Alive",
                     buttons=var_btn,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
                     text=py_thon,
-                    title="PythonBot Alive",
+                    title="SatyaBot Alive",
                     buttons=var_btn,
                     link_preview=False,
                 )
@@ -296,14 +296,14 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 Python𝙱𝚘𝚝 ⚜**",
+                text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏  Satya𝙱𝚘𝚝 ⚜**",
                 buttons=[
                     [Button.url("♥️ Tutorial ♥", "https://youtu.be/9dQgdUJfk_k")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/LEGEND-LX/PYTHONBOT-V9")],
+                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/SATYA-OP/SATYABOT")],
                     [
                         Button.url(
                             "💞 Deploy 💞",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT",
+                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2",
                         )
                     ],
                 ],
@@ -320,11 +320,11 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         else:
             result = builder.photo(
                 ALV_PIC,
-                text="""Hey! This is [Pythonẞø†](https://t.me/Python_Userbot_Support) \nYou can know more about me from the links given below 👇""",
+                text="""Hey! This is [SaTyaẞø†](https://t.me/Its_Legendboy) \nYou can know more about me from the links given below 👇""",
                 buttons=[
                     [
                         custom.Button.url(
-                            "⭐ Repo ⭐", "https://Github.com/LEGEND-LX/PYTHONBOT-V9"
+                            "⭐ Repo ⭐", "https://Github.com/SATYA-OP/SATYABOT"
                         ),
                         custom.Button.url(
                             "⚡ Repl ⚡",
@@ -343,7 +343,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"🔰 This is Pythonẞø† PM Security for {python_mention} to keep away unwanted retards from spamming PM..."
+                f"🔰 This is SaTyaẞø† PM Security for {python_mention} to keep away unwanted retards from spamming PM..."
             )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
@@ -512,7 +512,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own © PythonBot™"
+            reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own © SaTyaBot™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
@@ -522,7 +522,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 f"{python_emoji1} Re-Open Menu {python_emoji2}", data="reopen"
             )
             await event.edit(
-                f"**⚜️ Pythonẞø† Mêñû Prõvîdêr háš běěn čłøšĕd ⚜️**\n\n**Bot Of :**  {python_mention}\n\n            [©️Pythonẞø†]({chnl_link})",
+                f"**⚜️ Satyaẞø† Mêñû Prõvîdêr háš běěn čłøšĕd ⚜️**\n\n**SaTyaBot Of :**  {python_mention}\n\n            [©️Pythonẞø†]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
@@ -546,7 +546,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "This Button Only For My Master.   ©Pythonẞø†",
+                "This Button Only For My Master.   ©SaTyaẞø†",
                 cache_time=0,
                 alert=True,
             )
@@ -637,7 +637,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "MY MASTER ONLY CAN ACCESS THIS BUTTON. DEPLOY UR OWN ©Pythonẞø†™ ",
+                "MY MASTER ONLY CAN ACCESS THIS BUTTON. DEPLOY UR OWN ©SaTyaẞø†™ ",
                 cache_time=0,
                 alert=True,
             )
