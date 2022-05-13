@@ -18,10 +18,10 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "✞t͛ẞ̸ Pythonẞø✞ 🇮🇳"
+DEFAULTUSER = ALIVE_NAME or "✞t͛ẞ̸ SaTyaẞø✞ 🇮🇳"
 PYTHON_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice Pythonẞø✞"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice SaTyaẞø✞"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Its_LegendBoy"
 
 Python = bot.uid
 
@@ -71,21 +71,21 @@ async def amireallyalive(alive):
         
         PYTHON_caption += f"╔════❰𓆩༒Alive-linux𓆩༒❱═❍⊱❁ \n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼𓆩༒Developer༒𓆪⭆[Dark-Legend](t.me/Dark_Legend_Pro) \n"
+        PYTHON_caption += f"║┣⪼𓆩༒Developer༒𓆪⭆[Its_LegendBoy](t.me/Its_LegendBoy) \n"
         PYTHON_caption += f"║┣⪼𓆩༒X-Developer༒𓆪⭆[LegendX-Pro](t.me/LegendHacker_IIN) \n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣\n"
         PYTHON_caption += f"╚══════════════════❍⊱❁۪۪\n"
         PYTHON_caption += f"╔══❰𓆩༒Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ𓆩༒❱═➣\n"
         PYTHON_caption += f"║╭━━━━━━━━━━━━━━━➣ \n"
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲟⲱⲛⲉʀ༒𓆪⭆[ℓєgєи∂](t.me/Dark_Legend_Pro) \n"        
+        PYTHON_caption += f"║┣⪼𓆩༒Ⲟⲱⲛⲉʀ༒𓆪⭆[ℓєgєи∂](t.me/Its_LegendBoy) \n"        
         PYTHON_caption += f"║┣⪼𓆩༒Ⲋⲧⲁⲧυⲋ༒𓆪⭆Ⲟⲛⳑⲓⲛⲉ\n"            
         PYTHON_caption += f"║┣⪼𓆩༒Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ༒𓆪⭆{mention}\n" 
         PYTHON_caption += f"║┣⪼𓆩༒Ⳙⲣⲧⲓⲙⲉ༒𓆪⭆         {uptime}\n"
         PYTHON_caption += f"║┣⪼𓆩༒Ⲃⲟⲧ Ⲣⲓⲛⳋ༒𓆪⭆        290.087 \n"   
-        PYTHON_caption += f"║┣⪼𓆩༒Ⲣⲩⲧⲏⲟⲛ༒𓆪⭆         {PYTHONversion}\n"
+        PYTHON_caption += f"║┣⪼𓆩༒SaTya༒𓆪⭆         {PYTHONversion}\n"
         PYTHON_caption += f"║┣⪼𓆩༒Os:༒𓆪⭆    [Kali GNU/Linux](https://pkg.kali.org/derivative/kali-roll/) \n"   
         PYTHON_caption += f"║┣⪼𓆩༒Ⲧⲉⳑⲉⲧⲏⲟⲛ༒𓆪⭆        {version.__version__}\n" 
-        PYTHON_caption += f"║┣⪼[𓆩༒PYTHON┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭༒𓆪](https://t.me/Python_Userbot_Support_Pro)\n"
+        PYTHON_caption += f"║┣⪼[𓆩༒SATYA┣⪼ 𝐔𝐬𝐞𝐫𝐛𝐨𝐭༒𓆪](https://t.me/ITS_LEGENDBOY)\n"
         PYTHON_caption += f"║╰━━━━━━━━━━━━━━━➣ \n"
         PYTHON_caption += f"╚══════════════════❍⊱❁۪۪\n"
         
