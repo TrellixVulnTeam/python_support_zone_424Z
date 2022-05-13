@@ -24,7 +24,7 @@ async def add_bot(bot_token):
         bot.me = await bot.get_me()
         bot.uid = telethon.utils.get_peer_id(bot.me)
     except Exception as e:
-        print(f"PYTHON_STRING - {str(e)}")
+        print(f"SATYA_STRING - {str(e)}")
         sys.exit()
         
         
@@ -92,14 +92,14 @@ async def assistant():
 """
 bot.loop.run_until_complete(module())
 
-print(f"""『🔱PYTHON-USER-BOT🔱』➙𖤍࿐ IS ON!!! PYTHON VERSION :- {PYTHONversion}
-TYPE :- " .gpromote @DARK-LEGEND-PRO " OR .python OR .ping CHECK IF I'M ON!
-╔════❰PYTHONBOT❱═❍⊱❁۪۪
-║┣⪼ OWNER - LEGEND-PRO
+print(f"""『🔱SATYA-USER-BOT🔱』➙𖤍࿐ IS ON!!! SATYA VERSION :- {PYTHONversion}
+TYPE :- " .gpromote @DARK-LEGEND-PRO " OR .satya OR .ping CHECK IF I'M ON!
+╔════❰SATYABOT❱═❍⊱❁۪۪
+║┣⪼ OWNER - SATYA-OP
 ║┣⪼{PYTHON_PIC}
-║┣⪼ CREATOR -@DARK_LEGEND_PRO
+║┣⪼ CREATOR -@Its_LegendBoy
 ║┣⪼ TELETHON - 1.2.0
-║┣⪼ ✨ 『🔱PYTHON-USER-BOT 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+║┣⪼ ✨ 『🔱S A T Y A 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱""")
 
@@ -111,7 +111,7 @@ async def python_is_on():
             await bot.send_file(
                 Config.LOGGER_ID,
                 PYTHON_PIC,
-                caption=f"#START \n\nDeployed PYTHONBOT Successfully\n\n**PYTHONBOT- {PYTHONversion}**\n\nType `{l1}legend` or `{l1}alive` to check! \n\nJoin [PythonBot Channel](t.me/Python_Updata) for Updates & [PythonBot Chat](t.me/Python_Userbot_Support_Pro) for any query regarding PythonBot",
+                caption=f"#START \n\nDeployed SATYABOT Successfully\n\n**SATYABOT- {PYTHONversion}**\n\nType `{l1}legend` or `{l1}alive` to check! \n\nJoin [SatyaBot Channel](t.me/satya_Updata) for Updates & [SatyaBot Chat](t.me/SATY_Support_Pro) for any query regarding SatyaBot",
             )
     except Exception as e:
         print(str(e))
