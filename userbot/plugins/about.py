@@ -25,12 +25,12 @@ file5="https://telegra.ph/file/bf2c1a5ed662878104c0c.jpg"""" ===================
 pm_caption = "     **🔥『PYTHONẞø†』🔥**\n\n"
 pm_caption += f"**{CUSTOM_ALIVE_TEXT}**\n\n"
 pm_caption += "༆༄🎀🌹Åbôût Mê \n\n"
-pm_caption += "💫💫**✞︎t͛ẞ̸ Pythonẞø†**💫💫 >>》 V•9.Ø.8\n"
-pm_caption += "😇😇**Dark-LegendPro**😇😇   >>》 [Owner](https://t.me/DARK_LEGEND_PRO)\n"
+pm_caption += "💫💫**✞︎t͛ẞ̸ SaTyaẞø†**💫💫 >>》 V•1\n"
+pm_caption += "😇😇**Dark-LegendPro**😇😇   >>》 [Owner](https://t.me/Its_LegendBoy)\n"
 pm_caption += f"🔰🔰**Mâßtêř**🔰🔰  >>》 {python_mention}\n"
-pm_caption += "❣❣ *Pythonẞø✞︎**❣❣ >>》 [𝕲𝖗ουρ](https://t.me/Python_Userbot_Support_Pro)\n\n"
-pm_caption += "🎊🎊 **Řepô**🎊🎊  >>》 [𝕽єρο](https://github.com/LEGEND-LX/PYTHONBOT-V9.0.8)\n\n"
-pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/DARK_LEGEND_PRO)\n\n"
+pm_caption += "❣❣ *SaTyaẞø✞︎**❣❣ >>》 [𝕲𝖗ουρ](https://t.me/Python_Userbot_Support_Pro)\n\n"
+pm_caption += "🎊🎊 **Řepô**🎊🎊  >>》 [𝕽єρο](https://github.com/SATYA-OP/SATYABOT)\n\n"
+pm_caption += "[....▄███▄███▄\n....█████████\n.......▀██❣🌹💫😇💫🌹❣███▀\n...............▀█▀\n](https://t.me/Its_Legendboy)\n\n"
 @borg.on(admin_cmd(pattern=r"abot"))
 @bot.on(sudo_cmd(pattern="python$", allow_sudo=True))
 async def amireallyalive(yes):
