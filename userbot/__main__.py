@@ -106,7 +106,7 @@ TYPE :- " .gpromote @Its_LegendBoy " OR .python OR .ping CHECK IF I'M ON!
 
 
 
-async def from hekp():
+async def from python_is_on():
     try:
         
         if Config.LOGGER_ID != 0:
