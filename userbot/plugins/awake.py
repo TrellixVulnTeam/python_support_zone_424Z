@@ -16,8 +16,8 @@ async def reply_id(event):
 
 DEFAULTUSER = ALIVE_NAME or "PYTHONBOT"
 PYTHON_IMG = Config.AWAKE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice Pythonϐοτ"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice SaTyaϐοτ"
+CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@Python_Userbot_Support_Pro"
 
 USERID = bot.uid
 
@@ -66,13 +66,13 @@ async def amireallyalive(event):
         PYTHON_caption = f"**{mention}**\n"
         
         PYTHON_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        PYTHON_caption += f"     💫 ✞︎t͛ẞ̸ Pythonẞø✞︎ ιѕ αωακє 💫\n"
+        PYTHON_caption += f"     💫 ✞︎t͛ẞ̸ SaTyaẞø✞︎ ιѕ αωακє 💫\n"
         PYTHON_caption += f"•🔥•LegendBot-Mix    : ν3.0\n"
         PYTHON_caption += f"•🔥•𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
-        PYTHON_caption += f"•🔥•`PYTHON` :  V9.0.8 \n"
+        PYTHON_caption += f"•🔥•`SATYABOT` :  V.1 \n"
         PYTHON_caption += f"•🔥•`OS:`       : Kali GNU/Linux Rolling x86_64 \n"                                        
         PYTHON_caption += f"•🔥•𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
-        PYTHON_caption += f"•🔥•𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/Its_LegendBot)\n"
+        PYTHON_caption += f"•🔥•𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/Its_LegendBoy)\n"
         PYTHON_caption += f"•🔥•𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 : {CUSTOM_YOUR_GROUP}\n"   
 
         await event.client.send_file(
