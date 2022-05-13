@@ -11,8 +11,8 @@ PYTHONversion = "V1"
 botversion = "𝚅1"
 
 os.system("pip install --upgrade pip")
-if Var.PYTHON_STRING:
-    session_name = str(Var.PYTHON_STRING)
+if Var.SATYA_STRING:
+    session_name = str(Var.SATYA_STRING)
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
 else:
     session_name = "startup"
@@ -97,6 +97,7 @@ except:
 
     # SQL Database URI
     DB_URI = os.environ.get("DATABASE_URL", None)
+    SATYA_STRING = os.evviron.get("SATYA_STRING"),None)
 
     # OCR API key
     OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
