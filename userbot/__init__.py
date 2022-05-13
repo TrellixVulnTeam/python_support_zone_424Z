@@ -97,7 +97,7 @@ except:
 
     # SQL Database URI
     DB_URI = os.environ.get("DATABASE_URL", None)
-    SATYA_STRING = os.evviron.get("SATYA_STRING"),None)
+    SATYA_STRING = os.environ.get("SATYA_STRING"),None)
 
     # OCR API key
     OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
