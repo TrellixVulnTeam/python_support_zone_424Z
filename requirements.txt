@@ -47,6 +47,7 @@ gTTS_token>=1.1.3
 gTTS>=2.0.1
 gitpython
 google-trans-new
+google-api-python-client
 google-api-python-client==1.8.0
 google-auth-oauthlib
 google-auth-httplib2
@@ -111,6 +112,7 @@ sqlalchemy==1.3.23
 telegraph
 twitter_scraper
 telethon==1.24.0
+telethon
 tgcrypto
 tswift
 html-telegraph-poster
